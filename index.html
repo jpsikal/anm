@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikované numerické metody</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+        }
+        nav {
+            width: 20%;
+            background: #fff;
+            border-right: 2px solid #ddd;
+            padding: 1rem;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 1rem 0;
+        }
+        nav ul li a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            display: flex;
+            flex: 1;
+            margin-top: 2rem;
+        }
+        .main-content {
+            flex: 3;
+            padding: 2rem;
+            background: #fff;
+            margin: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: auto;
+            height: calc(100vh - 5rem);
+        }
+        .main-content h1 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        .toc {
+            width: 20%;
+            background: #fff;
+            border-left: 2px solid #ddd;
+            padding: 1rem;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+            flex-shrink: 0;
+            overflow-y: auto;
+            position: sticky;
+            top: 1rem;
+            height: calc(100vh - 2rem);
+        }
+        .toc h2 {
+            margin-top: 0;
+        }
+        .toc ul {
+            list-style: none;
+            padding: 0;
+        }
+        .toc ul li {
+            margin: 0.5rem 0;
+        }
+        .toc ul li a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .toc ul li a.active {
+            font-weight: bold;
+            color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #fff;
+            color: #333;
+            border-top: 2px solid #ddd;
+            width: 100%;
+        }
+        .main-footer {
+            margin-top: 1rem;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const tocLinks = document.querySelectorAll(".toc ul li a");
+            const sections = document.querySelectorAll(".main-content section");
+
+            function onScroll() {
+                let currentSection = null;
+                const scrollPosition = window.scrollY + 120; // Adjust tolerance
+
+                sections.forEach((section) => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                        currentSection = section;
+                    }
+                });
+
+                tocLinks.forEach((link) => {
+                    link.classList.remove("active");
+                    if (currentSection && link.getAttribute("href").substring(1) === currentSection.id) {
+                        link.classList.add("active");
+                    }
+                });
+            }
+
+            window.addEventListener("scroll", onScroll);
+            onScroll(); // Run on load to set initial state
+        });
+    </script>
+</head>
+<body>
+    <div class="content">
+        <nav>
+            <h3>letní semestr 2024/2025</h3>
+            <ul>
+                <li><a href="intro.html">Aplikované numerické metody (12ANM)</a></li>
+            </ul>
+            <h2>OBSAH CVIČENÍ</h2>
+            <ul>
+                <li><a href="cviceni1.html" target="content-frame">1. Jupyter notebook a základy Pythonu</a></li>
+                <li><a href="cviceni2.html" target="content-frame">2. Chyby a nestabilita</a></li>
+                <li><a href="cviceni3.html" target="content-frame">3. Numerické metody lineární algebry</a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <h1>Aplikované numerické metody – cvičení (12ANM)</h1>
+            <section id="rozvrh">
+                <h2>Rozvrh pro letní semestr 2024/2025</h2>
+                <p>pondělí, úterý, čtvrtek, pátek</p>
+            </section>
+
+            <section id="vyucujici">
+                <h2>Vyučující</h2>
+                <p><strong>doc. Ing. Jan Pšikal, Ph.D.</strong></p>
+                <p>Email: <a href="mailto:jan.psikal@fjfi.cvut.cz">jan.psikal@fjfi.cvut.cz</a></p>
+            </section>
+
+            <section id="prednasky">
+                <h2>Přednášky</h2>
+                <p>Přednášky jsou organizovány společně s předmětem <strong>NME1</strong> (přednášející <strong>doc. Ing. Pavel Váchal, Ph.D.</strong>).</p>
+                <p>Materiály k přednáškám jsou dostupné na: <a href="http://kfe.fjfi.cvut.cz/~vachal/edu/nme/" target="_blank">http://kfe.fjfi.cvut.cz/~vachal/edu/nme/</a></p>
+            </section>
+
+            <section id="cviceni">
+                <h2>Cvičení</h2>
+                <p>Cvičení pro obor <strong>Jaderná chemie</strong> probíhají striktně odděleně! (vyučující <strong>Ing. Alena Zavadilová, Ph.D.</strong>), obsahově jsou odlišné a odpovídají specifickým potřebám daného studijního oboru.</p>
+            </section>
+
+            <section id="podminky">
+                <h2>Podmínky pro udělení klasifikovaného zápočtu</h2>
+                <p>(Zde může být text podmínek, který nebyl specifikován ve vašem dokumentu.)</p>
+            </section>
+
+            <footer class="main-footer">
+                <p>&copy; 2024 Jan Pšikal</p>
+            </footer>
+        </div>
+        <aside class="toc">
+            <h2>Obsah</h2>
+            <ul>
+                <li><a href="#rozvrh">Rozvrh pro letní semestr</a></li>
+                <li><a href="#vyucujici">Vyučující</a></li>
+                <li><a href="#prednasky">Přednášky</a></li>
+                <li><a href="#cviceni">Cvičení</a></li>
+                <li><a href="#podminky">Podmínky zápočtu</a></li>
+            </ul>
+        </aside>
+    </div>
+</body>
+</html>
