@@ -3,8 +3,23 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: mymarkdownfile
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+parts:
+- caption: Obsah cvičení
+  numbered: true
+  chapters:
+  - file: Cviceni01
+  - file: Cviceni02
+  - file: Cviceni03
+  - file: Cviceni04
+  - file: Cviceni05
+  - file: Cviceni06
+  - file: Cviceni07
+  - file: Cviceni08
+  - file: Cviceni09
+  - file: Cviceni10
+
+#chapters:
+#- file: mymarkdownfile
+#- file: markdown
+#- file: notebooks
+#- file: markdown-notebooks
