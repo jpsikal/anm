@@ -3,10 +3,10 @@
 
 ## Rozvrh pro letní semestr
 
-- pondělí, úterý, čtvrtek
+- úterý, čtvrtek v učebně T-124
 - vyučující doc. Ing. Jan Pšikal, Ph.D., jan.psikal@fjfi.cvut.cz
-- přednášky jsou organizovány společně s předmětem NME1, materiály a další informace k přednáškám jsou [zde](http://kfe.fjfi.cvut.cz/~vachal/edu/nme/)
-- přednášejícím je doc. Pavel Váchal, Ph.D.
+- přednášky jsou organizovány společně s předmětem NME1 (přednášející doc. Pavel Váchal, Ph.D.), materiály a další informace k přednáškám jsou [zde](http://kfe.fjfi.cvut.cz/~vachal/edu/nme/)
+- cvičení pro obor Jaderná chemie probíhají striktně odděleně! (vyučující Ing. Alena Zavadilová, Ph.D.), obsahově jsou odlišné a odpovídají specifickým potřebám daného studijního oboru
 
 ## Podmínky pro udělení zápočtu a klasifikace
 - maximálně tři absence
