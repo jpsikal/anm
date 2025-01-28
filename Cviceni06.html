@@ -522,6 +522,7 @@
 </ol>
 </li>
 <li><p>konvergence <strong>není</strong> zaručena</p></li>
+<li><p>superlineární metoda</p></li>
 </ul>
 <div class="alert alert-block alert-warning"><b>Cvičení 06.02: </b> Najděte kořen rovnice $f(x)=\exp(x)-6$ metodou sečny.</div><div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -591,6 +592,7 @@
 <li><p>modifikace metody sečen</p></li>
 <li><p>po určení <span class="math notranslate nohighlight">\(a_{n+1}\)</span> si k němu vyberu z <span class="math notranslate nohighlight">\(a_{n-1}\)</span> a <span class="math notranslate nohighlight">\(a_{n}\)</span> takový bod <span class="math notranslate nohighlight">\(\tilde{a}_{n}\)</span>, aby kořen zůstal ohraničený, tj. <span class="math notranslate nohighlight">\(f(\tilde{a}_{n})f(a_{n+1})&lt;0\)</span></p></li>
 <li><p>konvergence <strong>je</strong> zaručena</p></li>
+<li><p>superlineární metoda, ale pomalejší než sekantová</p></li>
 </ul>
 </section>
 <section id="newtonraphsonova-tecnova-metoda">
@@ -604,6 +606,7 @@ f(x_{i}+\delta)=f(x_{i})+\delta f'(x_{i})+\dfrac{\delta^{2}}{2}f''(x_{i})+\dots
 <li><p>vypočítáme <span class="math notranslate nohighlight">\(\delta\)</span> z podmínky <span class="math notranslate nohighlight">\(f(x)=0\)</span></p></li>
 <li><p>iterační vzorec: <span class="math notranslate nohighlight">\(x_{i+1}=x_{i}-\dfrac{f(x_{i})}{f'(x_{i})}\)</span></p></li>
 <li><p>konvergence není zaručena</p></li>
+<li><p>kvadratická metoda, rychlá blízko u kořene</p></li>
 </ul>
 <div class="alert alert-block alert-warning"><b>Cvičení 06.03: </b> Najděte kořen rovnice $f(x)=\exp(x)-6$ tečnovou metodou.</div><div class="cell docutils container">
 <div class="cell_input docutils container">

@@ -432,9 +432,7 @@
 <p>kde <span class="math notranslate nohighlight">\(\mathbb{D}\)</span> je diagonální, <span class="math notranslate nohighlight">\(\mathbb{L}\)</span> je dolní trojúhelníková a <span class="math notranslate nohighlight">\(\mathbb{U}\)</span> je horní trojúhelníková matice (<span class="math notranslate nohighlight">\(\mathbb{L}\)</span> a <span class="math notranslate nohighlight">\(\mathbb{U}\)</span> mají nulovou diagonálu)</p>
 <ul class="simple">
 <li><p>Jacobiho metoda (<a class="reference external" href="http://kfe.fjfi.cvut.cz/~vachal/edu/nme/cviceni/02_linalg/DOCS/teorie_iteracni_metody.pdf">odvození</a>):
-$<span class="math notranslate nohighlight">\(
-\mathbf{x}^{(k+1)} = -\mathbb{D}^{-1}\left( \mathbb{L}+\mathbb{U}\right)\mathbf{x}^{(k)}+ \mathbb{D}^{-1}\mathbf{b}
-\)</span>$</p></li>
+<span class="math notranslate nohighlight">\(\mathbf{x}^{(k+1)} = -\mathbb{D}^{-1}\left( \mathbb{L}+\mathbb{U}\right)\mathbf{x}^{(k)}+ \mathbb{D}^{-1}\mathbf{b}\)</span></p></li>
 <li><p>Metoda konverguje, pokud je matice <span class="math notranslate nohighlight">\(\mathbb{A}\)</span> diagonálně dominantní, tj. <span class="math notranslate nohighlight">\(\vert a_{ii}\rvert &gt; \sum_{j=1,j\neq i}^{n}\vert a_{ij} \rvert\)</span></p></li>
 </ul>
 <div class="alert alert-block alert-warning"><b>Cvičení 04.01: </b> Doplňte předpis pro Jacobiho metodu.</div><div class="cell docutils container">
@@ -649,9 +647,9 @@ x_{i}^{(k+1)}=x_{i}^{(k)}+\omega\Delta x_{i}^{(k)}
 <h3><span class="section-number">4.1.4. </span>Prostá iterace<a class="headerlink" href="#prosta-iterace" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>Prostá iterace</strong>:
-$<span class="math notranslate nohighlight">\(
+<span class="math notranslate nohighlight">\(
 \mathbf{x}^{(k+1)}=\left(\mathbb{I}-\mathbb{A} \right)\mathbf{x}^{(k)} + \mathbb{I}\mathbf{b}
-\)</span>$</p></li>
+\)</span></p></li>
 </ul>
 </section>
 <section id="porovnani-proste-iterace-jacobiho-gauss-seidelovy-a-superrelaxacni-metody">
