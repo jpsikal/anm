@@ -5,17 +5,18 @@
 
 - úterý, čtvrtek v učebně T-124
 - vyučující doc. Ing. Jan Pšikal, Ph.D., jan.psikal@fjfi.cvut.cz
-- přednášky jsou organizovány společně s předmětem NME1 (přednášející doc. Pavel Váchal, Ph.D.), materiály a další informace k přednáškám jsou [zde](http://kfe.fjfi.cvut.cz/~vachal/edu/nme/)
+- přednášky jsou organizovány společně s předmětem 12NME1 (přednášející doc. Ing. Pavel Váchal, Ph.D.), materiály a další informace k přednáškám jsou [zde](http://kfe.fjfi.cvut.cz/~vachal/edu/nme/)
 - cvičení pro obor Jaderná chemie probíhají striktně odděleně! (vyučující Ing. Alena Zavadilová, Ph.D.), obsahově jsou odlišné a odpovídají specifickým potřebám daného studijního oboru
 
 ## Podmínky pro udělení zápočtu a klasifikace
 - maximálně tři absence
-- **aktivní** účast na cvičeních (vyřešení několika úloh přímo na cvičeních nebo na nich zadaných)
+- **aktivní** účast na cvičeních (vyřešení několika úloh přímo na cvičeních nebo problémů na nich zadaných)
 - závěrečný zápočtový test (podkladem rovněž pro klasifikaci)
+- studenti, kteří mají dle svého studijního programu nově absolvovat předmět 12ANM, ale mají již zápočet z předmětu 12NME1 bez úspěšně složené zkoušky, si mohou zapsat předmět 12ANM a nemusí se účastnit cvičení; musí však úspěšně absolvovat zápočtový test na konci semestru (takovým studentům doporučuji, aby se mi včas ozvali => budou informováni o termínu zápočtového testu, který je podkladem pro klasifikaci)
 
 ## Zápočtová tabulka
 
-### Cvičení pondělí 10:00
+### Cvičení úterý 10:00
 
 |               |  **1**  |  **2**  |  **3**  |  **4**  |  **5**  |  **6**  |  **7**  |  **8**  |  **9**  | **10** | **11** |
 |---------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|--------|--------|
@@ -24,7 +25,7 @@
 | Martin        |         |         |         |         |         |         |         |         |         |        |        |
 | Ondřej        |         |         |         |         |         |         |         |         |         |        |        |
 
-### Cvičení úterý 14:00
+### Cvičení úterý 12:00
 
 |               |  **1**  |  **2**  |  **3**  |  **4**  |  **5**  |  **6**  |  **7**  |  **8**  |  **9**  | **10** | **11** |
 |---------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|--------|--------|
@@ -32,6 +33,25 @@
 | Ivan          |         |         |         |         |         |         |         |         |         |        |        |
 | Martin        |         |         |         |         |         |         |         |         |         |        |        |
 | Ondřej        |         |         |         |         |         |         |         |         |         |        |        |
+
+### Cvičení čtvrtek 8:00
+
+|               |  **1**  |  **2**  |  **3**  |  **4**  |  **5**  |  **6**  |  **7**  |  **8**  |  **9**  | **10** | **11** |
+|---------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|--------|--------|
+| Jan           |         |         |         |         |         |         |         |         |         |        |        |
+| Ivan          |         |         |         |         |         |         |         |         |         |        |        |
+| Martin        |         |         |         |         |         |         |         |         |         |        |        |
+| Ondřej        |         |         |         |         |         |         |         |         |         |        |        |
+
+### Cvičení čtvrtek 10:00
+
+|               |  **1**  |  **2**  |  **3**  |  **4**  |  **5**  |  **6**  |  **7**  |  **8**  |  **9**  | **10** | **11** |
+|---------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|--------|--------|
+| Jan           |         |         |         |         |         |         |         |         |         |        |        |
+| Ivan          |         |         |         |         |         |         |         |         |         |        |        |
+| Martin        |         |         |         |         |         |         |         |         |         |        |        |
+| Ondřej        |         |         |         |         |         |         |         |         |         |        |        |
+
 
 Vysvětlivky:"/" přítomen, "-" nepřitomen, číslo udává počet bodů za aktivitu na cvičeních (nebo po nich)
 

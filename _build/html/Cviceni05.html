@@ -443,17 +443,15 @@
 <ul class="simple">
 <li><p><a class="reference external" href="http://pascal.fjfi.cvut.cz/~vachal/edu/nme/cviceni/03_aprox/DOCS/priklad_Lagrangeova_interpolace.pdf">Konstrukce Lagrangeova interpolačního polynomu</a> řádu <span class="math notranslate nohighlight">\(n\)</span>:</p>
 <ul>
-<li><p>Známe <span class="math notranslate nohighlight">\(n+1\)</span>  bodů <span class="math notranslate nohighlight">\(x_{0},\dots ,x_{n}\)</span>  a jim odpovídající funkční hodnoty <span class="math notranslate nohighlight">\(y_{0}=f(x_{0}),\dots ,y_{n}=f(x_{n})\)</span>
-$<span class="math notranslate nohighlight">\(
-L_{n}(x)=\sum_{i=0}^{n}y_{i}F_{i}(x),
-\)</span><span class="math notranslate nohighlight">\(
-přičemž \)</span>L_{n}(x_{0})=y_{0},\dots,L_{n}(x_{n})=y_{n},<span class="math notranslate nohighlight">\(
-\)</span><span class="math notranslate nohighlight">\(
-F_{i}(x) = \dfrac{x-x_{0}}{x_{i}-x_{0}}\dots\dfrac{x-x_{i-1}}{x_{i}-x_{i-1}}\dfrac{x-x_{i+1}}{x_{i}-x_{i+1}}\dots\dfrac{x-x_{n}}{x_{i}-x_{n}}=\prod_{j = 0,j \neq i}^{n}\dfrac{x-x_{j}}{x_{i}-x_{j}}
-\)</span>$</p></li>
+<li><p>Známe <span class="math notranslate nohighlight">\(n+1\)</span>  bodů <span class="math notranslate nohighlight">\(x_{0},\dots ,x_{n}\)</span>  a jim odpovídající funkční hodnoty <span class="math notranslate nohighlight">\(y_{0}=f(x_{0}),\dots ,y_{n}=f(x_{n})\)</span></p></li>
 </ul>
 </li>
 </ul>
+<p><span class="math notranslate nohighlight">\(L_{n}(x)=\sum_{i=0}^{n}y_{i}F_{i}(x),\)</span></p>
+<p>přičemž <span class="math notranslate nohighlight">\(L_{n}(x_{0})=y_{0},\dots,L_{n}(x_{n})=y_{n},\)</span></p>
+<p><span class="math notranslate nohighlight">\(
+F_{i}(x) = \dfrac{x-x_{0}}{x_{i}-x_{0}}\dots\dfrac{x-x_{i-1}}{x_{i}-x_{i-1}}\dfrac{x-x_{i+1}}{x_{i}-x_{i+1}}\dots\dfrac{x-x_{n}}{x_{i}-x_{n}}=\prod_{j = 0,j \neq i}^{n}\dfrac{x-x_{j}}{x_{i}-x_{j}}
+\)</span></p>
 <div class="alert alert-block alert-warning"><b>Cvičení 05.01: </b> Naprogramujte výpočet Lagrangeovy interpolace v libovolném bodě pro $x=\{-4, -1, 0, 2\}$ a $f(x)=\{-28, -16, -36, -40\}$.</div><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
