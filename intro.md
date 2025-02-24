@@ -3,9 +3,10 @@
 
 ## Rozvrh pro letní semestr
 
-- úterý, čtvrtek v učebně T-124
+- úterý 10:00-11:40, úterý 12:00-13:40, čtvrtek 10:00-11:40 v učebně T-124
 - vyučující doc. Ing. Jan Pšikal, Ph.D., jan.psikal@fjfi.cvut.cz
 - přednášky jsou organizovány společně s předmětem 12NME1 (přednášející doc. Ing. Pavel Váchal, Ph.D.), materiály a další informace k přednáškám jsou [zde](http://kfe.fjfi.cvut.cz/~vachal/edu/nme/)
+- přestupy mezi cvičeními možné jen z rozvrhových důvodů a se svolením vyučujícího
 - cvičení pro obor Jaderná chemie probíhají striktně odděleně! (vyučující Ing. Alena Zavadilová, Ph.D.), obsahově jsou odlišné a odpovídají specifickým potřebám daného studijního oboru
 
 ## Podmínky pro udělení zápočtu a klasifikace
@@ -20,37 +21,60 @@
 
 |               |  **1**  |  **2**  |  **3**  |  **4**  |  **5**  |  **6**  |  **7**  |  **8**  |  **9**  | **10** | **11** |
 |---------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|--------|--------|
-| Jan           |         |         |         |         |         |         |         |         |         |        |        |
-| Ivan          |         |         |         |         |         |         |         |         |         |        |        |
-| Martin        |         |         |         |         |         |         |         |         |         |        |        |
-| Ondřej        |         |         |         |         |         |         |         |         |         |        |        |
+| Čech M.       |   /     |         |         |         |         |         |         |         |         |        |        |
+| Frič F.       |   /     |         |         |         |         |         |         |         |         |        |        |
+| Gerža J.      |   /     |         |         |         |         |         |         |         |         |        |        |
+| Golovchyn V.  |   /     |         |         |         |         |         |         |         |         |        |        |
+| Hadáčková K.  |   /     |         |         |         |         |         |         |         |         |        |        |
+| Held D.       |   /     |         |         |         |         |         |         |         |         |        |        |
+| Holler M.     |   /     |         |         |         |         |         |         |         |         |        |        |
+| Kreutziger T. |   /     |         |         |         |         |         |         |         |         |        |        |
+| Lachout P.    |   /     |         |         |         |         |         |         |         |         |        |        |
+| Mrázek F.     |   /     |         |         |         |         |         |         |         |         |        |        |
+| Papež F.      |   /     |         |         |         |         |         |         |         |         |        |        |
+| Pelán Š.      |   /     |         |         |         |         |         |         |         |         |        |        |
+| Pintér P.     |   /     |         |         |         |         |         |         |         |         |        |        |
+| Růžičková V.  |   /     |         |         |         |         |         |         |         |         |        |        |
+| Šámalová  E.  |   /     |         |         |         |         |         |         |         |         |        |        |
+| Štěpánek P.   |   /     |         |         |         |         |         |         |         |         |        |        |
+| Troch J.      |   /     |         |         |         |         |         |         |         |         |        |        |
+| Vasko M.      |   /     |         |         |         |         |         |         |         |         |        |        |
 
 ### Cvičení úterý 12:00
 
 |               |  **1**  |  **2**  |  **3**  |  **4**  |  **5**  |  **6**  |  **7**  |  **8**  |  **9**  | **10** | **11** |
 |---------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|--------|--------|
-| Jan           |         |         |         |         |         |         |         |         |         |        |        |
-| Ivan          |         |         |         |         |         |         |         |         |         |        |        |
-| Martin        |         |         |         |         |         |         |         |         |         |        |        |
-| Ondřej        |         |         |         |         |         |         |         |         |         |        |        |
-
-### Cvičení čtvrtek 8:00
-
-|               |  **1**  |  **2**  |  **3**  |  **4**  |  **5**  |  **6**  |  **7**  |  **8**  |  **9**  | **10** | **11** |
-|---------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|--------|--------|
-| Jan           |         |         |         |         |         |         |         |         |         |        |        |
-| Ivan          |         |         |         |         |         |         |         |         |         |        |        |
-| Martin        |         |         |         |         |         |         |         |         |         |        |        |
-| Ondřej        |         |         |         |         |         |         |         |         |         |        |        |
+| Artamonov M.  |   /     |         |         |         |         |         |         |         |         |        |        |
+| Býčková M.    |   /     |         |         |         |         |         |         |         |         |        |        |
+| Čepec M.      |   /     |         |         |         |         |         |         |         |         |        |        |
+| Haikerová E.  |   /     |         |         |         |         |         |         |         |         |        |        |
+| Hromíř M.     |   /     |         |         |         |         |         |         |         |         |        |        |
+| Hušková D.    |   /     |         |         |         |         |         |         |         |         |        |        |
+| Chmela M.     |   /     |         |         |         |         |         |         |         |         |        |        |
+| Kubelka M.    |   /     |         |         |         |         |         |         |         |         |        |        |
+| Le Thi Thanh H|   /     |         |         |         |         |         |         |         |         |        |        |
+| Mouralová E.  |   /     |         |         |         |         |         |         |         |         |        |        |
+| Šrom D.       |   /     |         |         |         |         |         |         |         |         |        |        |
+| Štěpán J.     |   /     |         |         |         |         |         |         |         |         |        |        |
+| Tichý B.      |   /     |         |         |         |         |         |         |         |         |        |        |
 
 ### Cvičení čtvrtek 10:00
 
 |               |  **1**  |  **2**  |  **3**  |  **4**  |  **5**  |  **6**  |  **7**  |  **8**  |  **9**  | **10** | **11** |
 |---------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|--------|--------|
-| Jan           |         |         |         |         |         |         |         |         |         |        |        |
-| Ivan          |         |         |         |         |         |         |         |         |         |        |        |
-| Martin        |         |         |         |         |         |         |         |         |         |        |        |
-| Ondřej        |         |         |         |         |         |         |         |         |         |        |        |
+| Beleščiak S.  |   /     |         |         |         |         |         |         |         |         |        |        |
+| Drdla J.      |   /     |         |         |         |         |         |         |         |         |        |        |
+| Janásková M.  |   /     |         |         |         |         |         |         |         |         |        |        |
+| Kačmářová B.  |   /     |         |         |         |         |         |         |         |         |        |        |
+| Korecký M.    |   /     |         |         |         |         |         |         |         |         |        |        |
+| Krákorová E.  |   /     |         |         |         |         |         |         |         |         |        |        |
+| Lapšanská A.  |   /     |         |         |         |         |         |         |         |         |        |        |
+| Mutaková K.   |   /     |         |         |         |         |         |         |         |         |        |        |
+| Nezbeda M.    |   /     |         |         |         |         |         |         |         |         |        |        |
+| Seilerová E.  |   /     |         |         |         |         |         |         |         |         |        |        |
+| Strachvic A.  |   /     |         |         |         |         |         |         |         |         |        |        |
+| Svatus T.     |   /     |         |         |         |         |         |         |         |         |        |        |
+| Vodičková L.  |   /     |         |         |         |         |         |         |         |         |        |        |
 
 
 Vysvětlivky:"/" přítomen, "-" nepřitomen, číslo udává počet bodů za aktivitu na cvičeních (nebo po nich)

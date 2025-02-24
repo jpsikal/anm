@@ -7,7 +7,7 @@ parts:
 - caption: Obsah cvičení
   numbered: true
   chapters:
-  - file: Cviceni01
+  - file: Cviceni01vyplnene
   - file: Cviceni02
   - file: Cviceni03
   - file: Cviceni04
