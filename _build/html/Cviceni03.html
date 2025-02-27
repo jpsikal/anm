@@ -66,7 +66,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="4. Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel" href="Cviceni04.html" />
-    <link rel="prev" title="2. Chyby a nestabilita" href="Cviceni02.html" />
+    <link rel="prev" title="2. Chyby a nestabilita" href="Cviceni02vyplnene.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -166,8 +166,8 @@
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Obsah cvičení</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Cviceni01.html">1. Jupyter notebook a základy Pythonu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni02.html">2. Chyby a nestabilita</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni01vyplnene.html">1. Jupyter notebook a základy Pythonu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni02vyplnene.html">2. Chyby a nestabilita</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Numerické metody lineární algebry</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni04.html">4. Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni05.html">5. Aproximace funkcí</a></li>
@@ -417,7 +417,7 @@
 </div>
 <section id="nasobeni-matic">
 <h2><span class="section-number">3.1. </span>Násobení matic<a class="headerlink" href="#nasobeni-matic" title="Link to this heading">#</a></h2>
-<div class="alert alert-block alert-warning"><b>Cvičení 03.01: </b> Napište program pro násobení matic $\mathbb{A}$ and $\mathbb{B}$.</div><div class="cell docutils container">
+<div class="alert alert-block alert-warning"><b>Cvičení 03.01: </b> Napište program pro násobení matic $\mathbb{A}$ and $\mathbb{B}$. Určete výpočetní složitost tohoto násobení pro případ, kdybychom násobili čtvercové matice řádu $n$.</div><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
 <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.7</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
@@ -472,12 +472,12 @@
 <section id="reseni-soustav-s-trojuhelnikovou-matici">
 <h4><span class="section-number">3.2.1.1. </span>Řešení soustav s trojúhelníkovou maticí<a class="headerlink" href="#reseni-soustav-s-trojuhelnikovou-matici" title="Link to this heading">#</a></h4>
 <ul class="simple">
-<li><p>Při převodou matice <span class="math notranslate nohighlight">\(\mathbb{A}\)</span> na trojúhelníkový tvar hraje roli výběr hlavního prvku <span class="math notranslate nohighlight">\(a_{11}\)</span> (pivotu) matice <span class="math notranslate nohighlight">\(\mathbb{A}\)</span> (v důsledku omezené přesnosti čísel v počítači)</p></li>
+<li><p>Při převodou matice <span class="math notranslate nohighlight">\(\mathbb{A}\)</span> na trojúhelníkový tvar hraje roli výběr hlavního prvku <span class="math notranslate nohighlight">\(a_{ii}\)</span> (pivotu) matice <span class="math notranslate nohighlight">\(\mathbb{A}\)</span> (v důsledku omezené přesnosti čísel v počítači)</p></li>
 <li><p>Příklad na <a class="reference external" href="http://kfe.fjfi.cvut.cz/~vachal/edu/nme/cviceni/02_linalg/DOCS/priklad_pivoting.pdf">pivoting</a></p></li>
 <li><p>Následuje zpětný běh, ve kterém vypočítáme složky vektoru <span class="math notranslate nohighlight">\(\mathbf{x}\)</span> ve směru klesajícího indexu <span class="math notranslate nohighlight">\(i\)</span>:
 <span class="math notranslate nohighlight">\(x_{i}=\dfrac{b_{i}-\sum_{j=i+1}^{n-1}a_{ij}x_{j}}{a_{ii}}\)</span> kde <span class="math notranslate nohighlight">\(i= n-1, n-2,..., 0\)</span></p></li>
 </ul>
-<div class="alert alert-block alert-warning"><b>Cvičení 03.02: </b> Vyřeště soustavu lineárních  rovnic s horní trojúhlenikovou maticí.</div><div class="cell docutils container">
+<div class="alert alert-block alert-warning"><b>Cvičení 03.02: </b> Vyřeště soustavu lineárních  rovnic s horní trojúhleníkovou maticí. Určete výpočetní složitost zpětného běhu pro horní trojúhleníkovou matici řádu $n$.</div><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
 <span class="c1"># zpetny beh</span>
@@ -567,7 +567,7 @@ Matice U =  [[0. 0.]
 <li><p>Matice s kladnými prvky na hlavní a první pod- a naddiagonále.</p></li>
 <li><p>Ukážeme si implementaci <a class="reference external" href="http://kfe.fjfi.cvut.cz/~limpouch/numet/02-linalg-CZ.pdf">algoritmu</a> řešení soustavy lineárních rovnic s tridiagonální maticí.</p></li>
 </ul>
-<div class="alert alert-block alert-warning"><b>Cvičení 03.04: </b> Řešení soustavy lineárních rovnic s tridiagonální maticí.</div><div class="cell docutils container">
+<div class="alert alert-block alert-warning"><b>Cvičení 03.04: </b> Řešení soustavy lineárních rovnic s tridiagonální maticí. Jaká je výpočetní složitost pro čtvercovou matici řádu $n$ v tomto případě?</div><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
 <span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
@@ -647,7 +647,7 @@ Matice U =  [[0. 0.]
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Cviceni02.html"
+       href="Cviceni02vyplnene.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
