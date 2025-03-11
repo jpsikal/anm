@@ -873,6 +873,21 @@ Odhad prislusneho vlastniho vektoru =  0
 <img alt="_images/926cdaada8c989adc3adf9a309fbfab31f98304faaa844f7ca29d3f38eea7a3b.png" src="_images/926cdaada8c989adc3adf9a309fbfab31f98304faaa844f7ca29d3f38eea7a3b.png" />
 </div>
 </div>
+<div class="alert alert-block alert-warning"><b>Úloha 4.A: </b> Zopakujte si pojmy podmíněnost úlohy a podmíněnost matice, maticová norma. Bez použití předdefinované funkce z knihoven Pythonu (nebo jiného programovacího jazyka) pro podmíněnost a normu matice (pozn. použití dalších předdefinovaných funkcí je povoleno) níže doplňte kód pro výpočet podmíněnosti matice $\mathbb{A}$ (resp. čísla podmíněnosti matice). Do kódu vložte komentáře, aby bylo rozumět tomu, co pomocí něj provádíte. Je úloha řešení soustavy lineárních rovnic $\mathbb{A} \mathbf{x} = \mathbf{b}$ dobře nebo špatně podmíněná? (zodpovězte v komentáři na konci Vámi doplněného kódu a odpověď zdůvodněte) </div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># vypocet podminenosti matice A</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">11</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">14</span><span class="p">]</span>
+    <span class="p">])</span>
+
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">45</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">44</span><span class="p">]])</span><span class="o">.</span><span class="n">T</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
 
