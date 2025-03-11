@@ -442,7 +442,7 @@
     <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">pocet_sloupcu</span><span class="p">):</span>    <span class="c1"># a j-ty sloupec matice B</span>
         <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>   <span class="c1"># projdu zaroven cely i-ty radek A a j-ty sloupec B</span>
             <span class="n">C</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">C</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">k</span><span class="p">]</span><span class="o">*</span><span class="n">B</span><span class="p">[</span><span class="n">k</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="c1"># poscitam vynasobene hodnoty a ulozim je do prvku C[i,j]            </span>
-<span class="c1"># 3 vnorene cykly, ve vnitrnim cyklu 2n operaci, jinak vypocet n^2 hodnot =&gt; vypocetni slozitost O(n^3)            </span>
+<span class="c1"># vnejsi a 2 vnorene cykly, ve vnitrnim cyklu 2n operaci, jinak vypocet n^2 hodnot =&gt; vypocetni slozitost O(n^3)            </span>
             
 <span class="nb">print</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
 
@@ -504,7 +504,7 @@
         <span class="n">soucet</span> <span class="o">=</span> <span class="n">soucet</span><span class="o">+</span><span class="n">x</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">*</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span>
     <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">soucet</span><span class="p">)</span><span class="o">/</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">i</span><span class="p">]</span>
 
-<span class="c1"># 2 vnorene cykly, vypocetni slozitost O(n^2) </span>
+<span class="c1"># vnejsi a vnoreny cyklus =&gt; vypocetni slozitost O(n^2) </span>
 <span class="c1"># u prevedeni matice do horniho trojuhelnikoveho tvaru je vypocetni slozitost O(n^3)</span>
 <span class="c1"># Gaussovu eliminaci lze totiz vyjadrit jako nasobeni matic (viz nize - poznamky k LU rozkladu)</span>
     
@@ -567,7 +567,8 @@ Kontrola: x =  [[2.]
     <span class="n">U</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="p">:]</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="p">:]</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">L</span><span class="p">[</span><span class="n">i</span><span class="p">,:(</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">)],</span><span class="n">U</span><span class="p">[:(</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">),</span><span class="n">i</span><span class="p">:])</span>
     <span class="n">L</span><span class="p">[(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">):,</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">A</span><span class="p">[(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">):,</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">L</span><span class="p">[(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">):,:(</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">)],</span><span class="n">U</span><span class="p">[:(</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">),</span><span class="n">i</span><span class="p">]))</span> <span class="o">/</span> <span class="n">U</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span>
 
-<span class="c1"># vypocetni slozitost je celkove O(n^3)    </span>
+<span class="c1"># vypocetni slozitost je celkove O(n^3)</span>
+<span class="c1"># uvnitr cyklu je sice pouzita funkce pro nasobeni matic, ale nasobi je vzdy pouze s jednim radkem/sloupcem</span>
     
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Matice L = &#39;</span><span class="p">,</span><span class="n">L</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Matice U = &#39;</span><span class="p">,</span><span class="n">U</span><span class="p">)</span>
@@ -625,7 +626,7 @@ Matice U =  [[ 4.   3. ]
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span> <span class="c1"># zpetny beh</span>
     <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">mu</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">rho</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
     
-<span class="c1"># 2 cykly, ale nejsou vnorene =&gt; vypocetni slozitost O(n)</span>
+<span class="c1"># 2 cykly, ale druhy neni vnoreny (vzdy n kroku cyklu) =&gt; vypocetni slozitost O(n)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
