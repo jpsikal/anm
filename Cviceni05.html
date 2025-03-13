@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -66,7 +66,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="6. Řešení nelineárních rovnic a jejich soustav" href="Cviceni06.html" />
-    <link rel="prev" title="4. Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel" href="Cviceni04.html" />
+    <link rel="prev" title="4. Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel" href="Cviceni04vyplnene.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -166,10 +166,10 @@
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Obsah cvičení</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Cviceni01.html">1. Jupyter notebook a základy Pythonu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni02.html">2. Chyby a nestabilita</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni03.html">3. Numerické metody lineární algebry</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni04.html">4. Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni01vyplnene.html">1. Jupyter notebook a základy Pythonu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni02vyplnene.html">2. Chyby a nestabilita</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni03vyplnene.html">3. Numerické metody lineární algebry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni04vyplnene.html">4. Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">5. Aproximace funkcí</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni06.html">6. Řešení nelineárních rovnic a jejich soustav</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni07.html">7. Extrémy funkcí</a></li>
@@ -447,12 +447,11 @@
 </ul>
 </li>
 </ul>
-<p><span class="math notranslate nohighlight">\(L_{n}(x)=\sum_{i=0}^{n}y_{i}F_{i}(x),\)</span></p>
-<p>přičemž <span class="math notranslate nohighlight">\(L_{n}(x_{0})=y_{0},\dots,L_{n}(x_{n})=y_{n},\)</span></p>
+<p><span class="math notranslate nohighlight">\(L_{n}(x)=\sum_{i=0}^{n}y_{i}F_{i}(x),\)</span> přičemž <span class="math notranslate nohighlight">\(L_{n}(x_{0})=y_{0},\dots,L_{n}(x_{n})=y_{n},\)</span></p>
 <p><span class="math notranslate nohighlight">\(
 F_{i}(x) = \dfrac{x-x_{0}}{x_{i}-x_{0}}\dots\dfrac{x-x_{i-1}}{x_{i}-x_{i-1}}\dfrac{x-x_{i+1}}{x_{i}-x_{i+1}}\dots\dfrac{x-x_{n}}{x_{i}-x_{n}}=\prod_{j = 0,j \neq i}^{n}\dfrac{x-x_{j}}{x_{i}-x_{j}}
 \)</span></p>
-<div class="alert alert-block alert-warning"><b>Cvičení 05.01: </b> Naprogramujte výpočet Lagrangeovy interpolace v libovolném bodě pro $x=\{-4, -1, 0, 2\}$ a $f(x)=\{-28, -16, -36, -40\}$.</div><div class="cell docutils container">
+<div class="alert alert-block alert-warning"><b>Cvičení 05.01: </b> Naprogramujte výpočet Lagrangeovy interpolace v libovolném bodě pro $x=\{-4, -1, 0, 2\}$ a $f(x)=\{-28, -16, -36, -40\}$. Jaká interpolovaná hodnota pak vychází pro bod $x_p = -0.5$?</div><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
 <span class="n">bod</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.5</span>
@@ -467,12 +466,18 @@ F_{i}(x) = \dfrac{x-x_{0}}{x_{i}-x_{0}}\dots\dfrac{x-x_{i-1}}{x_{i}-x_{i-1}}\dfr
 <section id="spline-lokalni-interpolace">
 <h3><span class="section-number">5.2.2. </span>Spline (lokální interpolace)<a class="headerlink" href="#spline-lokalni-interpolace" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p>Lokální interpolace</p></li>
+<li><p>Lokální interpolace</p>
+<ul>
 <li><p>Celý interval je rozdělený na podintervaly</p></li>
 <li><p>V každém podintervalu má interpolační funkce různé koeficienty</p></li>
-<li><p>Interpolační spline:</p></li>
+</ul>
+</li>
+<li><p>Interpolační spline:</p>
+<ul>
 <li><p>Prochází všemi uzly.</p></li>
 <li><p>V uzlech má spojitou alespoň první derivaci.</p></li>
+</ul>
+</li>
 <li><p>Kubický spline - <a class="reference external" href="http://pascal.fjfi.cvut.cz/~vachal/edu/nme/cviceni/03_aprox/DOCS/teorie_kubicky_spline.pdf">odvození</a></p></li>
 </ul>
 <div class="alert alert-block alert-warning"><b>Cvičení 05.02: </b> Můžete vyzkoušet <a href="http://pascal.fjfi.cvut.cz/~vachal/edu/nme/cviceni/03_aprox/MATLAB/kubspline.m" >skript</a> pro kubický spline a <a href="http://pascal.fjfi.cvut.cz/~vachal/edu/nme/cviceni/03_aprox/MATLAB/spline.dat">vstupní data</a> pro Matlab (dostupný též <a href="https://www.mathworks.com/products/matlab-online.html">online</a> pro studenty ČVUT).</div></section>
@@ -480,19 +485,22 @@ F_{i}(x) = \dfrac{x-x_{0}}{x_{i}-x_{0}}\dots\dfrac{x-x_{i-1}}{x_{i}-x_{i-1}}\dfr
 <section id="aproximace-cebysevovymi-polynomy">
 <h2><span class="section-number">5.3. </span>Aproximace Čebyševovými polynomy<a class="headerlink" href="#aproximace-cebysevovymi-polynomy" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Čebyševův polynom <span class="math notranslate nohighlight">\(T_{n}(x)\)</span>:</p></li>
+<li><p>Čebyševův polynom <span class="math notranslate nohighlight">\(T_{n}(x)\)</span>:</p>
+<ul>
 <li><p><span class="math notranslate nohighlight">\(T_{0}(x)=1\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(T_{1}(x)=x\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(T_{n+1}(x)=2xT_{n}(x)-T_{n-1}(x)\)</span></p></li>
+</ul>
+</li>
 <li><p>Pro interpolaci <a class="reference external" href="https://en.wikipedia.org/wiki/Chebyshev_polynomials#/media/File:Chebyshev_Polynomials_of_the_First_Kind.svg">Čebyševovými polynomy</a> se libovolný interval lineárně transformuje na interval <span class="math notranslate nohighlight">\(\langle-1,1\rangle\)</span>.</p></li>
 <li><p>Každému <span class="math notranslate nohighlight">\(t \in \langle a,b\rangle\)</span> přiřadíme hodnotu <span class="math notranslate nohighlight">\(x \in \langle-1,1\rangle\)</span> předpisem <span class="math notranslate nohighlight">\(x = \left[2t-(a+b)\right]/(b-a)\)</span>.</p></li>
 <li><p>Funkci <span class="math notranslate nohighlight">\(f(x)\)</span> aproximujeme:
-$<span class="math notranslate nohighlight">\(
+<span class="math notranslate nohighlight">\(
 f(x)\approx T(x)=\dfrac{1}{2}c_{0}+\sum_{j=1}^{N-1}c_{j}T_{j}(x)
-\)</span><span class="math notranslate nohighlight">\(
-\)</span><span class="math notranslate nohighlight">\(
+\)</span>
+<span class="math notranslate nohighlight">\(
 c_{j}=\dfrac{2}{N}\sum_{k=1}^{N}f\left[ \cos\left( \dfrac{\pi(k-0.5)}{N}\right) \right]\cos\left( \dfrac{\pi j(k-0.5)}{N}\right)
-\)</span>$</p></li>
+\)</span></p></li>
 <li><p>Hodnoty funkce <span class="math notranslate nohighlight">\(f(x)\)</span> jsou rovny hodnotám funkce <span class="math notranslate nohighlight">\(T(x)\)</span> ve všech <span class="math notranslate nohighlight">\(N\)</span> kořenech (nulových bodech) polynomu <span class="math notranslate nohighlight">\(T_{n}(x)\)</span>.</p></li>
 </ul>
 <div class="alert alert-block alert-warning"><b>Cvičení 05.03: </b> Aproximujte funkci $f(x)=x^{4}\log(10+\lvert x \rvert)\cos(x)$ pomocí prvních 20 Čebyševových polynomů.</div><div class="cell docutils container">
@@ -582,7 +590,7 @@ c_{j}=\dfrac{2}{N}\sum_{k=1}^{N}f\left[ \cos\left( \dfrac{\pi(k-0.5)}{N}\right) 
 <li><p>Na 2. cvičení jsme ukazovali jednoduchý vzorec pro aproximaci derivace z funkčních hodnot ve dvou blízkých bodech</p></li>
 <li><p>Ukážeme si <a class="reference external" href="http://pascal.fjfi.cvut.cz/~vachal/edu/nme/cviceni/03_aprox/DOCS/priklad_aproximace_derivaci.pdf">příklad metody vyššího řádu</a> pro přesnější aproximaci derivace.</p></li>
 </ul>
-<div class="alert alert-block alert-warning"><b>Cvičení 05.04: </b> Implementujte uvedenou metodu vyššího řádu v následujícím příkladu pro výpočet derivace (zadání stejné jako Cvičení 02.04).</div><div class="cell docutils container">
+<div class="alert alert-block alert-warning"><b>Cvičení 05.04: </b> Implementujte uvedenou metodu vyššího řádu pro výpočet derivace funkce $\sin(x)$ v bodě $x=\pi/6$ pro velikost kroku $h\in(\epsilon,\pi/6\rangle $. Zobrazte výsledek a velikost relativní chyby v závislosti na $h$. (Zadání obdobné jako ve Cvičení 02.04.)</div><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># kod</span>
 
@@ -659,9 +667,12 @@ c_{j}=\dfrac{2}{N}\sum_{k=1}^{N}f\left[ \cos\left( \dfrac{\pi(k-0.5)}{N}\right) 
 $<span class="math notranslate nohighlight">\(
 \tilde{S} = \sqrt{\sum_{i=1}^{n}w_{i}\left[y_{i} - f(x_{i})\right]^{2}}
 \)</span>$</p></li>
-<li><p>Aproximační funkce může být např.</p></li>
+<li><p>Aproximační funkce může být např.</p>
+<ul>
 <li><p>Lineární (cvičení)</p></li>
 <li><p>Kvadratická <a class="reference external" href="http://kfe.fjfi.cvut.cz/~vachal/edu/nme/cviceni/03_aprox/DOCS/teorie_metoda_nejmensich_ctvercu.pdf">(odvození)</a></p></li>
+</ul>
+</li>
 <li><p>John von Neumann: “<em>With four parameters I can fit an elephant, and with five I can make him wiggle his trunk.</em>” <a class="reference external" href="http://dx.doi.org/10.1038/427297a">[zdroj]</a></p></li>
 <li><p>Problémy statistické regrese - <a class="reference external" href="https://en.wikipedia.org/wiki/Anscombe%27s_quartet">Anscombe’s quartet</a></p></li>
 </ul>
@@ -750,7 +761,7 @@ $<span class="math notranslate nohighlight">\(
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Cviceni04.html"
+       href="Cviceni04vyplnene.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
