@@ -66,7 +66,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="7. Extrémy funkcí" href="Cviceni07.html" />
-    <link rel="prev" title="5. Aproximace funkcí" href="Cviceni05.html" />
+    <link rel="prev" title="5. Aproximace funkcí" href="Cviceni05vyplnene.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -170,7 +170,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Cviceni02vyplnene.html">2. Chyby a nestabilita</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni03vyplnene.html">3. Numerické metody lineární algebry</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni04vyplnene.html">4. Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni05.html">5. Aproximace funkcí</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni05vyplnene.html">5. Aproximace funkcí</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">6. Řešení nelineárních rovnic a jejich soustav</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni07.html">7. Extrémy funkcí</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni08.html">8. Numerická integrace</a></li>
@@ -453,7 +453,7 @@
 <li><p>spolehlivá metoda</p></li>
 <li><p>v blízkosti kořene pomalá</p></li>
 </ul>
-<div class="alert alert-block alert-warning"><b>Cvičení 06.01: </b> Najděte kořen rovnice $f(x)=\sin(x)-0.5$ metodou půlení intervalu.</div><div class="cell docutils container">
+<div class="alert alert-block alert-warning"><b>Cvičení 06.01: </b> Najděte kořen rovnice $f(x)=0$, kde $f(x)=\sin(x)-0.5$, metodou půlení intervalu.</div><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
 <span class="c1"># metoda puleni intervalu</span>
@@ -524,7 +524,7 @@
 <li><p>konvergence <strong>není</strong> zaručena</p></li>
 <li><p>superlineární metoda</p></li>
 </ul>
-<div class="alert alert-block alert-warning"><b>Cvičení 06.02: </b> Najděte kořen rovnice $f(x)=\exp(x)-6$ metodou sečny.</div><div class="cell docutils container">
+<div class="alert alert-block alert-warning"><b>Cvičení 06.02: </b> Najděte kořen rovnice $f(x)=0$, kde $f(x)=\exp(x)-6$, metodou sečny.</div><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
 <span class="c1"># metoda secen</span>
@@ -600,15 +600,13 @@
 <ul class="simple">
 <li><p>využívá první derivaci zadané funkce (je vhodná, pokud umíme hodnoty derivací rychle počítat)</p></li>
 <li><p>Taylorův rozvoj zadané funkce v okolí bodu <span class="math notranslate nohighlight">\(x_{i}\)</span>:
-$<span class="math notranslate nohighlight">\(
-f(x_{i}+\delta)=f(x_{i})+\delta f'(x_{i})+\dfrac{\delta^{2}}{2}f''(x_{i})+\dots
-\)</span>$</p></li>
+<span class="math notranslate nohighlight">\(f(x_{i}+\delta)=f(x_{i})+\delta f'(x_{i})+\dfrac{\delta^{2}}{2}f''(x_{i})+\dots\)</span></p></li>
 <li><p>vypočítáme <span class="math notranslate nohighlight">\(\delta\)</span> z podmínky <span class="math notranslate nohighlight">\(f(x)=0\)</span></p></li>
 <li><p>iterační vzorec: <span class="math notranslate nohighlight">\(x_{i+1}=x_{i}-\dfrac{f(x_{i})}{f'(x_{i})}\)</span></p></li>
 <li><p>konvergence není zaručena</p></li>
 <li><p>kvadratická metoda, rychlá blízko u kořene</p></li>
 </ul>
-<div class="alert alert-block alert-warning"><b>Cvičení 06.03: </b> Najděte kořen rovnice $f(x)=\exp(x)-6$ tečnovou metodou.</div><div class="cell docutils container">
+<div class="alert alert-block alert-warning"><b>Cvičení 06.03: </b> Najděte kořen rovnice $f(x)=0$, kde  $f(x)=\exp(x)-6$, tečnovou metodou.</div><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># metoda tecny</span>
 
@@ -674,7 +672,7 @@ f(x_{i}+\delta)=f(x_{i})+\delta f'(x_{i})+\dfrac{\delta^{2}}{2}f''(x_{i})+\dots
 <ul class="simple">
 <li><p><a class="reference external" href="http://kfe.fjfi.cvut.cz/~vachal/edu/nme/cviceni/05_nelin/DOCS/teorie_Mullerova_metoda.pdf">teorie</a></p></li>
 </ul>
-<div class="alert alert-block alert-warning"><b>Cvičení 06.04: </b> Najděte kořen rovnice $f(x)=4x^{3}-2x^{2}-4x-3$ Mullerovou metodou.</div><div class="cell docutils container">
+<div class="alert alert-block alert-warning"><b>Cvičení 06.04: </b> Najděte kořen rovnice $f(x)=0$, kde $f(x)=4x^{3}-2x^{2}-4x-3$, Mullerovou metodou.</div><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Mullerova metoda</span>
 
@@ -694,7 +692,7 @@ f(x_{i}+\delta)=f(x_{i})+\delta f'(x_{i})+\dfrac{\delta^{2}}{2}f''(x_{i})+\dots
 <span class="n">y2</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span>
 <span class="n">y3</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">x3</span><span class="p">)</span>
 
-<span class="k">while</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">y3</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">presnost</span><span class="p">):</span> <span class="c1"># predpokladame, ze treti bod je neblize reseni</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">y3</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">presnost</span><span class="p">):</span> <span class="c1"># predpokladame, ze treti bod je nejblize reseni</span>
     <span class="c1">#print(&#39;Krok &#39;, n ,&#39;, koren &#39;, x3 ,&#39;, hodnota &#39;, y3)</span>
     <span class="c1"># hodnoty y1, y2, y3 prolozime Lagrangeovym polynomem, coz lze zapsat jako L(x)=A*x^2 + B*x + C</span>
     <span class="n">a1</span> <span class="o">=</span> <span class="n">y1</span><span class="o">/</span><span class="p">((</span><span class="n">x1</span><span class="o">-</span><span class="n">x2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">x1</span><span class="o">-</span><span class="n">x3</span><span class="p">))</span>
@@ -826,13 +824,9 @@ x_{n}=\varphi_{n}(\vec{x}).
 <ul class="simple">
 <li><p>přesné řešení <span class="math notranslate nohighlight">\(\vec{\xi}\)</span> vyjádříme ve tvaru <span class="math notranslate nohighlight">\(\vec{\xi}=\vec{x}+\delta\vec{x}\)</span></p></li>
 <li><p>hodnotu funkce v bodě <span class="math notranslate nohighlight">\(\vec{\xi}\)</span> vyjádříme pomocí Taylorovy věty:
-$<span class="math notranslate nohighlight">\(
-f_{i}(\vec{x}+\delta\vec{x})=f_{i}(\vec{x})+\sum_{j=1}^{n}\dfrac{\partial f_{i}}{\partial x_{j}}\delta x_{j}+\mathcal{O}(\delta \vec{x}^{2})
-\)</span>$</p></li>
+<span class="math notranslate nohighlight">\(f_{i}(\vec{x}+\delta\vec{x})=f_{i}(\vec{x})+\sum_{j=1}^{n}\dfrac{\partial f_{i}}{\partial x_{j}}\delta x_{j}+\mathcal{O}(\delta \vec{x}^{2})\)</span></p></li>
 <li><p>zanedbáním <span class="math notranslate nohighlight">\(\mathcal{O}(\delta \vec{x}^{2})\)</span> získáme:
-$<span class="math notranslate nohighlight">\(
-f_{i}(\vec{x}+\delta\vec{x})=f_{i}(\vec{x})+\sum_{j=1}^{n}\dfrac{\partial f_{i}}{\partial x_{j}}\delta x_{j}=0
-\)</span>$</p></li>
+<span class="math notranslate nohighlight">\(f_{i}(\vec{x}+\delta\vec{x})=f_{i}(\vec{x})+\sum_{j=1}^{n}\dfrac{\partial f_{i}}{\partial x_{j}}\delta x_{j}=0\)</span></p></li>
 <li><p>řešíme tedy soustavu <span class="math notranslate nohighlight">\(n\)</span> lineárních rovnic s neznámou <span class="math notranslate nohighlight">\(\delta \vec{x}\)</span></p></li>
 <li><p>iterační vztah: <span class="math notranslate nohighlight">\( x_{i}^{(k+1)}=x_{i}^{(k)}+ \delta x_{i}^{(k)}\)</span></p></li>
 </ul>
@@ -929,7 +923,7 @@ f_{i}(\vec{x}+\delta\vec{x})=f_{i}(\vec{x})+\sum_{j=1}^{n}\dfrac{\partial f_{i}}
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Cviceni05.html"
+       href="Cviceni05vyplnene.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
