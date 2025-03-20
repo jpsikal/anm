@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Aproximace funkcí &#8212; Letní semestr 2024/2025</title>
+    <title>5. Aproximace funkcí &#8212; Letní semestr 2024/2025</title>
   
   
   
@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -62,9 +62,11 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Cviceni05';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Cviceni05vyplnene';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="6. Řešení nelineárních rovnic a jejich soustav" href="Cviceni06.html" />
+    <link rel="prev" title="4. Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel" href="Cviceni04vyplnene.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -116,8 +118,6 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
@@ -165,12 +165,12 @@
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Obsah cvičení</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Cviceni01vyplnene.html">1. Jupyter notebook a základy Pythonu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni02vyplnene.html">2. Chyby a nestabilita</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni03vyplnene.html">3. Numerické metody lineární algebry</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni04vyplnene.html">4. Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni05vyplnene.html">5. Aproximace funkcí</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">5. Aproximace funkcí</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni06.html">6. Řešení nelineárních rovnic a jejich soustav</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni07.html">7. Extrémy funkcí</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni08.html">8. Numerická integrace</a></li>
@@ -235,7 +235,7 @@
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/jpsikal/anm/main?urlpath=tree/Cviceni05.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/jpsikal/anm/main?urlpath=tree/Cviceni05vyplnene.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -253,7 +253,7 @@
       
       
       
-      <li><a href="https://jupyter.fjfi.cvut.cz/hub/user-redirect/git-pull?repo=https%3A//github.com/jpsikal/anm&urlpath=tree/anm/Cviceni05.ipynb&branch=main" target="_blank"
+      <li><a href="https://jupyter.fjfi.cvut.cz/hub/user-redirect/git-pull?repo=https%3A//github.com/jpsikal/anm&urlpath=tree/anm/Cviceni05vyplnene.ipynb&branch=main" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on JupyterHub"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -284,7 +284,7 @@
       
       
       
-      <li><a href="_sources/Cviceni05.ipynb" target="_blank"
+      <li><a href="_sources/Cviceni05vyplnene.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -370,15 +370,15 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#typy-aproximaci">Typy aproximací:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpolacni-aproximace">Interpolační aproximace</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lagrangeuv-interpolacni-polynom-globalni-interpolace">Lagrangeův interpolační polynom (globální interpolace )</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spline-lokalni-interpolace">Spline (lokální interpolace)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#typy-aproximaci">5.1. Typy aproximací:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpolacni-aproximace">5.2. Interpolační aproximace</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lagrangeuv-interpolacni-polynom-globalni-interpolace">5.2.1. Lagrangeův interpolační polynom (globální interpolace )</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spline-lokalni-interpolace">5.2.2. Spline (lokální interpolace)</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aproximace-cebysevovymi-polynomy">Aproximace Čebyševovými polynomy</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aproximace-derivaci-konecnymi-diferencemi">Aproximace derivací konečnými diferencemi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metoda-nejmensich-ctvercu">Metoda nejmenších čtverců</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aproximace-cebysevovymi-polynomy">5.3. Aproximace Čebyševovými polynomy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aproximace-derivaci-konecnymi-diferencemi">5.4. Aproximace derivací konečnými diferencemi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metoda-nejmensich-ctvercu">5.5. Metoda nejmenších čtverců</a></li>
 </ul>
             </nav>
         </div>
@@ -391,7 +391,7 @@
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="aproximace-funkci">
-<h1>Aproximace funkcí<a class="headerlink" href="#aproximace-funkci" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">5. </span>Aproximace funkcí<a class="headerlink" href="#aproximace-funkci" title="Link to this heading">#</a></h1>
 <p>Naimportujeme si knihovny potřebné pro následující příklady:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -413,7 +413,7 @@
 </div>
 </div>
 <section id="typy-aproximaci">
-<h2>Typy aproximací:<a class="headerlink" href="#typy-aproximaci" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">5.1. </span>Typy aproximací:<a class="headerlink" href="#typy-aproximaci" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Interpolační</p></li>
 <li><p>Čebyševovy</p></li>
@@ -421,7 +421,7 @@
 </ul>
 </section>
 <section id="interpolacni-aproximace">
-<h2>Interpolační aproximace<a class="headerlink" href="#interpolacni-aproximace" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">5.2. </span>Interpolační aproximace<a class="headerlink" href="#interpolacni-aproximace" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Máme zadané diskrétní funkční hodnoty nějaké funkce <span class="math notranslate nohighlight">\(f(x)\)</span> v bodech <span class="math notranslate nohighlight">\(x_{0},\dots ,x_{n}\)</span>.</p></li>
 <li><p>Hledáme interpolační funkci, která má v zadaných bodech <span class="math notranslate nohighlight">\(x_{0},\dots ,x_{n}\)</span> stejné hodnoty jako funkce <span class="math notranslate nohighlight">\(f(x)\)</span>.</p></li>
@@ -439,7 +439,7 @@
 </li>
 </ul>
 <section id="lagrangeuv-interpolacni-polynom-globalni-interpolace">
-<h3>Lagrangeův interpolační polynom (globální interpolace )<a class="headerlink" href="#lagrangeuv-interpolacni-polynom-globalni-interpolace" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">5.2.1. </span>Lagrangeův interpolační polynom (globální interpolace )<a class="headerlink" href="#lagrangeuv-interpolacni-polynom-globalni-interpolace" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="http://pascal.fjfi.cvut.cz/~vachal/edu/nme/cviceni/03_aprox/DOCS/priklad_Lagrangeova_interpolace.pdf">Konstrukce Lagrangeova interpolačního polynomu</a> řádu <span class="math notranslate nohighlight">\(n\)</span>:</p>
 <ul>
@@ -457,14 +457,29 @@ F_{i}(x) = \dfrac{x-x_{0}}{x_{i}-x_{0}}\dots\dfrac{x-x_{i-1}}{x_{i}-x_{i-1}}\dfr
 <span class="n">bod</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.5</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mi">28</span><span class="p">,</span> <span class="o">-</span><span class="mi">16</span><span class="p">,</span> <span class="o">-</span><span class="mi">36</span><span class="p">,</span> <span class="o">-</span><span class="mi">40</span><span class="p">])</span>
-<span class="c1"># DOPLNTE KOD</span>
+<span class="n">pocet_bodu</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1"># stupen polynomu je pocet_bodu - 1</span>
+<span class="n">L</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># Lagrangeuv polynom</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">pocet_bodu</span><span class="p">):</span> <span class="c1"># pocet scitancu v sume = stejny jako pocet bodu</span>
+    <span class="n">F</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">pocet_bodu</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">j</span> <span class="o">!=</span> <span class="n">i</span><span class="p">:</span>
+            <span class="n">F</span> <span class="o">=</span> <span class="n">F</span> <span class="o">*</span> <span class="p">(</span><span class="n">bod</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="n">j</span><span class="p">])</span><span class="o">/</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">x</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+    <span class="n">L</span> <span class="o">=</span> <span class="n">L</span> <span class="o">+</span> <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">F</span>   
+
+<span class="nb">print</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-26.25
 </pre></div>
 </div>
 </div>
 </div>
 </section>
 <section id="spline-lokalni-interpolace">
-<h3>Spline (lokální interpolace)<a class="headerlink" href="#spline-lokalni-interpolace" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">5.2.2. </span>Spline (lokální interpolace)<a class="headerlink" href="#spline-lokalni-interpolace" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Lokální interpolace</p>
 <ul>
@@ -483,7 +498,7 @@ F_{i}(x) = \dfrac{x-x_{0}}{x_{i}-x_{0}}\dots\dfrac{x-x_{i-1}}{x_{i}-x_{i-1}}\dfr
 <div class="alert alert-block alert-warning"><b>Cvičení 05.02: </b> Můžete vyzkoušet <a href="http://pascal.fjfi.cvut.cz/~vachal/edu/nme/cviceni/03_aprox/MATLAB/kubspline.m" >skript</a> pro kubický spline a <a href="http://pascal.fjfi.cvut.cz/~vachal/edu/nme/cviceni/03_aprox/MATLAB/spline.dat">vstupní data</a> pro Matlab (dostupný též <a href="https://www.mathworks.com/products/matlab-online.html">online</a> pro studenty ČVUT).</div></section>
 </section>
 <section id="aproximace-cebysevovymi-polynomy">
-<h2>Aproximace Čebyševovými polynomy<a class="headerlink" href="#aproximace-cebysevovymi-polynomy" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">5.3. </span>Aproximace Čebyševovými polynomy<a class="headerlink" href="#aproximace-cebysevovymi-polynomy" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Čebyševův polynom <span class="math notranslate nohighlight">\(T_{n}(x)\)</span>:</p>
 <ul>
@@ -503,6 +518,8 @@ F_{i}(x) = \dfrac{x-x_{0}}{x_{i}-x_{0}}\dots\dfrac{x-x_{i-1}}{x_{i}-x_{i-1}}\dfr
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
 <span class="n">N</span> <span class="o">=</span> <span class="mi">20</span> <span class="c1"># stupen aproximace (pocet Cebysevovych polynomu)</span>
+<span class="c1">#N = 10</span>
+<span class="c1">#N = 50</span>
 <span class="n">a</span> <span class="o">=</span> <span class="o">-</span><span class="mi">10</span> <span class="c1"># levy kraj intervalu</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1"># pravy kraj intervalu</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">zadanafce</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
@@ -549,9 +566,12 @@ F_{i}(x) = \dfrac{x-x_{0}}{x_{i}-x_{0}}\dots\dfrac{x-x_{i-1}}{x_{i}-x_{i-1}}\dfr
 <span class="n">yarr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">bodu</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">bodu</span><span class="p">):</span>
-    <span class="c1">## DOPLNIT</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="c1">## DOPLNIT</span>
+    <span class="n">Tj</span> <span class="o">=</span> <span class="n">T</span><span class="p">(</span><span class="n">trans</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="c1"># hodnoty Cebysevovych polynomu v bode x</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">c0</span><span class="o">*</span><span class="mi">1</span> <span class="c1"># c0 prvni scitanec v aproximovane funkci</span>
+    <span class="c1"># dale potrebujeme pricist sumu polynomu</span>
+    <span class="c1"># cj[j] - koeficient cj, tj. j-ty polynom v bode x</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="n">cj</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">*</span><span class="n">Tj</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
     <span class="n">xarr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span> <span class="c1"># ulozime aktualni x</span>
     <span class="n">yarr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">y</span> <span class="c1"># a aktualni y</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">+</span><span class="n">krok</span> <span class="c1"># posuneme se na dalsi x</span>
@@ -573,15 +593,15 @@ F_{i}(x) = \dfrac{x-x_{0}}{x_{i}-x_{0}}\dots\dfrac{x-x_{i-1}}{x_{i}-x_{i-1}}\dfr
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fd494693a00&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7b6898741a30&gt;
 </pre></div>
 </div>
-<img alt="_images/f13bf10046c7389194cb9f499d0b8eb2454048a00657d3ec5b91336b7f575cb6.png" src="_images/f13bf10046c7389194cb9f499d0b8eb2454048a00657d3ec5b91336b7f575cb6.png" />
+<img alt="_images/c746e7c5e49abc8232630dca5c9b1c6c1bbd56c610f492b4e80263bf60a3ffd4.png" src="_images/c746e7c5e49abc8232630dca5c9b1c6c1bbd56c610f492b4e80263bf60a3ffd4.png" />
 </div>
 </div>
 </section>
 <section id="aproximace-derivaci-konecnymi-diferencemi">
-<h2>Aproximace derivací konečnými diferencemi<a class="headerlink" href="#aproximace-derivaci-konecnymi-diferencemi" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">5.4. </span>Aproximace derivací konečnými diferencemi<a class="headerlink" href="#aproximace-derivaci-konecnymi-diferencemi" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Na 2. cvičení jsme ukazovali jednoduchý vzorec pro aproximaci derivace z funkčních hodnot ve dvou blízkých bodech</p></li>
 <li><p>Ukážeme si <a class="reference external" href="http://pascal.fjfi.cvut.cz/~vachal/edu/nme/cviceni/03_aprox/DOCS/priklad_aproximace_derivaci.pdf">příklad metody vyššího řádu</a> pro přesnější aproximaci derivace.</p></li>
@@ -606,8 +626,7 @@ F_{i}(x) = \dfrac{x-x_{0}}{x_{i}-x_{0}}\dots\dfrac{x-x_{i-1}}{x_{i}-x_{i-1}}\dfr
     <span class="k">return</span> <span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">h</span><span class="p">)</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">h</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">h</span><span class="p">)</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">num4_df</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">h</span><span class="p">):</span> <span class="c1"># odhad derivace metodou ctvrteho radu</span>
-    <span class="c1">## DOPLNIT</span>
-    <span class="k">return</span> <span class="mf">1.0</span>
+    <span class="k">return</span> <span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">12</span><span class="o">*</span><span class="n">h</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">h</span><span class="p">)</span> <span class="o">-</span> <span class="mi">8</span><span class="o">*</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">h</span><span class="p">)</span> <span class="o">+</span> <span class="mi">8</span><span class="o">*</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">h</span><span class="p">)</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">h</span><span class="p">)</span> <span class="p">)</span>
 
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">6</span>
 <span class="n">h</span> <span class="o">=</span> <span class="n">x</span>  <span class="c1"># Pocatecni hodnota h</span>
@@ -651,12 +670,12 @@ F_{i}(x) = \dfrac{x-x_{0}}{x_{i}-x_{0}}\dots\dfrac{x-x_{i-1}}{x_{i}-x_{i-1}}\dfr
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/bb7183e8b0084068b8de93de509dff71dab9dd802ec47c5f5bbb395ab7daa2d4.png" src="_images/bb7183e8b0084068b8de93de509dff71dab9dd802ec47c5f5bbb395ab7daa2d4.png" />
+<img alt="_images/005a0a5e544e8b8853417e4f9871ff6a75b6698ee3e82633189ad57499b272af.png" src="_images/005a0a5e544e8b8853417e4f9871ff6a75b6698ee3e82633189ad57499b272af.png" />
 </div>
 </div>
 </section>
 <section id="metoda-nejmensich-ctvercu">
-<h2>Metoda nejmenších čtverců<a class="headerlink" href="#metoda-nejmensich-ctvercu" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">5.5. </span>Metoda nejmenších čtverců<a class="headerlink" href="#metoda-nejmensich-ctvercu" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Aproximační funkce <a class="reference external" href="https://miro.medium.com/max/1400/1*bqEcfSxeYrHx63_pHlmnIQ.png">neprochází</a> zadanými body (např. při aproximaci výsledků měření s nezanedbatelnými chybami)</p></li>
 <li><p>Naměřené hodnoty proložíme takovou aproximační funkcí <span class="math notranslate nohighlight">\(f(x)\)</span>, která minimalizujeme funkcionál
@@ -665,7 +684,7 @@ F_{i}(x) = \dfrac{x-x_{0}}{x_{i}-x_{0}}\dots\dfrac{x-x_{i-1}}{x_{i}-x_{i-1}}\dfr
 \)</span></p></li>
 <li><p>Aproximační funkce může být např.</p>
 <ul>
-<li><p>Lineární (cvičení)</p></li>
+<li><p>Lineární (odvození uděláme v rámci cvičení)</p></li>
 <li><p>Kvadratická <a class="reference external" href="http://kfe.fjfi.cvut.cz/~vachal/edu/nme/cviceni/03_aprox/DOCS/teorie_metoda_nejmensich_ctvercu.pdf">(odvození)</a></p></li>
 </ul>
 </li>
@@ -684,11 +703,12 @@ F_{i}(x) = \dfrac{x-x_{0}}{x_{i}-x_{0}}\dots\dfrac{x-x_{i-1}}{x_{i}-x_{i-1}}\dfr
 <span class="c1"># to vede na reseni soustavy lin. rovnic</span>
 <span class="c1"># ze soustavy lin. rovnic vypocitame koeficienty k, q</span>
 <span class="c1"># np.sum() = suma</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="n">x</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">x</span><span class="p">)],</span>
+    <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">n</span><span class="p">]</span>
+    <span class="p">])</span>
 
-<span class="c1"># DOPLNIT</span>
-<span class="c1"># A =</span>
-<span class="c1"># b =</span>
-<span class="c1"># DOPLNIT</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="n">y</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">y</span><span class="p">)])</span>
 
 <span class="c1"># ziskame koeficienty</span>
 <span class="n">reseni</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
@@ -709,18 +729,14 @@ F_{i}(x) = \dfrac{x-x_{0}}{x_{i}-x_{0}}\dots\dfrac{x-x_{i-1}}{x_{i}-x_{i-1}}\dfr
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_15197</span><span class="o">/</span><span class="mf">138282949.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">     </span><span class="mi">16</span> 
-<span class="g g-Whitespace">     </span><span class="mi">17</span> <span class="c1"># ziskame koeficienty</span>
-<span class="ne">---&gt; </span><span class="mi">18</span> <span class="n">reseni</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">19</span> <span class="n">k</span> <span class="o">=</span> <span class="n">reseni</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="g g-Whitespace">     </span><span class="mi">20</span> <span class="n">q</span> <span class="o">=</span> <span class="n">reseni</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-
-<span class="ne">NameError</span>: name &#39;A&#39; is not defined
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Parametr k:  1.3999999999999997
+Parametr q:  3.5000000000000004
 </pre></div>
 </div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 1.0, &#39;Aproximace metodou nejmensich ctvercu&#39;)
+</pre></div>
+</div>
+<img alt="_images/e783f89f35a015a08e5c360242dc61a9727d9a636642de428a3a11afe4b4dc65.png" src="_images/e783f89f35a015a08e5c360242dc61a9727d9a636642de428a3a11afe4b4dc65.png" />
 </div>
 </div>
 </section>
@@ -756,6 +772,24 @@ F_{i}(x) = \dfrac{x-x_{0}}{x_{i}-x_{0}}\dots\dfrac{x-x_{i-1}}{x_{i}-x_{i-1}}\dfr
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Cviceni04vyplnene.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Cviceni06.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">6. </span>Řešení nelineárních rovnic a jejich soustav</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -773,15 +807,15 @@ F_{i}(x) = \dfrac{x-x_{0}}{x_{i}-x_{0}}\dots\dfrac{x-x_{i-1}}{x_{i}-x_{i-1}}\dfr
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#typy-aproximaci">Typy aproximací:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpolacni-aproximace">Interpolační aproximace</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lagrangeuv-interpolacni-polynom-globalni-interpolace">Lagrangeův interpolační polynom (globální interpolace )</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spline-lokalni-interpolace">Spline (lokální interpolace)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#typy-aproximaci">5.1. Typy aproximací:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interpolacni-aproximace">5.2. Interpolační aproximace</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lagrangeuv-interpolacni-polynom-globalni-interpolace">5.2.1. Lagrangeův interpolační polynom (globální interpolace )</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spline-lokalni-interpolace">5.2.2. Spline (lokální interpolace)</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aproximace-cebysevovymi-polynomy">Aproximace Čebyševovými polynomy</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aproximace-derivaci-konecnymi-diferencemi">Aproximace derivací konečnými diferencemi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metoda-nejmensich-ctvercu">Metoda nejmenších čtverců</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aproximace-cebysevovymi-polynomy">5.3. Aproximace Čebyševovými polynomy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aproximace-derivaci-konecnymi-diferencemi">5.4. Aproximace derivací konečnými diferencemi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metoda-nejmensich-ctvercu">5.5. Metoda nejmenších čtverců</a></li>
 </ul>
   </nav></div>
 
