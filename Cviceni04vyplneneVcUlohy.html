@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel &#8212; Letní semestr 2024/2025</title>
+    <title>4. Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel &#8212; Letní semestr 2024/2025</title>
   
   
   
@@ -62,9 +62,11 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Cviceni04';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Cviceni04vyplneneVcUlohy';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="5. Aproximace funkcí" href="Cviceni05vyplnene.html" />
+    <link rel="prev" title="3. Numerické metody lineární algebry" href="Cviceni03vyplnene.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -116,8 +118,6 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
@@ -165,11 +165,11 @@
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Obsah cvičení</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Cviceni01vyplnene.html">1. Jupyter notebook a základy Pythonu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni02vyplnene.html">2. Chyby a nestabilita</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni03vyplnene.html">3. Numerické metody lineární algebry</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni04vyplneneVcUlohy.html">4. Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni05vyplnene.html">5. Aproximace funkcí</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni06vyplnene.html">6. Řešení nelineárních rovnic a jejich soustav</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni07.html">7. Extrémy funkcí</a></li>
@@ -235,7 +235,7 @@
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/jpsikal/anm/main?urlpath=tree/Cviceni04.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/jpsikal/anm/main?urlpath=tree/Cviceni04vyplneneVcUlohy.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -253,7 +253,7 @@
       
       
       
-      <li><a href="https://jupyter.fjfi.cvut.cz/hub/user-redirect/git-pull?repo=https%3A//github.com/jpsikal/anm&urlpath=tree/anm/Cviceni04.ipynb&branch=main" target="_blank"
+      <li><a href="https://jupyter.fjfi.cvut.cz/hub/user-redirect/git-pull?repo=https%3A//github.com/jpsikal/anm&urlpath=tree/anm/Cviceni04vyplneneVcUlohy.ipynb&branch=main" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on JupyterHub"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -284,7 +284,7 @@
       
       
       
-      <li><a href="_sources/Cviceni04.ipynb" target="_blank"
+      <li><a href="_sources/Cviceni04vyplneneVcUlohy.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -370,15 +370,15 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iteracni-metody">Iterační metody:</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jacobiho-metoda">Jacobiho metoda</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gauss-seidelova-metoda">Gauss-Seidelova metoda</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#superrelaxacni-metoda">Superrelaxační metoda</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prosta-iterace">Prostá iterace</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#porovnani-proste-iterace-jacobiho-gauss-seidelovy-a-superrelaxacni-metody">Porovnání prosté iterace, Jacobiho, Gauss-Seidelovy a superrelaxační metody</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iteracni-metody">4.1. Iterační metody:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jacobiho-metoda">4.1.1. Jacobiho metoda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gauss-seidelova-metoda">4.1.2. Gauss-Seidelova metoda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#superrelaxacni-metoda">4.1.3. Superrelaxační metoda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prosta-iterace">4.1.4. Prostá iterace</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#porovnani-proste-iterace-jacobiho-gauss-seidelovy-a-superrelaxacni-metody">4.1.5. Porovnání prosté iterace, Jacobiho, Gauss-Seidelovy a superrelaxační metody</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hledani-vlastnich-cisel-a-vektoru-matice">Hledání vlastních čísel a vektorů matice</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hledani-vlastnich-cisel-a-vektoru-matice">4.2. Hledání vlastních čísel a vektorů matice</a></li>
 </ul>
             </nav>
         </div>
@@ -391,7 +391,7 @@
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="iteracni-metody-reseni-soustav-linearnich-rovnic-hledani-vlastnich-cisel">
-<h1>Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel<a class="headerlink" href="#iteracni-metody-reseni-soustav-linearnich-rovnic-hledani-vlastnich-cisel" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">4. </span>Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel<a class="headerlink" href="#iteracni-metody-reseni-soustav-linearnich-rovnic-hledani-vlastnich-cisel" title="Link to this heading">#</a></h1>
 <p>Naimportujeme si knihovny potřebné pro následující příklady:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -413,13 +413,13 @@
 </div>
 </div>
 <section id="iteracni-metody">
-<h2>Iterační metody:<a class="headerlink" href="#iteracni-metody" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">4.1. </span>Iterační metody:<a class="headerlink" href="#iteracni-metody" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Řešení rovnice <span class="math notranslate nohighlight">\(\mathbb{A}\mathbf{x}=\mathbf{b}\)</span> odhadneme vektorem <span class="math notranslate nohighlight">\(\mathbf{x}^{0}\)</span></p></li>
 <li><p>Následné iterace <span class="math notranslate nohighlight">\(\mathbf{x}^{(k+1)}=\mathbb{B}_{k}\mathbf{x}^{(k)}+\mathbf{c}_{k}\)</span> upřesňují náš počáteční odhad (pozn. zde uvedeno obecné vyjádření nestacionární iterační metody, stacionární pokud <span class="math notranslate nohighlight">\(\mathbb{B}_{k} = \mathbb{B}\)</span> neboli je stejná v každém kroku)</p></li>
 </ol>
 <section id="jacobiho-metoda">
-<h3>Jacobiho metoda<a class="headerlink" href="#jacobiho-metoda" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">4.1.1. </span>Jacobiho metoda<a class="headerlink" href="#jacobiho-metoda" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Řešíme rovnici <span class="math notranslate nohighlight">\(\mathbb{A}\mathbf{x}=\mathbf{b}\)</span></p></li>
 <li><p>Předpokládáme, že matice <span class="math notranslate nohighlight">\(\mathbb{A}\)</span> má nenulové diagonální prvky <span class="math notranslate nohighlight">\(a_{ii}\neq 0\)</span></p></li>
@@ -480,10 +480,11 @@
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">pocet_iteraci</span><span class="p">):</span>
     <span class="n">velikostReseniA</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">velikostReseniA</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>  <span class="c1"># jen pro zobrazovani</span>
     <span class="n">velikostChybyA</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">velikostChybyA</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">reseniA</span><span class="p">))</span> <span class="c1"># jen pro zobrazovani</span>
-    <span class="c1"># DOPLNTE #    </span>
-    <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="c1"># DOPLNTE #</span>
-
+    <span class="n">F</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">D</span><span class="p">),(</span><span class="n">L</span><span class="o">+</span><span class="n">U</span><span class="p">))</span>   <span class="c1"># pozn. vypocet matic F a G je z programatorskeho hlediska efektivnejsi</span>
+    <span class="n">G</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">D</span><span class="p">)</span>                  <span class="c1"># uskutecnit pred cyklem for </span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">F</span><span class="p">,</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">G</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>         <span class="c1"># toto je vlastni vypocet, lze take jako x = F@x + G@b </span>
+    <span class="c1"># DOPLNTE #                           # chybny vypocet je x = F*x + G*b, takto nelze !</span>
 
 <span class="c1"># budeme iterovat matici B</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">xUvodni</span>
@@ -496,7 +497,9 @@
     <span class="n">velikostReseniB</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">velikostReseniB</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>  <span class="c1"># jen pro zobrazovani</span>
     <span class="n">velikostChybyB</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">velikostChybyB</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">reseniB</span><span class="p">))</span> <span class="c1"># jen pro zobrazovani</span>
     <span class="c1"># DOPLNTE #</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">F</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">D</span><span class="p">),(</span><span class="n">L</span><span class="o">+</span><span class="n">U</span><span class="p">))</span>
+    <span class="n">G</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">D</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">F</span><span class="p">,</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">G</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>                         <span class="c1"># vlastni vypocet</span>
     <span class="c1"># DOPLNTE #</span>
     
 <span class="c1"># zobrazime si, jak to vypada</span>
@@ -517,16 +520,10 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f77e25d3100&gt;
-</pre></div>
-</div>
-<img alt="_images/394b572164a048694359f089440cb4ff61f273b5c4cd57d381ce118caa07ad9b.png" src="_images/394b572164a048694359f089440cb4ff61f273b5c4cd57d381ce118caa07ad9b.png" />
-</div>
 </div>
 </section>
 <section id="gauss-seidelova-metoda">
-<h3>Gauss-Seidelova metoda<a class="headerlink" href="#gauss-seidelova-metoda" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">4.1.2. </span>Gauss-Seidelova metoda<a class="headerlink" href="#gauss-seidelova-metoda" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>Gauss-Seidelova metoda:</strong>
 <span class="math notranslate nohighlight">\(
@@ -581,7 +578,9 @@
     <span class="n">velikostReseniA</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">velikostReseniA</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>  <span class="c1"># jen pro zobrazovani</span>
     <span class="n">velikostChybyA</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">velikostChybyA</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">reseniA</span><span class="p">))</span> <span class="c1"># jen pro zobrazovani</span>
     <span class="c1"># DOPLNTE</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">F</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">D</span><span class="o">+</span><span class="n">L</span><span class="p">),</span><span class="n">U</span><span class="p">)</span>
+    <span class="n">G</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">D</span><span class="o">+</span><span class="n">L</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">F</span><span class="p">,</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">G</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>                         <span class="c1"># toto je vlastni vypocet </span>
     <span class="c1"># DOPLNTE</span>
 
 
@@ -597,20 +596,22 @@
     <span class="n">velikostReseniB</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">velikostReseniB</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>  <span class="c1"># jen pro zobrazovani</span>
     <span class="n">velikostChybyB</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">velikostChybyB</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">reseniB</span><span class="p">))</span> <span class="c1"># jen pro zobrazovani</span>
     <span class="c1"># DOPLNTE</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">F</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">D</span><span class="o">+</span><span class="n">L</span><span class="p">),</span><span class="n">U</span><span class="p">)</span>
+    <span class="n">G</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">D</span><span class="o">+</span><span class="n">L</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">F</span><span class="p">,</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">G</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>                         <span class="c1"># vlastni vypocet</span>
     <span class="c1"># DOPLNTE</span>
 
 <span class="c1"># zobrazime si, jak to vypada</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">pocet_iteraci</span><span class="p">),</span><span class="n">velikostReseniA</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Matice A - konverguje&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">pocet_iteraci</span><span class="p">),</span><span class="n">velikostReseniB</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Matice B - diverguje&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">pocet_iteraci</span><span class="p">),</span><span class="n">velikostReseniB</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Matice B - zde konverguje, diverguje pro Jacobiho&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_yscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Norma reseni v i-tem kroku&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Iterace&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 
 <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">pocet_iteraci</span><span class="p">),</span><span class="n">velikostChybyA</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Matice A - konverguje&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">pocet_iteraci</span><span class="p">),</span><span class="n">velikostChybyB</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Matice B - diverguje&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">pocet_iteraci</span><span class="p">),</span><span class="n">velikostChybyB</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Matice B - zde konverguje, diverguje pro Jacobiho&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_yscale</span><span class="p">(</span><span class="s1">&#39;linear&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Norma odchylky od skutecneho reseni&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Iterace&#39;</span><span class="p">)</span>
@@ -619,15 +620,15 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f77e1e3d520&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x729c95bec9e0&gt;
 </pre></div>
 </div>
-<img alt="_images/394b572164a048694359f089440cb4ff61f273b5c4cd57d381ce118caa07ad9b.png" src="_images/394b572164a048694359f089440cb4ff61f273b5c4cd57d381ce118caa07ad9b.png" />
+<img alt="_images/d828dca6658c7aec21378230b161b0a3c418fa0b1cbd55d3e55f85b5f1186935.png" src="_images/d828dca6658c7aec21378230b161b0a3c418fa0b1cbd55d3e55f85b5f1186935.png" />
 </div>
 </div>
 </section>
 <section id="superrelaxacni-metoda">
-<h3>Superrelaxační metoda<a class="headerlink" href="#superrelaxacni-metoda" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">4.1.3. </span>Superrelaxační metoda<a class="headerlink" href="#superrelaxacni-metoda" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Gauss-Seidelova metoda může konvergovat pomalu</p></li>
 <li><p>K urychlení iteračního procesu bývá využívána <strong>superrelaxační metoda</strong>:
@@ -644,7 +645,7 @@ x_{i}^{(k+1)}=x_{i}^{(k)}+\omega\Delta x_{i}^{(k)}
 </ul>
 </section>
 <section id="prosta-iterace">
-<h3>Prostá iterace<a class="headerlink" href="#prosta-iterace" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">4.1.4. </span>Prostá iterace<a class="headerlink" href="#prosta-iterace" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>Prostá iterace</strong>:
 <span class="math notranslate nohighlight">\(
@@ -653,7 +654,7 @@ x_{i}^{(k+1)}=x_{i}^{(k)}+\omega\Delta x_{i}^{(k)}
 </ul>
 </section>
 <section id="porovnani-proste-iterace-jacobiho-gauss-seidelovy-a-superrelaxacni-metody">
-<h3>Porovnání prosté iterace, Jacobiho, Gauss-Seidelovy a superrelaxační metody<a class="headerlink" href="#porovnani-proste-iterace-jacobiho-gauss-seidelovy-a-superrelaxacni-metody" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">4.1.5. </span>Porovnání prosté iterace, Jacobiho, Gauss-Seidelovy a superrelaxační metody<a class="headerlink" href="#porovnani-proste-iterace-jacobiho-gauss-seidelovy-a-superrelaxacni-metody" title="Link to this heading">#</a></h3>
 <div class="alert alert-block alert-warning"><b>Cvičení 04.03: </b> Doplňte předpis pro prostou iteraci a superrelaxační metodu.</div><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
@@ -684,7 +685,9 @@ x_{i}^{(k+1)}=x_{i}^{(k)}+\omega\Delta x_{i}^{(k)}
 <span class="n">vzdProstaIterace</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([])</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">pocet_iteraci</span><span class="p">):</span>
     <span class="c1"># DOPLNTE</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">F</span> <span class="o">=</span> <span class="n">B</span>
+    <span class="n">G</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">F</span><span class="p">,</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">G</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
     <span class="c1"># DOPLNTE</span>
     <span class="n">vzdProstaIterace</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">vzdProstaIterace</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">origReseni</span><span class="p">))</span>
 
@@ -724,8 +727,9 @@ x_{i}^{(k+1)}=x_{i}^{(k)}+\omega\Delta x_{i}^{(k)}
 <span class="n">x</span> <span class="o">=</span> <span class="n">uvodniOdhad</span>
 <span class="n">vzdSuperRelaxace</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([])</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">pocet_iteraci</span><span class="p">):</span>
-    <span class="c1"># DOPLNTE    </span>
-    <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="c1"># DOPLNTE</span>
+    <span class="n">xkp1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">F</span><span class="p">,</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">G</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>                         
+    <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">omega</span> <span class="o">*</span> <span class="p">(</span><span class="n">xkp1</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span>
     <span class="c1"># DOPLNTE</span>
     <span class="n">vzdSuperRelaxace</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">vzdSuperRelaxace</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">origReseni</span><span class="p">))</span>
 
@@ -736,7 +740,7 @@ x_{i}^{(k+1)}=x_{i}^{(k)}+\omega\Delta x_{i}^{(k)}
 <span class="n">U</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">triu</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># vytvori horni trojuhlenikovou matici (s nulovou diagonalou)</span>
 <span class="n">D</span> <span class="o">=</span> <span class="n">A</span> <span class="o">-</span> <span class="n">L</span> <span class="o">-</span> <span class="n">U</span>
 
-<span class="c1"># toto je ze seidela</span>
+<span class="c1"># toto je z Gaiss-Seidela</span>
 <span class="n">F</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">D</span><span class="o">+</span><span class="n">L</span><span class="p">),</span><span class="n">U</span><span class="p">)</span>
 <span class="n">G</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">D</span><span class="o">+</span><span class="n">L</span><span class="p">)</span>
 
@@ -748,7 +752,8 @@ x_{i}^{(k+1)}=x_{i}^{(k)}+\omega\Delta x_{i}^{(k)}
 <span class="n">vzdSuperRelaxaceOmega</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([])</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">pocet_iteraci</span><span class="p">):</span>
     <span class="c1"># DOPLNTE</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">xkp1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">F</span><span class="p">,</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">G</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>                         
+    <span class="n">x</span> <span class="o">=</span> <span class="n">omega</span> <span class="o">*</span> <span class="p">(</span><span class="n">xkp1</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">x</span>
     <span class="c1"># DOPLNTE</span>
     <span class="n">vzdSuperRelaxaceOmega</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">vzdSuperRelaxaceOmega</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">origReseni</span><span class="p">))</span>
 
@@ -769,16 +774,16 @@ x_{i}^{(k+1)}=x_{i}^{(k)}+\omega\Delta x_{i}^{(k)}
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f77e1c65550&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x729c942174d0&gt;
 </pre></div>
 </div>
-<img alt="_images/75fb5f708bf13bf65c6b044b257c5911bf9b051f8c9988b425c3fc2ec1f473d5.png" src="_images/75fb5f708bf13bf65c6b044b257c5911bf9b051f8c9988b425c3fc2ec1f473d5.png" />
+<img alt="_images/8aeddf2b54af04515231969f8c37378266be33db915b2c2a93de297f4f2c24a2.png" src="_images/8aeddf2b54af04515231969f8c37378266be33db915b2c2a93de297f4f2c24a2.png" />
 </div>
 </div>
 </section>
 </section>
 <section id="hledani-vlastnich-cisel-a-vektoru-matice">
-<h2>Hledání vlastních čísel a vektorů matice<a class="headerlink" href="#hledani-vlastnich-cisel-a-vektoru-matice" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">4.2. </span>Hledání vlastních čísel a vektorů matice<a class="headerlink" href="#hledani-vlastnich-cisel-a-vektoru-matice" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Nechť pro číslo <span class="math notranslate nohighlight">\(\lambda\)</span> existuje vektor <span class="math notranslate nohighlight">\(\mathbf{x}\neq\mathbf{0} \)</span> takový, že <span class="math notranslate nohighlight">\(\mathbb{A}\mathbf{x}=\lambda\mathbf{x}\)</span>. Pak:</p></li>
 <li><p><span class="math notranslate nohighlight">\(\lambda\)</span> je vlastní číslo matice <span class="math notranslate nohighlight">\(\mathbb{A}\)</span></p></li>
@@ -835,7 +840,7 @@ x_{i}^{(k+1)}=x_{i}^{(k)}+\omega\Delta x_{i}^{(k)}
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">pocet_iteraci</span><span class="p">):</span>
     <span class="n">odhadVlastnihoCisla</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">odhadVlastnihoCisla</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">matice</span><span class="p">,</span><span class="n">v</span><span class="p">)))</span>
     <span class="c1"># DOPLNTE</span>
-    <span class="n">v</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">matice</span><span class="p">,</span><span class="n">v</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">matice</span><span class="p">,</span><span class="n">v</span><span class="p">))</span>
     <span class="c1"># DOPLNTE</span>
     
 
@@ -856,24 +861,80 @@ x_{i}^{(k+1)}=x_{i}^{(k)}+\omega\Delta x_{i}^{(k)}
 <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
  
 <span class="c1"># kontrola    </span>
-<span class="c1">#vl_cislo_reseni, vl_vektor_reseni = np.linalg.eig(matice)</span>
-<span class="c1">#print(np.max(vl_cislo_reseni))</span>
-<span class="c1">#print(vl_vektor_reseni)</span>
+<span class="n">vl_cislo_reseni</span><span class="p">,</span> <span class="n">vl_vektor_reseni</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">matice</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">vl_cislo_reseni</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">vl_vektor_reseni</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Odhad nejvetsiho vlastniho cisla =  0.0
-Odhad prislusneho vlastniho vektoru =  0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Odhad nejvetsiho vlastniho cisla =  11.03694495486573
+Odhad prislusneho vlastniho vektoru =  [[-0.67304568]
+ [-0.56806248]
+ [ 0.47361854]]
+11.036944954865733
+[[-0.67304568 -0.63719453  0.31350718]
+ [-0.56806248 -0.58282439  0.94949328]
+ [ 0.47361854 -0.50428054  0.01325727]]
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f77e1624c70&gt;
-</pre></div>
-</div>
-<img alt="_images/926cdaada8c989adc3adf9a309fbfab31f98304faaa844f7ca29d3f38eea7a3b.png" src="_images/926cdaada8c989adc3adf9a309fbfab31f98304faaa844f7ca29d3f38eea7a3b.png" />
+<img alt="_images/028ac09e0a85e579a92e96e4ba36cd5d7db80a47c24ca82a1c3ae26cf02eb7b6.png" src="_images/028ac09e0a85e579a92e96e4ba36cd5d7db80a47c24ca82a1c3ae26cf02eb7b6.png" />
 </div>
 </div>
 <div class="alert alert-block alert-warning"><b>Úloha 4.A: </b> Zopakujte si pojmy podmíněnost úlohy a podmíněnost matice, maticová norma. Bez použití předdefinované funkce z knihoven Pythonu (nebo jiného programovacího jazyka) pro podmíněnost a normu matice (pozn. použití dalších předdefinovaných funkcí je povoleno) níže doplňte kód pro výpočet podmíněnosti matice $\mathbb{A}$ (resp. čísla podmíněnosti matice). Do kódu vložte komentáře, aby bylo rozumět tomu, co pomocí něj provádíte. Je úloha řešení soustavy lineárních rovnic $\mathbb{A} \mathbf{x} = \mathbf{b}$ dobře nebo špatně podmíněná? (zodpovězte v komentáři na konci Vámi doplněného kódu a odpověď zdůvodněte) </div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+
+<span class="c1"># vypocet podminenosti matice A</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">11</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">14</span><span class="p">]</span>
+    <span class="p">])</span>
+
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">45</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">44</span><span class="p">]])</span><span class="o">.</span><span class="n">T</span>
+
+
+<span class="c1"># existuje vice variant reseni, podminenost matice pocitame jako soucin normy matice a normy inverzni matice</span>
+<span class="c1"># nekteri z vas nasli reseni i bez pouziti norem matice (viz nize)</span>
+<span class="c1"># existuje vicero norem matice, je mozne si vybrat jednu z nich a tu pak pouzit</span>
+<span class="c1"># pozor! norma matice neni odmocninou z jejiho determinantu</span>
+
+<span class="c1"># prvni varianta reseni (v ruznych modifikacich asi nejcastejsi - pouziti Frobeniovy normy)</span>
+
+<span class="n">A_inv</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">#vytvoření inverzní matice pomocí funkce z knihovny numpy</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">norma</span><span class="p">(</span><span class="n">A</span><span class="p">):</span> <span class="c1">#funkce norma(A), která vrací odmocninu (použita funkce sqrt z knihovny math) </span>
+    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">radek</span><span class="p">)</span> <span class="k">for</span> <span class="n">radek</span> <span class="ow">in</span> <span class="n">A</span><span class="p">))</span> <span class="c1">#vnější suma prochází jednotlivé řádky matice</span>
+    <span class="c1">#vnitřní suma prochází řádky matice, pro každý řádek sečte čtverce jejich prvků</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">norma</span><span class="p">(</span><span class="n">A</span><span class="p">))</span>
+
+<span class="c1"># vypocet podminenosti matice A</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">podminenost</span><span class="p">(</span><span class="n">A</span><span class="p">):</span> <span class="c1">#funkce podminenost(A) která vrací násobek normyA a normy A_inv</span>
+    <span class="k">return</span> <span class="n">norma</span><span class="p">(</span><span class="n">A</span><span class="p">)</span><span class="o">*</span><span class="n">norma</span><span class="p">(</span><span class="n">A_inv</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">podminenost</span><span class="p">(</span><span class="n">A</span><span class="p">))</span>
+
+<span class="c1">#Čím vyšší je číslo podmíněnosti, tím je úloha citlivější na změnu vstupních dat a vede k větším chybám řešení</span>
+<span class="c1">#Kontrola podmíněnosti</span>
+<span class="k">if</span> <span class="n">podminenost</span><span class="p">(</span><span class="n">A</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">100</span><span class="p">:</span> <span class="c1"># hranice pro špatnou podmíněnost není ostrá, zde volíme &gt; 100 (určitě musí být &gt;&gt;1)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Soustava je špatně podmíněná&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Soustava je dobře podmíněná&quot;</span><span class="p">)</span>
+    
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>43.965895873961216
+11674.911648484895
+Soustava je špatně podmíněná
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># vypocet podminenosti matice A</span>
 
@@ -884,8 +945,273 @@ Odhad prislusneho vlastniho vektoru =  0
     <span class="p">])</span>
 
 <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">45</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">44</span><span class="p">]])</span><span class="o">.</span><span class="n">T</span>
+
+<span class="c1"># druha varianta reseni (pouziti radkove nebo sloupcove normy matice)</span>
+    
+<span class="c1"># Výpočet normy matice </span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">norma</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>    
+
+    <span class="n">max_soucet</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)):</span>  <span class="c1"># Pro každý řádek matice A</span>
+
+        <span class="n">soucet</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">])):</span>  <span class="c1"># Pro každý prvek v řádku</span>
+
+            <span class="n">soucet</span> <span class="o">+=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">])</span> 
+
+        <span class="k">if</span> <span class="n">soucet</span> <span class="o">&gt;</span> <span class="n">max_soucet</span><span class="p">:</span>  <span class="c1"># Maximální řádkový součet</span>
+
+            <span class="n">max_soucet</span> <span class="o">=</span> <span class="n">soucet</span>
+
+    <span class="k">return</span> <span class="n">max_soucet</span>  <span class="c1"># Největší součet řádku</span>
+
+
+<span class="c1"># Výpočet podmíněnosti matice</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">podminenost</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
+
+    <span class="n">A_inv</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>  <span class="c1"># Výpočet inverzní matice</span>
+
+    <span class="k">return</span> <span class="n">norma</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="o">*</span> <span class="n">norma</span><span class="p">(</span><span class="n">A_inv</span><span class="p">)</span> 
+
+
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">A</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">norma</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">A</span><span class="p">)))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Radkova norma matice je:&quot;</span><span class="p">,</span> <span class="n">norma</span><span class="p">(</span><span class="n">A</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Podmíněnost matice je:&quot;</span><span class="p">,</span> <span class="n">podminenost</span><span class="p">(</span><span class="n">A</span><span class="p">))</span>
+
+<span class="c1"># Odpověď: Matice je špatně podmíněná, protože podmíněnost je mnohem vyšší než 1.</span>
+
+
+<span class="c1"># v zadani umoznovalo vyuzit take funkce min, max, sum</span>
+<span class="c1"># pak to slo cele zjednodusit</span>
+
+<span class="c1"># radkova norma matice</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">matrix_norm_inf</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">A</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Radkova norma matice je:&quot;</span><span class="p">,</span> <span class="n">matrix_norm_inf</span><span class="p">(</span><span class="n">A</span><span class="p">))</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">matrix_norm_1</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">A</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sloupcova norma matice je:&quot;</span><span class="p">,</span> <span class="n">matrix_norm_1</span><span class="p">(</span><span class="n">A</span><span class="p">))</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">podminenost2</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
+
+    <span class="n">A_inv</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>  <span class="c1"># Výpočet inverzní matice</span>
+
+    <span class="k">return</span> <span class="n">matrix_norm_1</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="o">*</span> <span class="n">matrix_norm_1</span><span class="p">(</span><span class="n">A_inv</span><span class="p">)</span> 
+                         
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Podmíněnost matice je:&quot;</span><span class="p">,</span> <span class="n">podminenost2</span><span class="p">(</span><span class="n">A</span><span class="p">))</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ -23.   71.  -41.]
+ [  53. -163.   94.]
+ [ -43.  132.  -76.]]
+309.99999999991843
+Radkova norma matice je: 45
+Podmíněnost matice je: 13949.99999999633
+Radkova norma matice je: 45
+Sloupcova norma matice je: 48
+Podmíněnost matice je: 17567.99999999538
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># vypocet podminenosti matice A</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">11</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">14</span><span class="p">]</span>
+    <span class="p">])</span>
+
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">45</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">44</span><span class="p">]])</span><span class="o">.</span><span class="n">T</span>
+
+<span class="c1"># treti varianta reseni (pouziti spektralni normy matice)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">mat_norm</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
+    <span class="c1"># Výpočet matice normy (spektrální normy), což je největší vlastní číslo matice A^T * A</span>
+    <span class="n">ATA</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>  <span class="c1"># Výpočet A^T * A</span>
+    <span class="n">vlastnicislo</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eigvals</span><span class="p">(</span><span class="n">ATA</span><span class="p">)</span>  <span class="c1"># Vlastní čísla matice ATA</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">vlastnicislo</span><span class="p">))</span>  <span class="c1"># Spektrální norma je odmocnina největšího vlastního čísla</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">inverzni_matice</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
+    <span class="c1"># Výpočet inverzní matice pomocí Gauss-Jordanovy eliminace.</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="c1">#Definuje velikost matice, vraci pocet prvku = řádků</span>
+    <span class="n">A_rozsirena</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">((</span><span class="n">A</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="n">n</span><span class="p">)))</span>  <span class="c1"># Rozšířená matice [A | I]</span>
+    
+    <span class="c1"># Gaussova eliminace</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">pivot</span> <span class="o">=</span> <span class="n">A_rozsirena</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span>
+        <span class="n">A_rozsirena</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">A_rozsirena</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">/</span> <span class="n">pivot</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">i</span> <span class="o">!=</span> <span class="n">j</span><span class="p">:</span>
+                <span class="n">A_rozsirena</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">-=</span> <span class="n">A_rozsirena</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">A_rozsirena</span><span class="p">[</span><span class="n">j</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span>
+    
+    <span class="k">return</span> <span class="n">A_rozsirena</span><span class="p">[:,</span> <span class="n">n</span><span class="p">:]</span>
+
+
+<span class="c1"># Výpočet podmíněnosti matice A</span>
+<span class="n">norm_A</span> <span class="o">=</span> <span class="n">mat_norm</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>  <span class="c1"># Norma matice A</span>
+<span class="n">A_inv</span> <span class="o">=</span> <span class="n">inverzni_matice</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>  <span class="c1"># Inverzní matice A</span>
+<span class="n">norm_A_inv</span> <span class="o">=</span> <span class="n">mat_norm</span><span class="p">(</span><span class="n">A_inv</span><span class="p">)</span>  <span class="c1"># Norma inverzní matice A</span>
+<span class="n">podminenost_A</span> <span class="o">=</span> <span class="n">norm_A</span> <span class="o">*</span> <span class="n">norm_A_inv</span>  <span class="c1"># Podmíněnost matice A</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Podmíněnost matice A: </span><span class="si">{</span><span class="n">podminenost_A</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">A_inv</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>  <span class="c1"># Inverzní matice A</span>
+<span class="n">norm_A_inv</span> <span class="o">=</span> <span class="n">mat_norm</span><span class="p">(</span><span class="n">A_inv</span><span class="p">)</span>  <span class="c1"># Norma inverzní matice A</span>
+<span class="n">podminenost_A</span> <span class="o">=</span> <span class="n">norm_A</span> <span class="o">*</span> <span class="n">norm_A_inv</span>  <span class="c1"># Podmíněnost matice A</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Podmíněnost matice A: </span><span class="si">{</span><span class="n">podminenost_A</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Vyhodnocení podmíněnosti</span>
+<span class="c1"># Pokud je číslo podmíněnosti blízké 1, soustava je dobře podmíněná,</span>
+<span class="c1"># pokud je velmi velké, soustava je špatně podmíněná.</span>
+<span class="c1"># Výsledná hodnota podmíněnosti určuje, jak moc je soustava náchylná na chyby v datech.</span>
+<span class="c1"># Pokud je hodnota velmi vysoká, i malé změny v b nebo A mohou výrazně ovlivnit výsledek řešení.</span>
+<span class="c1">#V našem případě vyjde podmíněnost matice velmi vysoká, tato úloha je tedy špatně podmíněná.</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Podmíněnost matice A: 11562.039592427373
+Podmíněnost matice A: 11562.039592426216
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># vypocet podminenosti matice A</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">11</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">14</span><span class="p">]</span>
+    <span class="p">])</span>
+
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">45</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">44</span><span class="p">]])</span><span class="o">.</span><span class="n">T</span>
+
+<span class="c1"># ctvrta varianta reseni (vypocet pres singularni cisla matice A)</span>
+
+<span class="c1"># provedeme tzv. SVD rozklad matice A, kde matice W je diagonalni se singularnimi hodnotami na diagonale</span>
+<span class="c1"># pozn. v pripade ctvercove matice mohou byt singularni hodnoty matice rovny vlastnim cislum matice, ale to neplati vzdy!</span>
+
+
+<span class="n">U_1</span><span class="p">,</span> <span class="n">W_1</span><span class="p">,</span> <span class="n">Vt_1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">svd</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+<span class="n">A_inverse</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="n">U_2</span><span class="p">,</span> <span class="n">W_2</span><span class="p">,</span> <span class="n">Vt_2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">svd</span><span class="p">(</span><span class="n">A_inverse</span><span class="p">)</span>
+
+<span class="c1"># spektralni norma matice je nejvetsi singularni hodnota matice, z toho lze pak spocitat cislo podminenosti matice</span>
+<span class="n">Cp</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">W_1</span><span class="p">)</span><span class="o">*</span><span class="nb">max</span><span class="p">(</span><span class="n">W_2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Podmíněnost matice A: </span><span class="si">{</span><span class="n">Cp</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># podminenost matice lze take ziskat jako podil nejvetsiho a nejmensiho singularniho cisla matice </span>
+<span class="c1"># (vypocet bez vyuziti inverzni matice)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Podmíněnost matice A: </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">W_1</span><span class="p">)</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">W_1</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Podmíněnost matice A: 11562.039592426212
+Podmíněnost matice A: 11562.039592432893
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># ilustrace problemu se spatne podminenou matici, zkuste si zmenit odhad pocatecniho reseni xUvodni a sledujte vysledek</span>
+<span class="c1"># Gauss-Seidelova metoda se spatne podminenou matici</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">11</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">14</span><span class="p">]</span>
+    <span class="p">],</span><span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;float&#39;</span><span class="p">)</span>
+
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">45</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">44</span><span class="p">]],</span><span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;float&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
+
+
+<span class="c1"># nastavime uvodni odhad reseni (radkovy vektor prevedeme na sloupcovy pomoci transpozice .T)</span>
+<span class="n">xUvodni</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]],</span><span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;float&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
+<span class="c1">#xUvodni = np.array([[2, 2, 2]],dtype=&#39;float&#39;).T</span>
+
+<span class="c1"># zvolime pocet iteraci, po ktere budeme chtit sledovat jak se reseni chova</span>
+<span class="n">pocet_iteraci</span> <span class="o">=</span> <span class="mi">100</span>
+
+<span class="c1"># spocteme si reseni soustavy Ax=b primou metodou, pro kontrolu postupu</span>
+<span class="n">reseniA</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+
+<span class="c1"># v prubehu iteraci si budeme pamatovat velikost vektoru reseni v i-tem kroku, </span>
+<span class="c1"># dale &quot;vzdalenost&quot; reseni v i-tem kroku od skutecneho reseni spocitaneho primou metodou</span>
+
+<span class="c1"># budeme iterovat matici A</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">xUvodni</span>
+<span class="n">L</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">tril</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># vytvori dolni trojuhlenikovou matici (s nulovou diagonalou)</span>
+<span class="n">U</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">triu</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># vytvori horni trojuhlenikovou matici (s nulovou diagonalou)</span>
+<span class="n">D</span> <span class="o">=</span> <span class="n">A</span> <span class="o">-</span> <span class="n">L</span> <span class="o">-</span> <span class="n">U</span>
+<span class="n">velikostReseniA</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([])</span>
+<span class="n">velikostChybyA</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([])</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">pocet_iteraci</span><span class="p">):</span>
+    <span class="n">velikostReseniA</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">velikostReseniA</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>  <span class="c1"># jen pro zobrazovani</span>
+    <span class="n">velikostChybyA</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">velikostChybyA</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">reseniA</span><span class="p">))</span> <span class="c1"># jen pro zobrazovani</span>
+    <span class="n">F</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">D</span><span class="o">+</span><span class="n">L</span><span class="p">),</span><span class="n">U</span><span class="p">)</span>
+    <span class="n">G</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">D</span><span class="o">+</span><span class="n">L</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">F</span><span class="p">,</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">G</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>                         <span class="c1"># toto je vlastni vypocet </span>
+
+<span class="c1"># zobrazime si, jak to vypada</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">pocet_iteraci</span><span class="p">),</span><span class="n">velikostReseniA</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Matice A - konverguje&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_yscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Norma reseni v i-tem kroku&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Iterace&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">pocet_iteraci</span><span class="p">),</span><span class="n">velikostChybyA</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Matice A - konverguje&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_yscale</span><span class="p">(</span><span class="s1">&#39;linear&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Norma odchylky od skutecneho reseni&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Iterace&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;reseni=&#39;</span><span class="p">,</span> <span class="n">reseniA</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;pro xUvodni=&#39;</span><span class="p">,</span> <span class="n">xUvodni</span><span class="p">)</span> 
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x=&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>reseni= [[1.]
+ [1.]
+ [1.]]
+pro xUvodni= [[0.]
+ [0.]
+ [0.]]
+x= [[0.88824862]
+ [1.25678634]
+ [0.79195715]]
+</pre></div>
+</div>
+<img alt="_images/fead5126b68b96938deb9e43954013931cebbe8c60975c4179be5bb4c84633c3.png" src="_images/fead5126b68b96938deb9e43954013931cebbe8c60975c4179be5bb4c84633c3.png" />
 </div>
 </div>
 </section>
@@ -921,6 +1247,24 @@ Odhad prislusneho vlastniho vektoru =  0
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Cviceni03vyplnene.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Numerické metody lineární algebry</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Cviceni05vyplnene.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Aproximace funkcí</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -938,15 +1282,15 @@ Odhad prislusneho vlastniho vektoru =  0
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iteracni-metody">Iterační metody:</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jacobiho-metoda">Jacobiho metoda</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gauss-seidelova-metoda">Gauss-Seidelova metoda</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#superrelaxacni-metoda">Superrelaxační metoda</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prosta-iterace">Prostá iterace</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#porovnani-proste-iterace-jacobiho-gauss-seidelovy-a-superrelaxacni-metody">Porovnání prosté iterace, Jacobiho, Gauss-Seidelovy a superrelaxační metody</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iteracni-metody">4.1. Iterační metody:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jacobiho-metoda">4.1.1. Jacobiho metoda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gauss-seidelova-metoda">4.1.2. Gauss-Seidelova metoda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#superrelaxacni-metoda">4.1.3. Superrelaxační metoda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prosta-iterace">4.1.4. Prostá iterace</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#porovnani-proste-iterace-jacobiho-gauss-seidelovy-a-superrelaxacni-metody">4.1.5. Porovnání prosté iterace, Jacobiho, Gauss-Seidelovy a superrelaxační metody</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hledani-vlastnich-cisel-a-vektoru-matice">Hledání vlastních čísel a vektorů matice</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hledani-vlastnich-cisel-a-vektoru-matice">4.2. Hledání vlastních čísel a vektorů matice</a></li>
 </ul>
   </nav></div>
 
