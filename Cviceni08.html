@@ -66,7 +66,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="9. Obyčejné diferenciální rovnice (ODR)" href="Cviceni09.html" />
-    <link rel="prev" title="7. Extrémy funkcí" href="Cviceni07.html" />
+    <link rel="prev" title="7. Extrémy funkcí" href="Cviceni07vyplnene.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -172,7 +172,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Cviceni04vyplneneVcUlohy.html">4. Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni05vyplnene.html">5. Aproximace funkcí</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni06vyplnene.html">6. Řešení nelineárních rovnic a jejich soustav</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni07.html">7. Extrémy funkcí</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni07vyplnene.html">7. Extrémy funkcí</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">8. Numerická integrace</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni09.html">9. Obyčejné diferenciální rovnice (ODR)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni10.html">10. Obyčejné diferenciální rovnice (ODR) II</a></li>
@@ -418,7 +418,7 @@
 <section id="klasicke-kvadraturni-vzorce">
 <h2><span class="section-number">8.1. </span>Klasické kvadraturní vzorce<a class="headerlink" href="#klasicke-kvadraturni-vzorce" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Máme ekvidistantní body <span class="math notranslate nohighlight">\(x_{i}\)</span> a vypočteme <span class="math notranslate nohighlight">\(f_{i}(x_{i})\)</span></p></li>
+<li><p>Máme ekvidistantní body <span class="math notranslate nohighlight">\(x_{i}\)</span> a vypočteme <span class="math notranslate nohighlight">\(f(x_{i})\)</span></p></li>
 <li><p>V 1D aproximujeme integrál pomocí obdélníků/lichoběžníků</p></li>
 <li><p>Přesnost je dána šířkou obdélníku</p></li>
 </ul>
@@ -426,20 +426,14 @@
 <h3><span class="section-number">8.1.1. </span>Newton–Cotesovy vzorce<a class="headerlink" href="#newtoncotesovy-vzorce" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Obdélníkové pravidlo
-$<span class="math notranslate nohighlight">\(
-\int_{x_{1}}^{x_{2}}f(x)\,dx\approx (x_{2}-x_{1})f\left( \dfrac{x_{1}+x_{2}}{2} \right)
-\)</span>$</p></li>
+<span class="math notranslate nohighlight">\(\int_{x_{1}}^{x_{2}}f(x)\,dx\approx (x_{2}-x_{1})f\left( \dfrac{x_{1}+x_{2}}{2} \right)\)</span></p></li>
 <li><p>Lichoběžníkové pravidlo
-$<span class="math notranslate nohighlight">\(
-\int_{x_{1}}^{x_{2}}f(x)\,dx\approx (x_{2}-x_{1})\dfrac{f(x_{1})+f(x_{2})}{2}
-\)</span>$</p></li>
+<span class="math notranslate nohighlight">\(\int_{x_{1}}^{x_{2}}f(x)\,dx\approx (x_{2}-x_{1})\dfrac{f(x_{1})+f(x_{2})}{2}\)</span></p></li>
 <li><p>Simpsonovo pravidlo</p></li>
 </ol>
 <ul class="simple">
 <li><p><a class="reference external" href="http://kfe.fjfi.cvut.cz/~vachal/edu/nme/cviceni/07_numint/DOCS/odvozeni_integrace_Lagrange.pdf">Odvození</a>
-$<span class="math notranslate nohighlight">\(
-\int_{x_{1}}^{x_{3}}f(x)\,dx\approx (x_{2}-x_{1})\dfrac{f(x_{1})+4f(x_{2})+f(x_{3})}{3}
-\)</span>$</p></li>
+<span class="math notranslate nohighlight">\(\int_{x_{1}}^{x_{3}}f(x)\,dx\approx (x_{2}-x_{1})\dfrac{f(x_{1})+4f(x_{2})+f(x_{3})}{3}\)</span></p></li>
 </ul>
 <div class="alert alert-block alert-warning"><b>Cvičení 08.01: </b>Pomocí obdélníkové, lichoběžníkové a Simpsonovy metody numericky vypočtěte <a href="https://www.wolframalpha.com/input?i=integrate+sin%28x%29+from+1+to+5">integrál</a> $\int_{1}^{5} \sin(x)\,dx$.</div><div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -499,27 +493,20 @@ Simpsonovo pravidlo:  0
 <li><p>Volíme optimální polohu bodů <span class="math notranslate nohighlight">\(x_{i}\)</span> a příslušné váhy <span class="math notranslate nohighlight">\(w_{i}\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(n\)</span> bodů dává přesný výsledek pro polynomy řádu <span class="math notranslate nohighlight">\(\leq 2n-1\)</span></p></li>
 <li><p>Dvojnásobná přesnost oproti integraci s ekvidistantním rozdělením</p></li>
-<li><p>Pro polohu bodů a příslušné váhy používáme tyto polynomy:</p></li>
+<li><p>Pro polohu bodů a příslušné váhy používáme tyto polynomy:</p>
+<ul>
 <li><p>Legenderovy na intervalu <span class="math notranslate nohighlight">\((-1,1)\)</span></p></li>
 <li><p>Čebyševovy na intervalu <span class="math notranslate nohighlight">\((-1,1)\)</span></p></li>
 <li><p>Laguerrovy na intervalu <span class="math notranslate nohighlight">\((0,+\infty)\)</span></p></li>
 <li><p>Hermiteovy na intervalu <span class="math notranslate nohighlight">\((-\infty,+\infty)\)</span></p></li>
+</ul>
+</li>
 <li><p>Funkci <span class="math notranslate nohighlight">\(f(x)\)</span> interpolujeme daným typem polynomu, nalezneme <span class="math notranslate nohighlight">\(w_{i}\)</span> a <span class="math notranslate nohighlight">\(x_{i}\)</span></p></li>
 <li><p>Následně lze integrál numericky vypočítat předpisem:
-$<span class="math notranslate nohighlight">\(
-\int_{-1}^{1}f(x)dx\approx \sum_{i=1}^{n}w_{i}f(x_{i})
-\)</span>$</p></li>
+<span class="math notranslate nohighlight">\(\int_{-1}^{1}f(x)dx\approx \sum_{i=1}^{n}w_{i}f(x_{i})\)</span></p></li>
 <li><p>Pokud integrujeme přes interval <span class="math notranslate nohighlight">\(\langle a,b\rangle\)</span>, získáme předpis:
-$<span class="math notranslate nohighlight">\(
-\int_{a}^{b}f(x)dx\approx \sum_{i=1}^{n}\tilde{w}_{i}f(\tilde{x}_{i}),
-\)</span><span class="math notranslate nohighlight">\(
-kde
-\)</span><span class="math notranslate nohighlight">\(
-\tilde{w}_{i} = w_{i}\dfrac{b-a}{2}
-\)</span><span class="math notranslate nohighlight">\(
-\)</span><span class="math notranslate nohighlight">\(
-\tilde{x}_{i} = \dfrac{(b-a)x_{i}+a+b}{2}
-\)</span>$</p></li>
+<span class="math notranslate nohighlight">\(\int_{a}^{b}f(x)dx\approx \sum_{i=1}^{n}\tilde{w}_{i}f(\tilde{x}_{i})\)</span>, kde
+<span class="math notranslate nohighlight">\(\tilde{w}_{i} = w_{i}\dfrac{b-a}{2}\)</span> a <span class="math notranslate nohighlight">\(\tilde{x}_{i} = \dfrac{(b-a)x_{i}+a+b}{2}\)</span></p></li>
 </ul>
 <div class="alert alert-block alert-warning"><b>Cvičení 08.02: </b>Metodou Gaussovy kvadratury numericky vypočtěte <a href="https://www.wolframalpha.com/input?i=sin%28x%29exp%28cos%28x%29%29">integrál</a> $\int_{0}^{\pi} \sin(x)\exp[\cos(x)]\,dx$.</div><div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -678,12 +665,10 @@ Kontrola:  2.350402387287603
 <ul class="simple">
 <li><p>Integrační oblast <span class="math notranslate nohighlight">\(V\)</span> uzavřeme do co nejmenší oblasti se známým objemem <span class="math notranslate nohighlight">\(\tilde{V}\)</span>, ve které lze snadno generovat náhodné body</p></li>
 <li><p>Vygenerujeme <span class="math notranslate nohighlight">\(N\)</span> náhodných bodů ve <span class="math notranslate nohighlight">\(\tilde{V}\)</span> a vypočteme integrál
-$<span class="math notranslate nohighlight">\(
-\int f(\vec{x})dV\approx\dfrac{\tilde{V}}{N}\sum_{i=1}^{N}\tilde{f}(\vec{x}_{i}),
-\)</span><span class="math notranslate nohighlight">\(
-kde \)</span>\tilde{f}(\vec{x}) = f(\vec{x})<span class="math notranslate nohighlight">\(, pokud \)</span>\vec{x}\in V<span class="math notranslate nohighlight">\(. Jinak \)</span>\tilde{f}(\vec{x}) = 0$.</p></li>
+<span class="math notranslate nohighlight">\(\int f(\vec{x})dV\approx\dfrac{\tilde{V}}{N}\sum_{i=1}^{N}\tilde{f}(\vec{x}_{i})\)</span>, kde <span class="math notranslate nohighlight">\(\tilde{f}(\vec{x}) = f(\vec{x})\)</span>, pokud <span class="math notranslate nohighlight">\(\vec{x}\in V\)</span>.
+Jinak <span class="math notranslate nohighlight">\(\tilde{f}(\vec{x}) = 0\)</span>.</p></li>
 </ul>
-<div class="alert alert-block alert-warning"><b>Cvičení 08.04: </b> Metodou Monte-Carlo určete velikost konstanty $\pi$.</div><div class="cell docutils container">
+<div class="alert alert-block alert-warning"><b>Cvičení 08.04: </b> Metodou Monte-Carlo určete velikost konstanty $\pi$. Pozorujte výsledek při nastavení počtu kroků na 10, 100, 1000, 10000.</div><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># kod</span>
 
@@ -817,7 +802,7 @@ Kontrola =  1
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Cviceni07.html"
+       href="Cviceni07vyplnene.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
