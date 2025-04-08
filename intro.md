@@ -17,7 +17,7 @@
 
 ## Zápočtová tabulka
 
-- studenti, kteří mě informovali, že mají zápočet (bez složené zkoušky) z 12NME1: M. Artamonov, A. Kouřimská, R. Kozmová, F. Krupka
+- studenti, kteří mají zápočet (bez složené zkoušky) z 12NME1 (a informovali mě o tom): A. Kouřimská, R. Kozmová, F. Krupka
 
 ### Cvičení úterý 10:00
 

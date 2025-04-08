@@ -383,6 +383,7 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newtonraphsonova-metoda">6.2.2. Newton–Raphsonova metoda</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uloha-6-c">6.3. Úloha 6.C</a></li>
 </ul>
             </nav>
         </div>
@@ -971,8 +972,9 @@ Krok  19 , f2(x0, y0)=  -1.3537194698542976e-07
 
 <span class="c1"># matice A a prava strana b pro soustavu linearnich rovnic</span>
 <span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">stupen</span><span class="p">,</span><span class="n">stupen</span><span class="p">))</span>
-<span class="c1">#b = np.array((stupen,1)</span>
+<span class="c1">#b = np.array((stupen,1))</span>
 <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="n">stupen</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;float&#39;</span><span class="p">)</span>
+<span class="c1">#b = np.zeros(stupen) # tato inicializace by byvala byla asi nejlepsi, vyhneme se problemum s datovym typem</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Krok &#39;</span><span class="p">,</span> <span class="n">i</span> <span class="p">,</span><span class="s1">&#39;, (x0, y0)=(&#39;</span><span class="p">,</span> <span class="n">x0</span> <span class="p">,</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">y0</span> <span class="p">,</span><span class="s1">&#39;)&#39;</span><span class="p">)</span>
@@ -1153,6 +1155,21 @@ b=  [-2.22044605e-16 -0.00000000e+00]
 </div>
 </section>
 </section>
+<section id="uloha-6-c">
+<h2><span class="section-number">6.3. </span>Úloha 6.C<a class="headerlink" href="#uloha-6-c" title="Link to this heading">#</a></h2>
+<div class="alert alert-block alert-warning"><b>Úloha 6.C: </b> Máme naměřeny účinné průřezy $g(E_i)$ s chybami $\sigma_i$ pro rezonanční rozptyl neutronů závisejícím na kinetické energii neutronů $E_i$. Víme, že závislost účinného průřezu na energii lze obecně popsat vztahem $f(E)=\dfrac{a1}{(E-a2)^2+a3}$, kde a1, a2, a3 jsou neznámé parametry. Aproximací metodou nejmenších čtverců určete neznámé parametry a1, a2, a3 ve fitovací funkci při zohlednění chyb měření účinných průřezů pro jednotlivé kinetické energie neutronů (váhu "přesnosti" jednotlivých naměřených bodů počítejte jako $1/\sigma_i$). Pro stanovení parametrů a1 až a3 použijte ve výpočtu Newton-Raphsonovu metodu (vycházejte z její implementace ve Cvičení 06.06). Na výstupu vypište hodnoty vypočítaných parametrů a zobrazte jednotlivé body a jejich fitování pomocí $f(E)$ v grafu. Pro vyřešení této úlohy není povoleno používání implicitních funkcí z knihoven Pythonu pro fitování ani pro řešení soustavy nelineárních rovnic, na které tento problém vede (můžete však využít implementace ze Cvičení 06.06). Případné použití dalších implicitních funkcí Pythonu je povoleno. Tip: parciální derivace chybové funkce (sumě rozdílů mezi naměřenými hodnotami a hodnotami vypočtenými fitovací funkcí $f(E)$ umocněným na druhou) najdete vypočteny <a href="http://kfe.fjfi.cvut.cz/~psikal/anm/parcderUloha6C.pdf">zde</a>. Tyto derivace, které pro hledání minima chybové funkce položíme rovny 0, tvoří základ pro soustavu nelineárních rovnic, jež musíme dále vyřešit. Důležitý je také počáteční odhad řešení soustavy, který by měl být co nejpřesnější (jinak Newton-Raphsonova metoda nemusí konvergovat ke správnému řešení). Ten stanovte porovnáním tvaru funkce $f(E)$ s grafem naměřených hodnot, ze kterého lze vyvodit např. to, že parametr $a2 \approx 75$ a poměr $a1/a3 \approx 100$. 
+ </div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># namerene hodnoty definovany nize</span>
+
+<span class="n">E</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">25.</span><span class="p">,</span> <span class="mf">50.</span><span class="p">,</span> <span class="mf">75.</span><span class="p">,</span> <span class="mf">100.</span><span class="p">,</span> <span class="mf">125.</span><span class="p">,</span> <span class="mf">150.</span><span class="p">,</span> <span class="mf">175.</span><span class="p">,</span> <span class="mf">200.</span><span class="p">])</span>    <span class="c1"># hodnoty kinetickych energii neutronu</span>
+<span class="n">gE</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">10.6</span><span class="p">,</span> <span class="mf">16.0</span><span class="p">,</span> <span class="mf">45.0</span><span class="p">,</span> <span class="mf">83.5</span><span class="p">,</span> <span class="mf">52.8</span><span class="p">,</span> <span class="mf">19.9</span><span class="p">,</span> <span class="mf">10.8</span><span class="p">,</span> <span class="mf">8.25</span><span class="p">,</span> <span class="mf">4.7</span><span class="p">])</span>  <span class="c1"># hodnoty namerenych ucinnych prurezu</span>
+<span class="n">sigma</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">9.34</span><span class="p">,</span> <span class="mf">17.9</span><span class="p">,</span> <span class="mf">41.5</span><span class="p">,</span> <span class="mf">85.5</span><span class="p">,</span> <span class="mf">51.5</span><span class="p">,</span> <span class="mf">21.5</span><span class="p">,</span> <span class="mf">10.8</span><span class="p">,</span> <span class="mf">6.29</span><span class="p">,</span> <span class="mf">4.14</span><span class="p">])</span>  <span class="c1"># hodnoty chyb mereni</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1233,6 +1250,7 @@ b=  [-2.22044605e-16 -0.00000000e+00]
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newtonraphsonova-metoda">6.2.2. Newton–Raphsonova metoda</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uloha-6-c">6.3. Úloha 6.C</a></li>
 </ul>
   </nav></div>
 
