@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -173,7 +173,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Cviceni05vyplnene.html">5. Aproximace funkcí</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni06vyplnene.html">6. Řešení nelineárních rovnic a jejich soustav</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni07vyplnene.html">7. Extrémy funkcí</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni08.html">8. Numerická integrace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni08vyplnene.html">8. Numerická integrace</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni09.html">9. Obyčejné diferenciální rovnice (ODR)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni10.html">10. Obyčejné diferenciální rovnice (ODR) II</a></li>
 </ul>
@@ -1014,6 +1014,15 @@ Soustava je špatně podmíněná
     <span class="k">return</span> <span class="n">matrix_norm_1</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="o">*</span> <span class="n">matrix_norm_1</span><span class="p">(</span><span class="n">A_inv</span><span class="p">)</span> 
                          
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Podmíněnost matice je:&quot;</span><span class="p">,</span> <span class="n">podminenost2</span><span class="p">(</span><span class="n">A</span><span class="p">))</span>
+
+<span class="n">offset</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a single float number that will be our solution offset: &quot;</span><span class="p">))</span>
+<span class="n">b_offset</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">offset</span><span class="p">]])</span><span class="o">.</span><span class="n">T</span>
+<span class="n">sol1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="n">sol2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">b</span><span class="o">+</span><span class="n">b_offset</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Reseni pro zadany vektor b:</span><span class="se">\t\t</span><span class="si">{}</span><span class="s2">.</span><span class="se">\n</span><span class="s2">Reseni pro lehce posunuty vektor:</span><span class="se">\t</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sol1</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">sol2</span><span class="o">.</span><span class="n">T</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Z hodnoty cisla podminenosti matice A i z nasledne ukazky, jak i drobna zmena vstupnich hodnot drasticky ovlivni vysledne reseni, vidime, ze nase matice je opravdu spatne podminena.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1027,6 +1036,10 @@ Podmíněnost matice je: 13949.99999999633
 Radkova norma matice je: 45
 Sloupcova norma matice je: 48
 Podmíněnost matice je: 17567.99999999538
+Enter a single float number that will be our solution offset: 0.01
+Reseni pro zadany vektor b:		[[1. 1. 1.]].
+Reseni pro lehce posunuty vektor:	[[0.59 1.94 0.24]]
+Z hodnoty cisla podminenosti matice A i z nasledne ukazky, jak i drobna zmena vstupnich hodnot drasticky ovlivni vysledne reseni, vidime, ze nase matice je opravdu spatne podminena.
 </pre></div>
 </div>
 </div>

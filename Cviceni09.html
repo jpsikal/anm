@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -66,7 +66,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="10. Obyčejné diferenciální rovnice (ODR) II" href="Cviceni10.html" />
-    <link rel="prev" title="8. Numerická integrace" href="Cviceni08.html" />
+    <link rel="prev" title="8. Numerická integrace" href="Cviceni08vyplnene.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -173,7 +173,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Cviceni05vyplnene.html">5. Aproximace funkcí</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni06vyplnene.html">6. Řešení nelineárních rovnic a jejich soustav</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni07vyplnene.html">7. Extrémy funkcí</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni08.html">8. Numerická integrace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni08vyplnene.html">8. Numerická integrace</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">9. Obyčejné diferenciální rovnice (ODR)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni10.html">10. Obyčejné diferenciální rovnice (ODR) II</a></li>
 </ul>
@@ -414,8 +414,7 @@
 </div>
 </div>
 <ul class="simple">
-<li><p>Vektorové vyjádření systému rovnic
-$<span class="math notranslate nohighlight">\( \dfrac{\mathrm{d}\vec y}{\mathrm{d}x}=\vec f (x,\vec y)\)</span>$</p></li>
+<li><p>Vektorové vyjádření systému rovnic <span class="math notranslate nohighlight">\(\dfrac{\mathrm{d}\vec y}{\mathrm{d}x}=\vec f (x,\vec y)\)</span></p></li>
 <li><p>ODR <span class="math notranslate nohighlight">\(N\)</span>-tého řádu převádíme na soustavu <span class="math notranslate nohighlight">\(N\)</span> diferenciálních rovnic 1. řádu</p></li>
 <li><p>Potřebujeme  <span class="math notranslate nohighlight">\(N\)</span> počátečních podmínek</p></li>
 <li><p>Řešení se liší v závislosti na počátečních podmínkách:</p>
@@ -431,8 +430,7 @@ $<span class="math notranslate nohighlight">\( \dfrac{\mathrm{d}\vec y}{\mathrm{
 <h3><span class="section-number">9.1.1. </span>Eulerova metoda<a class="headerlink" href="#eulerova-metoda" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Z Taylorova rozvoje známe směrnici tečny</p></li>
-<li><p>V každém bodě <span class="math notranslate nohighlight">\(x_{1},x_{2}\dots x_{n}\)</span> aproximujeme funkci její tečnou
-$<span class="math notranslate nohighlight">\( y(x+h)\approx y(x)+hf\left( x,y(x)\right)\)</span>$</p></li>
+<li><p>V každém bodě <span class="math notranslate nohighlight">\(x_{1},x_{2}\dots x_{n}\)</span> aproximujeme funkci její tečnou <span class="math notranslate nohighlight">\(y(x+h)\approx y(x)+hf\left( x,y(x)\right)\)</span></p></li>
 <li><p>Metodu lze zpřesnit zmenšením vzdálenosti <span class="math notranslate nohighlight">\(h=x_{k+1}-x_{k}\)</span></p></li>
 </ul>
 </section>
@@ -443,11 +441,11 @@ $<span class="math notranslate nohighlight">\( y(x+h)\approx y(x)+hf\left( x,y(x
 <ol class="arabic simple">
 <li><p>Provedeme poloviční krok <span class="math notranslate nohighlight">\(h/2\)</span> pomocí Eulerovy metody</p></li>
 <li><p>V tomto bodě vypočítáme směrnici tečny</p></li>
-<li><p>Tuto směrnici použijeme k provedení celého kroku z bodu <span class="math notranslate nohighlight">\(x\)</span> do <span class="math notranslate nohighlight">\(x+h\)</span>
-$<span class="math notranslate nohighlight">\( y(x+h)\approx y(x)+hf\left[ x+\dfrac{h}{2},y(x)+\dfrac{h}{2}f\left( x,y(x)\right) \right]   \)</span>$</p></li>
+<li><p>Tuto směrnici použijeme k provedení celého kroku z bodu <span class="math notranslate nohighlight">\(x\)</span> do <span class="math notranslate nohighlight">\(x+h\)</span></p></li>
 </ol>
 </li>
 </ul>
+<p><span class="math notranslate nohighlight">\(y(x+h)\approx y(x)+hf\left[ x+\dfrac{h}{2},y(x)+\dfrac{h}{2}f\left( x,y(x)\right) \right]\)</span></p>
 </section>
 <section id="heunova-metoda">
 <h3><span class="section-number">9.1.3. </span>Heunova metoda<a class="headerlink" href="#heunova-metoda" title="Link to this heading">#</a></h3>
@@ -456,11 +454,11 @@ $<span class="math notranslate nohighlight">\( y(x+h)\approx y(x)+hf\left[ x+\df
 <ol class="arabic simple">
 <li><p>Směrnici tečny v bodě <span class="math notranslate nohighlight">\(x+h\)</span> určíme pomocí Eulerovy metody</p></li>
 <li><p>Uděláme průměr ze směrnic v bodech <span class="math notranslate nohighlight">\(x\)</span> a <span class="math notranslate nohighlight">\(x+h\)</span></p></li>
-<li><p>Tuto směrnici použijeme k provedení celého kroku z bodu <span class="math notranslate nohighlight">\(x\)</span> do <span class="math notranslate nohighlight">\(x+h\)</span>
-$<span class="math notranslate nohighlight">\( y(x+h)\approx y(x)+\dfrac{h}{2}\lbrace f \left( x,y(x) \right) + f\left[x+h,y(x)+hf(x,y(x))\right]\rbrace   \)</span>$</p></li>
+<li><p>Tuto směrnici použijeme k provedení celého kroku z bodu <span class="math notranslate nohighlight">\(x\)</span> do <span class="math notranslate nohighlight">\(x+h\)</span></p></li>
 </ol>
 </li>
 </ul>
+<p><span class="math notranslate nohighlight">\(y(x+h)\approx y(x)+\dfrac{h}{2}\lbrace f \left( x,y(x) \right) + f\left[x+h,y(x)+hf(x,y(x))\right]\rbrace\)</span></p>
 </section>
 <section id="runge-kuttova-metoda-4-radu">
 <h3><span class="section-number">9.1.4. </span>Runge-Kuttova metoda 4. řádu<a class="headerlink" href="#runge-kuttova-metoda-4-radu" title="Link to this heading">#</a></h3>
@@ -468,11 +466,10 @@ $<span class="math notranslate nohighlight">\( y(x+h)\approx y(x)+\dfrac{h}{2}\l
 <li><p>Využívá postupné zpřesňování hodnot derivace v bodech mezi <span class="math notranslate nohighlight">\(x\)</span> a <span class="math notranslate nohighlight">\(x+h\)</span></p></li>
 <li><p><a class="reference external" href="http://kfe.fjfi.cvut.cz/~vachal/edu/nme/cviceni/09_ODE/DOCS/teorie_RK.pdf">Odvození</a></p></li>
 <li><p>Postup výpočtu:
-$<span class="math notranslate nohighlight">\( k_{1}=f(x_{n},y_{n})\)</span><span class="math notranslate nohighlight">\(
-\)</span><span class="math notranslate nohighlight">\( k_{2}=f(x_{n}+\dfrac{h}{2},y_{n}+\dfrac{h}{2}k_{1})\)</span><span class="math notranslate nohighlight">\(
-\)</span><span class="math notranslate nohighlight">\( k_{3}=f(x_{n}+\dfrac{h}{2},y_{n}+\dfrac{h}{2}k_{2})\)</span><span class="math notranslate nohighlight">\(
-\)</span><span class="math notranslate nohighlight">\( k_{4}=f(x_{n}+h,y_{n}+hk_{3})\)</span><span class="math notranslate nohighlight">\(
-\)</span><span class="math notranslate nohighlight">\( y_{n+1}\approx y_{n}+\dfrac{h}{6}\left(k_{1}+2k_{2}+2k_{3}+k_{4} \right)\)</span>$</p></li>
+<span class="math notranslate nohighlight">\(k_{1}=f(x_{n},y_{n})\)</span>, <span class="math notranslate nohighlight">\(k_{2}=f(x_{n}+\dfrac{h}{2},y_{n}+\dfrac{h}{2}k_{1})\)</span>, <span class="math notranslate nohighlight">\(k_{3}=f(x_{n}+\dfrac{h}{2},y_{n}+\dfrac{h}{2}k_{2})\)</span>, <span class="math notranslate nohighlight">\(k_{4}=f(x_{n}+h,y_{n}+hk_{3})\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(y_{n+1}\approx y_{n}+\dfrac{h}{6}\left(k_{1}+2k_{2}+2k_{3}+k_{4} \right)\)</span></p>
+<ul class="simple">
 <li><p>Pro Runge-Kuttovy metody obecně platí:</p>
 <ul>
 <li><p>Výhody: robustní metoda, funguje témeř vždy</p></li>
@@ -505,6 +502,7 @@ $<span class="math notranslate nohighlight">\( k_{1}=f(x_{n},y_{n})\)</span><spa
 
 <span class="c1"># delka kroku</span>
 <span class="n">h</span> <span class="o">=</span> <span class="mf">0.1</span> 
+<span class="c1">#h = 0.5</span>
 <span class="c1">##</span>
 
 
@@ -517,7 +515,8 @@ $<span class="math notranslate nohighlight">\( k_{1}=f(x_{n},y_{n})\)</span><spa
 <span class="c1">#</span>
 <span class="c1">#</span>
 <span class="c1"># delka kroku (0.1 - 0.2)</span>
-<span class="c1">#h=0.1</span>
+<span class="c1">#h = 0.1</span>
+<span class="c1">#h = 0.05</span>
 <span class="c1">##</span>
 
 
@@ -573,7 +572,7 @@ $<span class="math notranslate nohighlight">\( k_{1}=f(x_{n},y_{n})\)</span><spa
 <section id="reseni-soustav-diferencialnich-rovnic">
 <h2><span class="section-number">9.3. </span>Řešení soustav diferenciálních rovnic<a class="headerlink" href="#reseni-soustav-diferencialnich-rovnic" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Zadnou úlohu převedeme na soustavu <span class="math notranslate nohighlight">\(N\)</span> diferenciálních rovnic 1. řádu</p></li>
+<li><p>Zadanou úlohu převedeme na soustavu <span class="math notranslate nohighlight">\(N\)</span> diferenciálních rovnic 1. řádu</p></li>
 </ul>
 <div class="alert alert-block alert-warning"><b>Cvičení 09.02: </b> Runge-Kuttovou metodou čtvrtého řádu vyřešte <a href="https://cs.wikipedia.org/wiki/Keplerova_%C3%BAloha">Keplerovu úlohu</a> dle <a href="http://kfe.fjfi.cvut.cz/~vachal/edu/nme/cviceni/09_ODE/DOCS/priklad_ode_soustava.pdf">tohoto</a> zadání.</div><div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -661,7 +660,7 @@ $<span class="math notranslate nohighlight">\( k_{1}=f(x_{n},y_{n})\)</span><spa
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Cviceni08.html"
+       href="Cviceni08vyplnene.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
