@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -175,7 +175,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Cviceni07vyplnene.html">7. Extrémy funkcí</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni08vyplnene.html">8. Numerická integrace</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni09vyplnene.html">9. Obyčejné diferenciální rovnice (ODR)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni10.html">10. Obyčejné diferenciální rovnice (ODR) II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni10vyplnene.html">10. Obyčejné diferenciální rovnice (ODR) II</a></li>
 </ul>
 
     </div>
@@ -540,7 +540,7 @@ F_{i}(x) = \dfrac{x-x_{0}}{x_{i}-x_{0}}\dots\dfrac{x-x_{i-1}}{x_{i}-x_{i-1}}\dfr
 
 <span class="k">def</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">j</span><span class="p">):</span> <span class="c1"># koeficienty cj (viz. prednaska)</span>
     <span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>   <span class="c1"># zde oprava oproti puvodni verzi reseni, zmenena dolni a horni mez iteracni promenne k</span>
         <span class="n">suma</span> <span class="o">=</span> <span class="n">suma</span> <span class="o">+</span> <span class="n">func</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="n">N</span><span class="o">*</span><span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="mf">0.5</span><span class="p">))</span> <span class="p">)</span>  <span class="o">*</span>  <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="n">N</span><span class="o">*</span><span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="mf">0.5</span><span class="p">)</span><span class="o">*</span><span class="n">j</span> <span class="p">)</span>
     <span class="k">return</span> <span class="mi">2</span><span class="o">*</span><span class="n">suma</span><span class="o">/</span><span class="n">N</span>
 
@@ -588,16 +588,16 @@ F_{i}(x) = \dfrac{x-x_{0}}{x_{i}-x_{0}}\dots\dfrac{x-x_{i-1}}{x_{i}-x_{i-1}}\dfr
 
 <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span><span class="n">yarr</span><span class="o">-</span><span class="n">y1</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Chyba aproximace&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
-<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">1000</span><span class="p">,</span><span class="mi">1000</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
 <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7b6898741a30&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x1513addf170&gt;
 </pre></div>
 </div>
-<img alt="_images/c746e7c5e49abc8232630dca5c9b1c6c1bbd56c610f492b4e80263bf60a3ffd4.png" src="_images/c746e7c5e49abc8232630dca5c9b1c6c1bbd56c610f492b4e80263bf60a3ffd4.png" />
+<img alt="_images/3a63f7f53e25a24be08cda94b9c1e05bb13c88d9cb12c81fa59764fdd2722608.png" src="_images/3a63f7f53e25a24be08cda94b9c1e05bb13c88d9cb12c81fa59764fdd2722608.png" />
 </div>
 </div>
 </section>
