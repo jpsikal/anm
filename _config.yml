@@ -35,8 +35,8 @@ repository:
 
 launch_buttons:
   binderhub_url: "https://mybinder.org"  # The URL for your BinderHub (e.g., https://mybinder.org)
-  jupyterhub_url: "https://jupyter.fjfi.cvut.cz"
-  jupyterhubtest_url: "https://jupytest.fjfi.cvut.cz"
+#  jupyterhub_url: "https://jupyter.fjfi.cvut.cz"
+  jupyterhub_url: "https://jupytest.fjfi.cvut.cz"
 #  thebe                  : true
   
 html:
