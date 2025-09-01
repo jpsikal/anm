@@ -77,7 +77,7 @@
 | Kouřimská A.  |   -     |   /     |   /     |   /,  +3|   /, 1  |   -     |   /     |   /     |   /     |   -     | 6 (F)  |
 | Krákorová E.  |   /     |   /, 1  |   /, 1  |   /, 1+3|   -, +4 |   /     |   /, 1  |   /     |   /     |   /     | **18 (A)** |
 | Krupka F.     |   o     |   o     |   /     |   o     |   o     |   o     |   o     |   o     |   o     |   o     |        |
-| Lapšanská A.  |   /     |   /, 1  |   /     |   /, 2  |   -, +3 |   /, 1  |   -     |   /, 1  |   /     |   -     | 12 (E) |
+| Lapšanská A.  |   /     |   /, 1  |   /     |   /, 2  |   -, +3 |   /, 1  |   -     |   /, 1  |   /     |   -     | **12 (E)** |
 | Mikšovský P.  |   -     |   /     |   -     |   /,  +3|   /     |   /     |   -     |   o     |   /, 1  |   /     | 9 (F)  |
 | Mutaková K.   |   /     |   -     |   -     |   /     |   -, +4 |   /, 1  |   /, +3 |   /, 2  |   /     |   /     | **15 (C)** |
 | Nezbeda M.    |   /     |   -     |   /, 2  |   /,  +3|   /, 1+3|   /, 1  |   -     |   -     |   o     |   /     | 4 (F)  |
@@ -109,7 +109,7 @@ v případě hraničních 10ti bodů z testu je lepší hodnocení při dosažen
 
 - každý student má právo na jeden opravný zápočtový test; pokud se pro něj rozhodne, pak platí následující pravidlo: počítá se co je pro studenta výhodnější - buď pouze hodnocení z druhého napsaného testu nebo hodnocení založené na aritmetickém průměru z obou testů
 
-- upřesněné termíny pro **opravný zápočtový test** včetně místa jejich konání: **úterý 17.6. 10:00-11:30 v učebně č. 121**, **čtvrtek 17.7. 13:00-14:30 v učebně č. 121**, **čtvrtek 4.9. 10:00-11:30 v učebně č. 124**, vše na **KLFF v budově FJFI v Trojanově ulici**; **na opravný zápočtový test se přihlaste e-mailem minimálně 24 hodin před jeho začátkem**
+- upřesněné termíny pro **opravný zápočtový test** včetně místa jejich konání: úterý 17.6. 10:00-11:30 v učebně č. 121, čtvrtek 17.7. 13:00-14:30 v učebně č. 121, **čtvrtek 4.9. 10:00-11:30 v učebně č. 209 (pozor - změna učebny!)**, vše **v budově FJFI v Trojanově ulici**; **na opravný zápočtový test se přihlaste e-mailem minimálně 24 hodin před jeho začátkem**
 
 
 ## Okruhy témat k opakování pro úspěšné zvládnutí opravného zápočtového testu
