@@ -4,19 +4,22 @@
 format: jb-book
 root: intro
 parts:
-- caption: Obsah cvičení
-  numbered: true
-  chapters:
-  - file: Cviceni01vyplnene
-  - file: Cviceni02vyplnene
-  - file: Cviceni03vyplnene
-  - file: Cviceni04vyplneneVcUlohy
-  - file: Cviceni05vyplnene
-  - file: Cviceni06vyplnene
-  - file: Cviceni07vyplnene
-  - file: Cviceni08vyplnene
-  - file: Cviceni09vyplnene
-  - file: Cviceni10vyplnene
+  - caption: Obsah cvičení
+    numbered: True
+    chapters:
+    - file: Cviceni01
+    - file: Cviceni02
+    - file: Cviceni03
+    - file: Cviceni04
+    - file: Cviceni05
+    - file: Cviceni06
+    - file: Cviceni07
+    - file: Cviceni08
+    - file: Cviceni09
+    - file: Cviceni10
+  - caption: Zadání úloh
+    chapters:
+    - file: ZadaniUloh
 
 #chapters:
 #- file: mymarkdownfile
