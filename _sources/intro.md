@@ -3,118 +3,35 @@
 
 ## Rozvrh pro letní semestr
 
-- úterý 10:00-11:40, úterý 12:00-13:40, čtvrtek 10:00-11:40 v učebně T-124
+- bude doplněno, včetně učeben
 - vyučující doc. Ing. Jan Pšikal, Ph.D., jan.psikal@fjfi.cvut.cz
-- přednášky jsou organizovány společně s předmětem 12NME1 (přednášející doc. Ing. Pavel Váchal, Ph.D.), materiály a další informace k přednáškám jsou [zde](http://kfe.fjfi.cvut.cz/~vachal/edu/nme/)
+- přednášky k předmětu 12ANM jsou v tomto akademickém roce organizovány samostatně, v případě hlubšího zájmu o problematiku doporučuji materiály k předmětu 12NME1 (přednášející doc. Ing. Pavel Váchal, Ph.D.), materiály [zde](http://kfe.fjfi.cvut.cz/~vachal/edu/nme/)
 - přestupy mezi cvičeními možné jen z rozvrhových důvodů a se svolením vyučujícího
 - cvičení pro obor Jaderná chemie probíhají striktně odděleně! (vyučující Ing. Alena Zavadilová, Ph.D.), obsahově jsou odlišné a odpovídají specifickým potřebám daného studijního oboru
 
 ## Podmínky pro udělení zápočtu a klasifikace
-- maximálně tři absence
-- **aktivní** účast na cvičeních (vyřešení několika úloh přímo na cvičeních nebo problémů na nich zadaných)
-- závěrečný zápočtový test (podkladem rovněž pro klasifikaci)
-- studenti, kteří mají dle svého studijního programu nově absolvovat předmět 12ANM, ale mají již zápočet z předmětu 12NME1 bez úspěšně složené zkoušky, si mohou zapsat předmět 12ANM a nemusí se účastnit cvičení; musí však úspěšně absolvovat zápočtový test na konci semestru (takovým studentům doporučuji, aby se mi včas ozvali => budou informováni o termínu zápočtového testu, který je podkladem pro klasifikaci)
+- maximálně tři absence na cvičeních (podmínka neplatí u studentů, kteří cvičení z 12ANM absolvovali již v předchozím akademickém roce)
+- **aktivní** účast na cvičeních (řešení úloh přímo na cvičeních); pouhá fyzická přítomnost a očividné věnování se jiné aktivitě během výuky bude započítáno jako absence, stejně jako fyzická účast pouze na úvodních nebo závěrečných minutách cvičení
+- závěrečný zápočtový test
+- podkladem pro klasifikaci je závěrečný zápočtový test a body získané za aktivitu přímo na cvičeních nebo představením vyřešené úlohy (úloh) na tomto webu zadaných
+- podmínkou pro udělení zápočtu je zisk stanoveného minimálního počtu bodů ze zápočtového testu dle počtu bodů získaných za aktivitu, na klasifikaci má vliv i počet bodů získaných za aktivitu (obojí detailněji viz níže)
+- studenti, kteří mají 12ANM podruhé zapsán, si mohou svoje bodové skóre vylepšit před zápočtovým testem vyřešením úloh v předchozím akademickém roce nezadaných, na kterých se se mnou předem dohodnou
 
 ## Zápočtová tabulka
-
-- studenti, kteří mají zápočet (bez složené zkoušky) z 12NME1 (a informovali mě o tom): A. Kouřimská, R. Kozmová, F. Krupka
-
-### Cvičení úterý 10:00
-
-|               |  **1**  |  **2**  |  **3**  |  **4**  |  **5**  |  **6**  |  **7**  |  **8**  |  **9**  | **10** | **ZT** |
-|---------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|--------|--------|
-| Beleščiak S.  |   /     |   /     |   /, 1  |   /     |   -, +3 |   /     |   /, +3 |   /, 1  |   /     |   /    | **10 (E)** |
-| Čech M.       |   /     |   /, 1  |   /, 2  |   /, 1+3|   /     |   /, 1  |   /, +4 |   /     |   /, 1  |   /, 2 | **16 (B)** |
-| Frič F.       |   /     |   -     |   /     |   /,  +3|   /     |   -     |   /, +3 |   /     |   /     |   /    | **15 (C)** |
-| Gerža J.      |   /     |   /     |   /     |   /, 1+3|   /, 1+4|   /, 1  |   /, +4 |   /, 1  |   /, 1  |   /    | **18 (A)** |
-| Golovchyn V.  |   /     |   /     |   /, 1  |   /, 1  |   /, 1+3|   /, 1  |   /, +3 |   /     |   -     |   /, 1 | **15 (B)** |
-| Hadáčková K.  |   /     |   /     |   -     |   /     |   -, +4 |   /     |   /     |   /, 1  |   /, 1  |   /    | **15 (C)** |
-| Held D.       |   /     |   /     |   /, 1  |   /, 1+3|   /, 1+5|   /, +3 |   /, +3 |   /, 1  |   /     |   /, 2 | **15 (B)** |
-| Holler M.     |   /     |   /, 1  |   /     |   /, 1+3|   /     |   /     |   /     |   /, 2  |   /     |   /, 2 | **11 (E)** |
-| Kreutziger T. |   /     |   /     |   /, 1  |   /, 1  |   /, 1+4|   /, 1  |   /, 2+3|   /, 1  |   -     |   -    | **16 (B)** |
-| Lachout P.    |   /     |   /     |   /     |   /, 1+3|   /, +3 |   /     |   /, +3 |   /     |   -     |   /    | **10 (E)** |
-| Mrázek F.     |   /     |   /     |   /     |   /,  +3|   /, 1  |   /, 1  |   /, +5 |   /, 1  |   /     |   /, 1 | **19 (A)** |
-| Papež F.      |   /     |   /     |   /     |   /, 1+3|   /, 1+3|   /     |   -     |   /     |   /     |   -    | **11 (E)** |
-| Pelán Š.      |   /     |   /     |   /, 1  |   /, 1+3|   /     |   /, 1  |   /     |   /     |   /, 1  |   /, 1 | **6 (F)**  |
-| Pintér P.     |   /     |   /     |   /, 1  |   /,  +3|   /, +4 |   /     |   -     |   /     |   -     |   /    | **12 (E)** |
-| Růžičková V.  |   /     |   /, 1  |   /, 1  |   /, 1+3|   /     |   /, 3  |   /     |   /     |   /, 1  |   /, 2 | **20 (A)** |
-| Šámalová  E.  |   /     |   /     |   /     |   /,  +3|   /     |   /, 1  |   /     |   /     |   /     |   /    | **13 (E)** |
-| Štěpánek P.   |   /     |   -     |   -     |   /     |   /     |   /     |   /     |   /     |   /     |   /    | **14 (E)** |
-| Troch J.      |   /     |   -     |   /     |   /, 1  |   /, 2  |   /     |   -     |   /, 3  |   /, 1  |   -    | **11 (E)** |
-| Vasko M.      |   /     |   /     |   /     |   /,  +3|   /, +3 |   /     |   /     |   -     |   -     |   -    | **11 (E)** |
-
-### Cvičení úterý 12:00
-
-|               |  **1**  |  **2**  |  **3**  |  **4**  |  **5**  |  **6**  |  **7**  |  **8**  |  **9**  | **10** | **ZT** |
-|---------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|--------|--------|
-| Artamonov M.  |   /     |   /     |   /     |   -     |   /, +3 |   /, +4 |   -, +5 |   -     |   /, 1  |   o    | **9 (F)**  |
-| Bažantová V.  |   /     |   -     |   /     |   /, 1+3|   /     |   -     |   /, +3 |   /     |   /, 1  |   /    | **5 (F)**  |
-| Býčková M.    |   /     |   /, 1  |   /     |   /   +1|   /     |   /, 3  |   -     |   /, 2  |   /     |   -    | **9 (F)**  |
-| Čepec M.      |   /     |   /     |   /     |   /,  +3|   /     |   -     |   /     |   /     |   /, 1  |   -    | **14 (E)** |
-| Grund O.      |   o     |   o     |   o     |   o,  +3|   /, 2  |   o     |   /, 2  |   o     |   o     |   o    |        |
-| Haikerová E.  |   /     |   /, 1  |   /     |   /,  +3|   /     |   /, 2  |   -     |   /, 2  |   /     |   -    | **5 (F)**  |
-| Hromíř M.     |   /     |   /     |   /, 1  |   /,  +3|   /, 2+3|   /, 1+3|   -     |   /, 2  |   /, 1  |   /    | **12 (D)** |
-| Hušková D.    |   /     |   /     |   -     |   /,  +3|   /  +3 |   /     |   /     |   /     |   /, 1  |   /    | **15 (C)** |
-| Chmela M.     |   /     |   /     |   /     |   /, 1+3|   /, 1+3|   /, 1  |   -     |   /     |   /, 1  |   /    | **12 (E)** |
-| Kubelka M.    |   /     |   /     |   /, 1  |   /, 1+3|   /     |   /     |   /, +4 |   /     |   /, 1  |   /, 1 | **6 (F)**  |
-| Le Thi Thanh H|   /     |   -     |   /, 2  |   /     |   /, 1+4|   -, +4 |   /     |   -     |   /, 1  |   /    | **10 (E)** |
-| Mouralová E.  |   /     |   /     |   -     |   /, 1+3|   /, 1  |   /, 1+3|   /, 1+3|   /, 2  |   -     |   /    | **11 (D)** |
-| Šrom D.       |   /     |   -     |   /, 2  |   -     |   /, 1  |   -     |   /     |   /, 2  |   /     |   /    | **5 (F)**  |
-| Štěpán J.     |   /     |   /     |   -     |   /, 2  |   -     |   /, 1  |   /, 1  |   /, 1  |   /, 1  |   /, 2 | **7 (F)**  |
-| Tichý B.      |   /     |   /, 1  |   -     |   /, 1  |   /, +3 |   /     |   -, +3 |   /, 1  |   /     |   /    | **11 (E)** |
-
-### Cvičení čtvrtek 10:00
-
-|               |  **1**  |  **2**  |  **3**  |  **4**  |  **5**  |  **6**  |  **7**  |  **8**  |  **9**  | **10**  | **ZT** |
-|---------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|--------|
-| Dolejš M.     |   -     |   -     |   /     |   /     |   /     |   /     |   /     |   /     |   /     |   /     | **6 (F)**  |
-| Drdla J.      |   /     |   /, 2  |   /, 2  |   -,  +3|   /, 1  |   /, 2  |   /, 2+3|   /, 3  |   /     |   /     | **17 (A)** |
-| Janásková M.  |   /     |   /     |   /     |   /     |   -, +3 |   /     |   /, +3 |   /, 1  |   /, 1  |   -     | **7 (F)**  |
-| Kačmářová B.  |   /     |   /     |   /, 1  |   /   +2|   -     |   /, 1+3|   /     |   /     |   /     |   /     | **11 (E)** |
-| Karásek T.    |   -     |   /     |   /, 2  |   /, 1+3|   /, +3 |   /, 2  |   /     |   -     |   -     |   /     | **7 (F)**  |
-| Kononova A.   |   -     |   /     |   /, 1  |   -,  +3|   /     |   /     |   /     |   /     |   /     |   /     | **3 (F)**  |
-| Korecký M.    |   /     |   -     |   /     |   -     |   -, +5 |   /, 2  |   /     |   o     |   /, 1  |   /     | **7 (F)**  |
-| Kouřimská A.  |   -, +6 |   /     |   /     |   /,  +3|   /, 1  |   -     |   /     |   /     |   /     |   -     | **10 (E)** |
-| Krákorová E.  |   /     |   /, 1  |   /, 1  |   /, 1+3|   -, +4 |   /     |   /, 1  |   /     |   /     |   /     | **18 (A)** |
-| Krupka F.     |   o, +6 |   o     |   /     |   o     |   o     |   o     |   o     |   o     |   o     |   o     |        |
-| Lapšanská A.  |   /     |   /, 1  |   /     |   /, 2  |   -, +3 |   /, 1  |   -     |   /, 1  |   /     |   -     | **12 (E)** |
-| Mikšovský P.  |   -     |   /     |   -     |   /,  +3|   /     |   /     |   -     |   o     |   /, 1  |   /     | **9 (F)**  |
-| Mutaková K.   |   /     |   -     |   -     |   /     |   -, +4 |   /, 1  |   /, +3 |   /, 2  |   /     |   /     | **15 (C)** |
-| Nezbeda M.    |   /     |   -     |   /, 2  |   /,  +3|   /, 1+3|   /, 1  |   -     |   -     |   o     |   /     | **4 (F)**  |
-| Satranský M.  |   /     |   /     |   /, 2  |   /   +3|   /, 1  |   /     |   /, +3 |   /, 1  |   /     |   /, 2  | **16 (B)** |
-| Seilerová E.  |   /     |   /     |   /     |   /, 1+3|   /, +4 |   /     |   /, +4 |   /     |   /     |   /     | **12 (D)** |
-| Strachvic A.  |   /     |   /     |   /     |   /,  +3|   /, +4 |   -     |   /, +4 |   /     |   /     |   -     | **10 (E)** |
-| Svatus T.     |   /     |   /     |   -     |   /,  +3|   -     |   /     |   /     |   /     |   /     |   -     | **7 (F)**  |
-| Šustr V.      |   -     |   /     |   /     |   /, 2  |   /, 1  |   /, 1  |   /, 1+4|   /, 2  |   /     |   /     | **14 (C)** |
-| Vodičková L.  |   /     |   -     |   -     |   /,  +3|   /, 1  |   /, 1  |   /     |   /, 1  |   -     |   /     | **11 (E)** |
-| Kozmová R.    |   o, +6 |   o     |   o     |   o     |   o     |   o     |   o     |   o     |   o     |   o     | **11 (E)** |
-
-Vysvětlivky:"/" přítomen, "-" nepřitomen, "o" omluven, číslo udává počet bodů za aktivitu na cvičeních (nebo po nich se znaménkem "+").
-Poslední sloupeček udává počet bodů ze zápočtového testu spolu s návrhem klasifikace (ta zohledňuje rovněž předchozí aktivitu, proto se může při dosažení shodného počtu bodů ze zápočtového testu u jednotlivých studentů mírně lišit).
 
 - přiřazení hodnocení počtu bodů dosažených v zápočtovém testu: 
 
 17-20: A-C; 15-16: B-D; 13-14: C-E; 11-12: D-F; 10: E-F; méně než 10: F bez ohledu na cokoliv dalšího
 
-- určení přesného hodnocení se dále řídí obdrženými body za vyřešené zadané úlohy a aktivitu:
+- určení přesného hodnocení se dále řídí obdrženými body za aktivitu na cvičeních (zde se započítává max. 8 bodů) nebo za představené vyřešené úlohy (každý může představit řešení max. 3 úloh, které budou oceněny různými počty bodů dle obtížnosti a přiděleny):
 
 11 a více: nejlepší hodnocení z deklarovaného rozmezí; 
 6-10: prostřední hodnocení z deklarovaného rozmezí; 
 0-5: nejhorší hodnocení z deklarovaného rozmezí; 
 v případě hraničních 10ti bodů z testu je lepší hodnocení při dosažení 8 a více bodů z úloh/aktivity
 
-- za zápočet získaný z 12NME1 v předchozím akademickém roce (bez složené zkoušky) se uděluje 6 bodů
 
-- pokud je známka zapsaná tučně, jedná se o definitivní hodnocení se záznamem v systému KOS ČVUT
-
-- studentům s prozatimním hodnocením lepším než F udělím definitivní hodnocení odpovídající zde uvedené známce, pokud mi do 23.5.2025 e-mailem neoznámí, že mají zájem se pokoušet o lepší hodnocení
-
-- každý student má právo na jeden opravný zápočtový test; pokud se pro něj rozhodne, pak platí následující pravidlo: počítá se co je pro studenta výhodnější - buď pouze hodnocení z druhého napsaného testu nebo hodnocení založené na aritmetickém průměru z obou testů
-
-- upřesněné termíny pro **opravný zápočtový test** včetně místa jejich konání: úterý 17.6. 10:00-11:30 v učebně č. 121, čtvrtek 17.7. 13:00-14:30 v učebně č. 121, **čtvrtek 4.9. 10:00-11:30 v učebně č. 209 (pozor - změna učebny!)**, vše **v budově FJFI v Trojanově ulici**; **na opravný zápočtový test se přihlaste e-mailem minimálně 24 hodin před jeho začátkem**
-
-
-## Okruhy témat k opakování pro úspěšné zvládnutí opravného zápočtového testu
+## Okruhy témat k opakování pro úspěšné zvládnutí zápočtového testu
 - opakování z lineární algebry: násobení matic, vlastní čísla, jednotková matice, diagonální matice, úprava matice do horního/dolního trojúhelníkového tvaru, skalární součin, lineární závislost/nezávislost
 - opakování z matematické analýzy: Taylorův rozvoj, obecný zápis polynomu, stupeň polynomu, derivace, určitý integrál, obyčejná diferenciální rovnice
 - strojové epsilon a vzdálenost mezi čísly s desetinnou čárkou zapisovatelných do paměti počítače na číselné ose
@@ -145,8 +62,8 @@ v případě hraničních 10ti bodů z testu je lepší hodnocení při dosažen
 ## Používané nástroje
 Na cvičeních budeme používat Python v on-line prostředí [Jupyter notebook](https://jupyter.org). 
 Jupyter notebook (JP) lze vytvářet a editovat on-line např. v prostředí:
-- *Binder* - ve kterém lze Jupyter notebook (JP) upravovat a následně uložit na disk
-- *JupyterHub* - místní prostředí běžící na FJFI, umožňuje uložit JP na vlastním účtu
+- *JupyterHub* - místní prostředí běžící na FJFI, umožňuje uložit Jupyter notebook na vlastním účtu
+- *Binder* - ve kterém lze Jupyter notebook upravovat a následně uložit na disk
 - *Google Colab*
 
 Pro off-line práci s Jupyter notebooky na počítači je nejjednodušší nainstalovat si programový balík [Anaconda](https://www.anaconda.com) (dostupné pro Windows/Mac/Linux), který obsahuje všechny potřebné knihovny:

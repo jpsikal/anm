@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Numerická integrace &#8212; Letní semestr 2024/2025</title>
+    <title>8. Numerická integrace &#8212; Letní semestr 2025/2026</title>
   
   
   
@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -65,6 +65,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Cviceni08';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="9. Obyčejné diferenciální rovnice (ODR)" href="Cviceni09.html" />
+    <link rel="prev" title="7. Extrémy funkcí" href="Cviceni07.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -116,8 +118,6 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
@@ -144,7 +144,7 @@
   
   
   
-    <p class="title logo__title">Letní semestr 2024/2025</p>
+    <p class="title logo__title">Letní semestr 2025/2026</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -165,17 +165,21 @@
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Obsah cvičení</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Cviceni01.html">1. Jupyter notebook a základy Pythonu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni02.html">2. Chyby a nestabilita</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni03.html">3. Numerické metody lineární algebry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni04.html">4. Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni05.html">5. Aproximace funkcí</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni06.html">6. Řešení nelineárních rovnic a jejich soustav</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni07.html">7. Extrémy funkcí</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">8. Numerická integrace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni09.html">9. Obyčejné diferenciální rovnice (ODR)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni10.html">10. Obyčejné diferenciální rovnice (ODR) II</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Zadání úloh</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Cviceni01vyplnene.html">1. Jupyter notebook a základy Pythonu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni02vyplnene.html">2. Chyby a nestabilita</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni03vyplnene.html">3. Numerické metody lineární algebry</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni04vyplneneVcUlohy.html">4. Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni05vyplnene.html">5. Aproximace funkcí</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni06vyplnene.html">6. Řešení nelineárních rovnic a jejich soustav</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni07vyplnene.html">7. Extrémy funkcí</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni08vyplnene.html">8. Numerická integrace</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni09vyplnene.html">9. Obyčejné diferenciální rovnice (ODR)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni10vyplnene.html">10. Obyčejné diferenciální rovnice (ODR) II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ZadaniUloh.html">Úlohy k řešení</a></li>
 </ul>
 
     </div>
@@ -370,14 +374,14 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#klasicke-kvadraturni-vzorce">Klasické kvadraturní vzorce</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newtoncotesovy-vzorce">Newton–Cotesovy vzorce</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#klasicke-kvadraturni-vzorce">8.1. Klasické kvadraturní vzorce</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newtoncotesovy-vzorce">8.1.1. Newton–Cotesovy vzorce</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gaussovy-kvadratury">Gaussovy kvadratury</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rombergova-metoda">Rombergova metoda</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vicedimenzionalni-integraly">Vícedimenzionální integrály</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metoda-monte-carlo">Metoda Monte-Carlo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gaussovy-kvadratury">8.2. Gaussovy kvadratury</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rombergova-metoda">8.3. Rombergova metoda</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vicedimenzionalni-integraly">8.4. Vícedimenzionální integrály</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metoda-monte-carlo">8.4.1. Metoda Monte-Carlo</a></li>
 </ul>
 </li>
 </ul>
@@ -392,7 +396,7 @@
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="numericka-integrace">
-<h1>Numerická integrace<a class="headerlink" href="#numericka-integrace" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">8. </span>Numerická integrace<a class="headerlink" href="#numericka-integrace" title="Link to this heading">#</a></h1>
 <p>Naimportujeme si knihovny potřebné pro následující příklady:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -416,14 +420,14 @@
 </div>
 </div>
 <section id="klasicke-kvadraturni-vzorce">
-<h2>Klasické kvadraturní vzorce<a class="headerlink" href="#klasicke-kvadraturni-vzorce" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">8.1. </span>Klasické kvadraturní vzorce<a class="headerlink" href="#klasicke-kvadraturni-vzorce" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Máme ekvidistantní body <span class="math notranslate nohighlight">\(x_{i}\)</span> a vypočteme <span class="math notranslate nohighlight">\(f(x_{i})\)</span></p></li>
 <li><p>V 1D aproximujeme integrál pomocí obdélníků/lichoběžníků</p></li>
 <li><p>Přesnost je dána šířkou obdélníku</p></li>
 </ul>
 <section id="newtoncotesovy-vzorce">
-<h3>Newton–Cotesovy vzorce<a class="headerlink" href="#newtoncotesovy-vzorce" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">8.1.1. </span>Newton–Cotesovy vzorce<a class="headerlink" href="#newtoncotesovy-vzorce" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Obdélníkové pravidlo
 <span class="math notranslate nohighlight">\(\int_{x_{1}}^{x_{2}}f(x)\,dx\approx (x_{2}-x_{1})f\left( \dfrac{x_{1}+x_{2}}{2} \right)\)</span></p></li>
@@ -487,7 +491,7 @@ Simpsonovo pravidlo:  0
 </section>
 </section>
 <section id="gaussovy-kvadratury">
-<h2>Gaussovy kvadratury<a class="headerlink" href="#gaussovy-kvadratury" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">8.2. </span>Gaussovy kvadratury<a class="headerlink" href="#gaussovy-kvadratury" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Výpočet integrálu při neekvidistantním rozdělení bodů <span class="math notranslate nohighlight">\(x_{i}\)</span> s různými váhami <span class="math notranslate nohighlight">\(w_{i}\)</span></p></li>
 <li><p>Chceme spočítat integrál s minimálním počtem vyčíslení <span class="math notranslate nohighlight">\(f(x)\)</span></p></li>
@@ -567,7 +571,7 @@ Kontrola:  2.350402387287603
 </div>
 </section>
 <section id="rombergova-metoda">
-<h2>Rombergova metoda<a class="headerlink" href="#rombergova-metoda" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">8.3. </span>Rombergova metoda<a class="headerlink" href="#rombergova-metoda" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Algoritmus na zpřesnění výpočtu integrálu</p></li>
 <li><p>Pro zadanou přesnost integrace sníží počet bodů, ve kterých musíme počítat funkční hodnotu</p></li>
@@ -639,7 +643,7 @@ Kontrola:  2.350402387287603
 </div>
 </section>
 <section id="vicedimenzionalni-integraly">
-<h2>Vícedimenzionální integrály<a class="headerlink" href="#vicedimenzionalni-integraly" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">8.4. </span>Vícedimenzionální integrály<a class="headerlink" href="#vicedimenzionalni-integraly" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(N\)</span> dimenzí</p></li>
 <li><p>Počet bodů, ve kterých vyčíslujeme funkční hodnotu roste s <span class="math notranslate nohighlight">\(N\)</span>-tou mocninou</p>
@@ -662,7 +666,7 @@ Kontrola:  2.350402387287603
 </li>
 </ul>
 <section id="metoda-monte-carlo">
-<h3>Metoda Monte-Carlo<a class="headerlink" href="#metoda-monte-carlo" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">8.4.1. </span>Metoda Monte-Carlo<a class="headerlink" href="#metoda-monte-carlo" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Integrační oblast <span class="math notranslate nohighlight">\(V\)</span> uzavřeme do co nejmenší oblasti se známým objemem <span class="math notranslate nohighlight">\(\tilde{V}\)</span>, ve které lze snadno generovat náhodné body</p></li>
 <li><p>Vygenerujeme <span class="math notranslate nohighlight">\(N\)</span> náhodných bodů ve <span class="math notranslate nohighlight">\(\tilde{V}\)</span> a vypočteme integrál
@@ -802,6 +806,24 @@ Kontrola =  1
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Cviceni07.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">7. </span>Extrémy funkcí</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Cviceni09.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">9. </span>Obyčejné diferenciální rovnice (ODR)</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -819,14 +841,14 @@ Kontrola =  1
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#klasicke-kvadraturni-vzorce">Klasické kvadraturní vzorce</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newtoncotesovy-vzorce">Newton–Cotesovy vzorce</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#klasicke-kvadraturni-vzorce">8.1. Klasické kvadraturní vzorce</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#newtoncotesovy-vzorce">8.1.1. Newton–Cotesovy vzorce</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gaussovy-kvadratury">Gaussovy kvadratury</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rombergova-metoda">Rombergova metoda</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vicedimenzionalni-integraly">Vícedimenzionální integrály</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metoda-monte-carlo">Metoda Monte-Carlo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gaussovy-kvadratury">8.2. Gaussovy kvadratury</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rombergova-metoda">8.3. Rombergova metoda</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vicedimenzionalni-integraly">8.4. Vícedimenzionální integrály</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metoda-monte-carlo">8.4.1. Metoda Monte-Carlo</a></li>
 </ul>
 </li>
 </ul>
