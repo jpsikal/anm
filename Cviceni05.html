@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -526,7 +526,7 @@ F_{i}(x) = \dfrac{x-x_{0}}{x_{i}-x_{0}}\dots\dfrac{x-x_{i-1}}{x_{i}-x_{i-1}}\dfr
 
 <span class="k">def</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">j</span><span class="p">):</span> <span class="c1"># koeficienty cj (viz. prednaska)</span>
     <span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
         <span class="n">suma</span> <span class="o">=</span> <span class="n">suma</span> <span class="o">+</span> <span class="n">func</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="n">N</span><span class="o">*</span><span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="mf">0.5</span><span class="p">))</span> <span class="p">)</span>  <span class="o">*</span>  <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="n">N</span><span class="o">*</span><span class="p">(</span><span class="n">k</span><span class="o">-</span><span class="mf">0.5</span><span class="p">)</span><span class="o">*</span><span class="n">j</span> <span class="p">)</span>
     <span class="k">return</span> <span class="mi">2</span><span class="o">*</span><span class="n">suma</span><span class="o">/</span><span class="n">N</span>
 
@@ -553,9 +553,12 @@ F_{i}(x) = \dfrac{x-x_{0}}{x_{i}-x_{0}}\dots\dfrac{x-x_{i-1}}{x_{i}-x_{i-1}}\dfr
 <span class="n">yarr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">bodu</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">bodu</span><span class="p">):</span>
-    <span class="c1">## DOPLNIT</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="c1">## DOPLNIT</span>
+    <span class="n">Tj</span> <span class="o">=</span> <span class="n">T</span><span class="p">(</span><span class="n">trans</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="c1"># hodnoty Cebysevovych polynomu v bode x</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">c0</span><span class="o">*</span><span class="mi">1</span> <span class="c1"># c0 prvni scitanec v aproximovane funkci</span>
+    <span class="c1"># dale potrebujeme pricist sumu polynomu</span>
+    <span class="c1"># cj[j] - koeficient cj, tj. j-ty polynom v bode x</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="n">cj</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">*</span><span class="n">Tj</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>   
     <span class="n">xarr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span> <span class="c1"># ulozime aktualni x</span>
     <span class="n">yarr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">y</span> <span class="c1"># a aktualni y</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">+</span><span class="n">krok</span> <span class="c1"># posuneme se na dalsi x</span>
@@ -577,10 +580,10 @@ F_{i}(x) = \dfrac{x-x_{0}}{x_{i}-x_{0}}\dots\dfrac{x-x_{i-1}}{x_{i}-x_{i-1}}\dfr
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fd494693a00&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f471a7ccc50&gt;
 </pre></div>
 </div>
-<img alt="_images/f13bf10046c7389194cb9f499d0b8eb2454048a00657d3ec5b91336b7f575cb6.png" src="_images/f13bf10046c7389194cb9f499d0b8eb2454048a00657d3ec5b91336b7f575cb6.png" />
+<img alt="_images/a0c735ea1be74b47ed81d471bfa66b0b909fe15c8d945e80c510245498438a17.png" src="_images/a0c735ea1be74b47ed81d471bfa66b0b909fe15c8d945e80c510245498438a17.png" />
 </div>
 </div>
 </section>

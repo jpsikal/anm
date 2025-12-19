@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -855,11 +855,11 @@ x_{n}=\varphi_{n}(\vec{x}).
 <span class="c1"># delka kroku</span>
 <span class="n">h</span> <span class="o">=</span> <span class="mf">0.01</span>
 
-<span class="c1"># derivace funkce f podle x</span>
+<span class="c1"># derivace funkce f podle x metodou centralni diference</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">dfdx</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">h</span><span class="p">):</span>
     <span class="k">return</span> <span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">h</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">h</span><span class="p">,</span><span class="n">y</span><span class="p">)</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">h</span><span class="p">,</span><span class="n">y</span><span class="p">)</span> <span class="p">)</span>
 
-<span class="c1"># derivace funkce f podle y</span>
+<span class="c1"># derivace funkce f podle y metodou centralni diference</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">dfdy</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">h</span><span class="p">):</span>
     <span class="k">return</span> <span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">h</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="o">+</span><span class="n">h</span><span class="p">)</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="o">-</span><span class="n">h</span><span class="p">)</span> <span class="p">)</span>
 
@@ -879,27 +879,124 @@ x_{n}=\varphi_{n}(\vec{x}).
 
 <span class="c1"># matice A a prava strana b pro soustavu linearnich rovnic</span>
 <span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">stupen</span><span class="p">,</span><span class="n">stupen</span><span class="p">))</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="n">stupen</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
-<span class="c1">#b = np.array((stupen,1), dtype=&#39;float&#39;)</span>
+<span class="c1">#b = np.array((stupen,1))</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="n">stupen</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;float&#39;</span><span class="p">)</span>
+<span class="c1">#b = np.zeros(stupen) # tato inicializace by byvala byla asi nejlepsi, vyhneme se problemum s datovym typem</span>
+
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="c1">#print(&#39;Krok &#39;, i ,&#39;, (x0, y0)=(&#39;, x0 ,&#39;,&#39;, y0 ,&#39;)&#39;)</span>
-    <span class="c1">#print(&#39;Krok &#39;, i ,&#39;, f1(x0, y0)= &#39;, f1(x0,y0))</span>
-    <span class="c1">#print(&#39;Krok &#39;, i ,&#39;, f2(x0, y0)= &#39;, f2(x0,y0))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Krok &#39;</span><span class="p">,</span> <span class="n">i</span> <span class="p">,</span><span class="s1">&#39;, (x0, y0)=(&#39;</span><span class="p">,</span> <span class="n">x0</span> <span class="p">,</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">y0</span> <span class="p">,</span><span class="s1">&#39;)&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Krok &#39;</span><span class="p">,</span> <span class="n">i</span> <span class="p">,</span><span class="s1">&#39;, f1(x0, y0)= &#39;</span><span class="p">,</span> <span class="n">f1</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span><span class="n">y0</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Krok &#39;</span><span class="p">,</span> <span class="n">i</span> <span class="p">,</span><span class="s1">&#39;, f2(x0, y0)= &#39;</span><span class="p">,</span> <span class="n">f2</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span><span class="n">y0</span><span class="p">))</span>
     
-    <span class="c1"># DOPLNTE</span>
-    <span class="c1"># A[0,0] = </span>
-    <span class="c1"># ...</span>
-    <span class="c1"># b[0] = </span>
-    <span class="c1"># b[1] =</span>
-    <span class="c1"># DOPLNTE</span>
-    
+    <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">dfdx</span><span class="p">(</span><span class="n">f1</span><span class="p">,</span><span class="n">x0</span><span class="p">,</span><span class="n">y0</span><span class="p">,</span><span class="n">h</span><span class="p">)</span>  <span class="c1"># prvky tzv. Jacobiho matice</span>
+    <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">dfdy</span><span class="p">(</span><span class="n">f1</span><span class="p">,</span><span class="n">x0</span><span class="p">,</span><span class="n">y0</span><span class="p">,</span><span class="n">h</span><span class="p">)</span>
+    <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">dfdx</span><span class="p">(</span><span class="n">f2</span><span class="p">,</span><span class="n">x0</span><span class="p">,</span><span class="n">y0</span><span class="p">,</span><span class="n">h</span><span class="p">)</span>
+    <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">dfdy</span><span class="p">(</span><span class="n">f2</span><span class="p">,</span><span class="n">x0</span><span class="p">,</span><span class="n">y0</span><span class="p">,</span><span class="n">h</span><span class="p">)</span>
+
+    <span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="n">f1</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span><span class="n">y0</span><span class="p">)</span>
+    <span class="n">b</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="n">f2</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span><span class="n">y0</span><span class="p">)</span>
+       
     <span class="c1"># vypocitame neznamou</span>
     <span class="n">dx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
 
     <span class="c1"># iteracni vztah</span>
     <span class="n">x0</span> <span class="o">=</span> <span class="n">x0</span> <span class="o">+</span> <span class="n">dx</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
     <span class="n">y0</span> <span class="o">=</span> <span class="n">y0</span> <span class="o">+</span> <span class="n">dx</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Krok &#39;</span><span class="p">,</span> <span class="n">i</span> <span class="p">,</span><span class="s1">&#39;, dx= &#39;</span><span class="p">,</span> <span class="n">dx</span><span class="p">)</span>
+<span class="c1">#    print(&#39;A=&#39;, A)</span>
+<span class="c1">#    print(&#39;b= &#39;, b)</span>
+
+    
+<span class="c1"># POZOR!!!    </span>
+<span class="c1"># pokud nedefinujeme u vektoru b dtype=&#39;float&#39;, tak vypis ukazuje, ze zpresnovani reseni konci po prvnim kroku, ackoliv nalezene reseni neni moc presne    </span>
+<span class="c1"># pro danou soustavu nelinearnich rovnic se pak metoda zda jako neprilis vhodna</span>
+<span class="c1"># nicmene pokud explicitne nastavime datovy typ slozek vektoru b na &#39;float&#39;, tak je metoda presnejsi nez metoda proste iterace (a rychleji konverguje k presnejsimu reseni)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Krok  0 , (x0, y0)=( 1 , 1 )
+Krok  0 , f1(x0, y0)=  1
+Krok  0 , f2(x0, y0)=  2
+Krok  0 , dx=  [-0.34210526 -0.26315789]
+Krok  1 , (x0, y0)=( 0.6578947368421049 , 0.7368421052631572 )
+Krok  1 , f1(x0, y0)=  0.04778393351800614
+Krok  1 , f2(x0, y0)=  0.11703601108032835
+Krok  1 , dx=  [-0.02072149 -0.01795418]
+Krok  2 , (x0, y0)=( 0.6371732465891273 , 0.7188879267978749 )
+Krok  2 , f1(x0, y0)=  0.00010702763394121462
+Krok  2 , f2(x0, y0)=  0.00042938015830351617
+Krok  2 , dx=  [-6.54008973e-05 -6.92073508e-05]
+Krok  3 , (x0, y0)=( 0.6371078456917931 , 0.718818719447048 )
+Krok  3 , f1(x0, y0)=  -5.123796942285708e-10
+Krok  3 , f2(x0, y0)=  4.277277199093987e-09
+Krok  3 , dx=  [-3.94838661e-10 -7.54833516e-10]
+Krok  4 , (x0, y0)=( 0.6371078452969545 , 0.7188187186922145 )
+Krok  4 , f1(x0, y0)=  2.220446049250313e-16
+Krok  4 , f2(x0, y0)=  0.0
+Krok  4 , dx=  [-3.61032053e-17  9.20065413e-18]
+Krok  5 , (x0, y0)=( 0.6371078452969545 , 0.7188187186922145 )
+Krok  5 , f1(x0, y0)=  2.220446049250313e-16
+Krok  5 , f2(x0, y0)=  0.0
+Krok  5 , dx=  [-3.61032053e-17  9.20065413e-18]
+Krok  6 , (x0, y0)=( 0.6371078452969545 , 0.7188187186922145 )
+Krok  6 , f1(x0, y0)=  2.220446049250313e-16
+Krok  6 , f2(x0, y0)=  0.0
+Krok  6 , dx=  [-3.61032053e-17  9.20065413e-18]
+Krok  7 , (x0, y0)=( 0.6371078452969545 , 0.7188187186922145 )
+Krok  7 , f1(x0, y0)=  2.220446049250313e-16
+Krok  7 , f2(x0, y0)=  0.0
+Krok  7 , dx=  [-3.61032053e-17  9.20065413e-18]
+Krok  8 , (x0, y0)=( 0.6371078452969545 , 0.7188187186922145 )
+Krok  8 , f1(x0, y0)=  2.220446049250313e-16
+Krok  8 , f2(x0, y0)=  0.0
+Krok  8 , dx=  [-3.61032053e-17  9.20065413e-18]
+Krok  9 , (x0, y0)=( 0.6371078452969545 , 0.7188187186922145 )
+Krok  9 , f1(x0, y0)=  2.220446049250313e-16
+Krok  9 , f2(x0, y0)=  0.0
+Krok  9 , dx=  [-3.61032053e-17  9.20065413e-18]
+Krok  10 , (x0, y0)=( 0.6371078452969545 , 0.7188187186922145 )
+Krok  10 , f1(x0, y0)=  2.220446049250313e-16
+Krok  10 , f2(x0, y0)=  0.0
+Krok  10 , dx=  [-3.61032053e-17  9.20065413e-18]
+Krok  11 , (x0, y0)=( 0.6371078452969545 , 0.7188187186922145 )
+Krok  11 , f1(x0, y0)=  2.220446049250313e-16
+Krok  11 , f2(x0, y0)=  0.0
+Krok  11 , dx=  [-3.61032053e-17  9.20065413e-18]
+Krok  12 , (x0, y0)=( 0.6371078452969545 , 0.7188187186922145 )
+Krok  12 , f1(x0, y0)=  2.220446049250313e-16
+Krok  12 , f2(x0, y0)=  0.0
+Krok  12 , dx=  [-3.61032053e-17  9.20065413e-18]
+Krok  13 , (x0, y0)=( 0.6371078452969545 , 0.7188187186922145 )
+Krok  13 , f1(x0, y0)=  2.220446049250313e-16
+Krok  13 , f2(x0, y0)=  0.0
+Krok  13 , dx=  [-3.61032053e-17  9.20065413e-18]
+Krok  14 , (x0, y0)=( 0.6371078452969545 , 0.7188187186922145 )
+Krok  14 , f1(x0, y0)=  2.220446049250313e-16
+Krok  14 , f2(x0, y0)=  0.0
+Krok  14 , dx=  [-3.61032053e-17  9.20065413e-18]
+Krok  15 , (x0, y0)=( 0.6371078452969545 , 0.7188187186922145 )
+Krok  15 , f1(x0, y0)=  2.220446049250313e-16
+Krok  15 , f2(x0, y0)=  0.0
+Krok  15 , dx=  [-3.61032053e-17  9.20065413e-18]
+Krok  16 , (x0, y0)=( 0.6371078452969545 , 0.7188187186922145 )
+Krok  16 , f1(x0, y0)=  2.220446049250313e-16
+Krok  16 , f2(x0, y0)=  0.0
+Krok  16 , dx=  [-3.61032053e-17  9.20065413e-18]
+Krok  17 , (x0, y0)=( 0.6371078452969545 , 0.7188187186922145 )
+Krok  17 , f1(x0, y0)=  2.220446049250313e-16
+Krok  17 , f2(x0, y0)=  0.0
+Krok  17 , dx=  [-3.61032053e-17  9.20065413e-18]
+Krok  18 , (x0, y0)=( 0.6371078452969545 , 0.7188187186922145 )
+Krok  18 , f1(x0, y0)=  2.220446049250313e-16
+Krok  18 , f2(x0, y0)=  0.0
+Krok  18 , dx=  [-3.61032053e-17  9.20065413e-18]
+Krok  19 , (x0, y0)=( 0.6371078452969545 , 0.7188187186922145 )
+Krok  19 , f1(x0, y0)=  2.220446049250313e-16
+Krok  19 , f2(x0, y0)=  0.0
+Krok  19 , dx=  [-3.61032053e-17  9.20065413e-18]
 </pre></div>
 </div>
 </div>
