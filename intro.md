@@ -68,7 +68,7 @@ Jupyter notebook (JP) lze vytvářet a editovat on-line např. v prostředí:
 
 Pro off-line práci s Jupyter notebooky na počítači je nejjednodušší nainstalovat si programový balík [Anaconda](https://www.anaconda.com) (dostupné pro Windows/Mac/Linux), který obsahuje všechny potřebné knihovny:
 - [návod na instalaci](https://docs.anaconda.com/anaconda/install/)
-- [návod na spuštění Jupyter Notebook](https://freelearning.anaconda.cloud/get-started-with-anaconda/18571)
+- [návod na spuštění Jupyter Notebook](https://freelearning.anaconda.cloud/get-started-with-anaconda/)
 
 
 ## Použité zdroje
