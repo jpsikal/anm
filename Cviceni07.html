@@ -381,11 +381,10 @@
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hledani-extremu-funkce-vice-promennych">7.2. Hledání extrémů funkce více proměnných</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nelder-mead-simplex-metoda">7.2.1. Nelder-Mead (simplex) metoda</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metoda-nejvetsiho-spadu">7.2.2. Metoda největšího spádu</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metoda-nejvetsiho-nejprudsiho-spadu">7.2.2. Metoda největšího (nejprudšího) spádu</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metoda-konjugovanych-gradientu">7.2.3. Metoda konjugovaných gradientů</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uloha-7-d">7.3. Úloha 7.D</a></li>
 </ul>
             </nav>
         </div>
@@ -556,8 +555,8 @@
 <li><p>Bod <span class="math notranslate nohighlight">\(G\)</span> přesuneme do <span class="math notranslate nohighlight">\(M\)</span></p></li>
 </ol>
 </section>
-<section id="metoda-nejvetsiho-spadu">
-<h3><span class="section-number">7.2.2. </span>Metoda největšího spádu<a class="headerlink" href="#metoda-nejvetsiho-spadu" title="Link to this heading">#</a></h3>
+<section id="metoda-nejvetsiho-nejprudsiho-spadu">
+<h3><span class="section-number">7.2.2. </span>Metoda největšího (nejprudšího) spádu<a class="headerlink" href="#metoda-nejvetsiho-nejprudsiho-spadu" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Postup pro hledání minima funkce <span class="math notranslate nohighlight">\(f(\vec{x})\)</span>:</p>
 <ol class="arabic simple">
@@ -568,7 +567,7 @@
 </ol>
 </li>
 </ul>
-<div class="alert alert-block alert-warning"><b>Cvičení 07.03: </b>Najděte minimum funkcí $f_{1}(\vec{x})=x^{2}+y^{2}$ a  $f_{2}(\vec{x})=100(x-y^{2})^{2}+(1-x)^{2}$ metodou nejmenšího spádu. </div><p><span class="math notranslate nohighlight">\(f_2\)</span> je tzv. banánová funkce (<a class="reference external" href="https://en.wikipedia.org/wiki/Rosenbrock_function">Rosenbrock function</a>), resp. její upravená verze</p>
+<div class="alert alert-block alert-warning"><b>Cvičení 07.03: </b>Najděte minimum funkcí $f_{1}(\vec{x})=x^{2}+y^{2}$ a  $f_{2}(\vec{x})=100(x-y^{2})^{2}+(1-x)^{2}$ metodou největšího spádu. </div><p><span class="math notranslate nohighlight">\(f_2\)</span> je tzv. banánová funkce (<a class="reference external" href="https://en.wikipedia.org/wiki/Rosenbrock_function">Rosenbrock function</a>), resp. její upravená verze</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># metoda nejvetsiho spadu</span>
@@ -687,10 +686,6 @@ minimum(SciPy): [0.99999953 0.99999982]
 </ol>
 </section>
 </section>
-<section id="uloha-7-d">
-<h2><span class="section-number">7.3. </span>Úloha 7.D<a class="headerlink" href="#uloha-7-d" title="Link to this heading">#</a></h2>
-<div class="alert alert-block alert-warning"><b>Úloha 7.D: </b> Najděte minimum funkce $f(\vec{x})=100(x-y^{2})^{2}+(1-x)^{2}$ metodou konjugovaných gradientů. Metodu konjugovaných gradientů sami implementujte (není povoleno přímé použití této metody jejím voláním příslušnou funkcí z knihoven Pythonu, je však povoleno použití funkcí z knihoven Pythonu pro skalární násobení dvou vektorů, výpočet normy vektoru, apod.) Použijte pro to algoritmus metody výše uvedený, počáteční odhad řešení nastavte na $\vec{x_0}=(0, -1.5)$. Podívejte se na detail vývoje hledání minima v okolí lokálního minima ($x_{min}=1, y_{min}=\pm1$) a porovnejte to s již implementovanou metodou největšího spádu (ve cvičení 07.03). 
- </div></section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -765,11 +760,10 @@ minimum(SciPy): [0.99999953 0.99999982]
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hledani-extremu-funkce-vice-promennych">7.2. Hledání extrémů funkce více proměnných</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nelder-mead-simplex-metoda">7.2.1. Nelder-Mead (simplex) metoda</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metoda-nejvetsiho-spadu">7.2.2. Metoda největšího spádu</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metoda-nejvetsiho-nejprudsiho-spadu">7.2.2. Metoda největšího (nejprudšího) spádu</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metoda-konjugovanych-gradientu">7.2.3. Metoda konjugovaných gradientů</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uloha-7-d">7.3. Úloha 7.D</a></li>
 </ul>
   </nav></div>
 
