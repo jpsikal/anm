@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -390,10 +390,10 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.5.2. Funkce</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizace-dat">1.6. Visualizace dat</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vizualizace-dat">1.6. Vizualizace dat</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graf-jedne-promenne">1.6.1. Graf jedné proměnné</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizace-zavislosti-dvou-promennych">1.6.2. Visualizace závislosti dvou proměnných</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-visualizace">1.6.3. 3D visualizace</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vizualizace-zavislosti-dvou-promennych">1.6.2. Vizualizace závislosti dvou proměnných</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-vizualizace">1.6.3. 3D vizualizace</a></li>
 </ul>
 </li>
 </ul>
@@ -700,7 +700,7 @@ Hotovo
 </div>
 </div>
 <ul class="simple">
-<li><p>Funkcí <code class="docutils literal notranslate"><span class="pre">ones()</span></code> vytvoříme jednotkovou matici 3x3:</p></li>
+<li><p>Funkcí <code class="docutils literal notranslate"><span class="pre">ones()</span></code> vytvoříme jedničkovou matici 3x3:</p></li>
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -710,7 +710,7 @@ Hotovo
 </div>
 </div>
 <ul class="simple">
-<li><p>Pomocí funkce <code class="docutils literal notranslate"><span class="pre">eye()</span></code> vytvoříme matici 3x3 s jedničkami na diagonále, ostatní hodnoty jsou nulové:</p></li>
+<li><p>Pomocí funkce <code class="docutils literal notranslate"><span class="pre">eye()</span></code> vytvoříme matici 3x3 s jedničkami na diagonále (jednotkovou), ostatní hodnoty jsou nulové:</p></li>
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -902,8 +902,8 @@ Hotovo
 </div>
 <div class="alert alert-block alert-info"><b>Tip: </b> Další příklady a návody pro práci s knihovnou <code>numpy</code> lze nalézt na <a href='https://numpy.org/'>https://numpy.org/</a>.</div></section>
 </section>
-<section id="visualizace-dat">
-<h2><span class="section-number">1.6. </span>Visualizace dat<a class="headerlink" href="#visualizace-dat" title="Link to this heading">#</a></h2>
+<section id="vizualizace-dat">
+<h2><span class="section-number">1.6. </span>Vizualizace dat<a class="headerlink" href="#vizualizace-dat" title="Link to this heading">#</a></h2>
 <p>Pro kreslení grafů využijeme knihovnu <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -962,8 +962,8 @@ Hotovo
 </div>
 </div>
 </section>
-<section id="visualizace-zavislosti-dvou-promennych">
-<h3><span class="section-number">1.6.2. </span>Visualizace závislosti dvou proměnných<a class="headerlink" href="#visualizace-zavislosti-dvou-promennych" title="Link to this heading">#</a></h3>
+<section id="vizualizace-zavislosti-dvou-promennych">
+<h3><span class="section-number">1.6.2. </span>Vizualizace závislosti dvou proměnných<a class="headerlink" href="#vizualizace-zavislosti-dvou-promennych" title="Link to this heading">#</a></h3>
 <p>Mějme funkci <span class="math notranslate nohighlight">\(z(x,y)\)</span>, která závisí na dvou proměnných <span class="math notranslate nohighlight">\(z(x,y)=\exp(-\sqrt{x^2+y^2})\cos(2x)\sin(2y)\)</span>, a vykreslíme její závislost v 2D grafu.</p>
 <p>Vytvoříme mřížku <span class="math notranslate nohighlight">\(x\times y\)</span> pomocí funkce <code class="docutils literal notranslate"><span class="pre">meshgrid()</span></code>:</p>
 <div class="cell docutils container">
@@ -1004,8 +1004,8 @@ Hotovo
 </div>
 </div>
 </section>
-<section id="d-visualizace">
-<h3><span class="section-number">1.6.3. </span>3D visualizace<a class="headerlink" href="#d-visualizace" title="Link to this heading">#</a></h3>
+<section id="d-vizualizace">
+<h3><span class="section-number">1.6.3. </span>3D vizualizace<a class="headerlink" href="#d-vizualizace" title="Link to this heading">#</a></h3>
 <p>Máme stejnou funkci <span class="math notranslate nohighlight">\(z(x,y)=\exp(-\sqrt{x^2+y^2})\cos(2x)\sin(2y)\)</span>, kterou nyní chceme vykreslit v 3D grafu. Nejdříve vytvoříme trojrozměrnou osu:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1136,10 +1136,10 @@ Hotovo
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.5.2. Funkce</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizace-dat">1.6. Visualizace dat</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vizualizace-dat">1.6. Vizualizace dat</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graf-jedne-promenne">1.6.1. Graf jedné proměnné</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizace-zavislosti-dvou-promennych">1.6.2. Visualizace závislosti dvou proměnných</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-visualizace">1.6.3. 3D visualizace</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vizualizace-zavislosti-dvou-promennych">1.6.2. Vizualizace závislosti dvou proměnných</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-vizualizace">1.6.3. 3D vizualizace</a></li>
 </ul>
 </li>
 </ul>
