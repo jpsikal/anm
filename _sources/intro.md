@@ -23,86 +23,90 @@
 ### Cvičení středa 10:00
 |               |  **1**  |  **2**  |  **3**  |  **4**  |  **5**  |  **6**  |  **7**  |  **8**  |  **9**  | **10** | **Úlohy** |   **ZT**   |
 |---------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|--------|-----------|------------|
-| Adamec J.     |         |         |         |         |         |         |         |         |         |        |           |            |
-| Babulík O.    |         |         |         |         |         |         |         |         |         |        |           |            |
-| Fildán M.     |         |         |         |         |         |         |         |         |         |        |           |            |
-| Filip M.      |         |         |         |         |         |         |         |         |         |        |           |            |
-| Flaig D. I.   |         |         |         |         |         |         |         |         |         |        |           |            |
-| Gyepes F.     |         |         |         |         |         |         |         |         |         |        |           |            |
-| Horáček K.    |         |         |         |         |         |         |         |         |         |        |           |            |
-| Chmela R.     |         |         |         |         |         |         |         |         |         |        |           |            |
-| Chylík R.     |         |         |         |         |         |         |         |         |         |        |           |            |
-| Kolář J.      |         |         |         |         |         |         |         |         |         |        |           |            |
-| Kozlová A.    |         |         |         |         |         |         |         |         |         |        |           |            |
-| Krška F.      |         |         |         |         |         |         |         |         |         |        |           |            |
-| Krupka F.     |         |         |         |         |         |         |         |         |         |        |           |            |
-| Kubiš J.      |         |         |         |         |         |         |         |         |         |        |           |            |
-| Kuchárik J.   |         |         |         |         |         |         |         |         |         |        |           |            |
-| Landa P.      |         |         |         |         |         |         |         |         |         |        |           |            |
-| Lorenc L.     |         |         |         |         |         |         |         |         |         |        |           |            |
-| Luhanová K.   |         |         |         |         |         |         |         |         |         |        |           |            |
-| Matušek J.    |         |         |         |         |         |         |         |         |         |        |           |            |
-| Müller J.     |         |         |         |         |         |         |         |         |         |        |           |            |
-| Onderka R.    |         |         |         |         |         |         |         |         |         |        |           |            |
-| Roller J.     |         |         |         |         |         |         |         |         |         |        |           |            |
-| Sochorovský V.|         |         |         |         |         |         |         |         |         |        |           |            |
-| Stuchlík O.   |         |         |         |         |         |         |         |         |         |        |           |            |
-| Vinkler V.    |         |         |         |         |         |         |         |         |         |        |           |            |
-| Zajac V.      |         |         |         |         |         |         |         |         |         |        |           |            |
+| Adamec J.     |  /      |         |         |         |         |         |         |         |         |        | C         |            |
+| Babulík O.    |  /, 1   |         |         |         |         |         |         |         |         |        | A         |            |
+| Fildán M.     |  /, 1   |         |         |         |         |         |         |         |         |        | B         |            |
+| Filip M.      |  /      |         |         |         |         |         |         |         |         |        | C         |            |
+| Flaig D. I.   |  -      |         |         |         |         |         |         |         |         |        | A         |            |
+| Gyepes F.     |  /, 1   |         |         |         |         |         |         |         |         |        | B         |            |
+| Horáček K.    |  /      |         |         |         |         |         |         |         |         |        | C         |            |
+| Chmela R.     |  /      |         |         |         |         |         |         |         |         |        | A         |            |
+| Kolář J.      |  /, 1   |         |         |         |         |         |         |         |         |        | B         |            |
+| Kozlová A.    |  /, 1   |         |         |         |         |         |         |         |         |        | C         |            |
+| Krška F.      |  /      |         |         |         |         |         |         |         |         |        | A         |            |
+| Krupka F.     |  /, 1   |         |         |         |         |         |         |         |         |        | B         |            |
+| Kubiš J.      |  /      |         |         |         |         |         |         |         |         |        | C         |            |
+| Kuchárik J.   |  /      |         |         |         |         |         |         |         |         |        | A         |            |
+| Landa P.      |  /      |         |         |         |         |         |         |         |         |        | B         |            |
+| Lorenc L.     |  /      |         |         |         |         |         |         |         |         |        | C         |            |
+| Luhanová K.   |  /      |         |         |         |         |         |         |         |         |        | A         |            |
+| Matušek J.    |  /, 1   |         |         |         |         |         |         |         |         |        | B         |            |
+| Müller J.     |  /, 1   |         |         |         |         |         |         |         |         |        | C         |            |
+| Onderka R.    |  /, 1   |         |         |         |         |         |         |         |         |        | A         |            |
+| Roller J.     |  /, 1   |         |         |         |         |         |         |         |         |        | B         |            |
+| Sochorovský V.|  /, 1   |         |         |         |         |         |         |         |         |        | C         |            |
+| Stuchlík O.   |  /, 1   |         |         |         |         |         |         |         |         |        | A         |            |
+| Vinkler V.    |  /, 1   |         |         |         |         |         |         |         |         |        | B         |            |
+| Zajac V.      |  /      |         |         |         |         |         |         |         |         |        | C         |            |
 
 
 ### Cvičení středa 12:00
 |               |  **1**  |  **2**  |  **3**  |  **4**  |  **5**  |  **6**  |  **7**  |  **8**  |  **9**  | **10** | **Úlohy** |   **ZT**   |
 |---------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|--------|-----------|------------|
-| Artamonov M.  | (1)     |         |         |         |         |         |         |         |         |        | 3+4+5     |            |
-| Bažantová V.  | (2)     |         |         |         |         |         |         |         |         |        | 3+3       |            |
-| Darbayev C.   |         |         |         |         |         |         |         |         |         |        |           |            |
-| Děnisova A.   |         |         |         |         |         |         |         |         |         |        |           |            |
-| Golisová S.   |         |         |         |         |         |         |         |         |         |        |           |            |
-| Chalas T.     |         |         |         |         |         |         |         |         |         |        |           |            |
-| Kašlíková M.  |         |         |         |         |         |         |         |         |         |        |           |            |
-| Krejčí J.     |         |         |         |         |         |         |         |         |         |        |           |            |
-| Kulhánková A. |         |         |         |         |         |         |         |         |         |        |           |            |
-| Lohvynenko O. |         |         |         |         |         |         |         |         |         |        |           |            |
-| Provazník V.  |         |         |         |         |         |         |         |         |         |        |           |            |
-| Rudenko Y.    |         |         |         |         |         |         |         |         |         |        |           |            |
-| Salikhov D.   |         |         |         |         |         |         |         |         |         |        |           |            |
-| Sereghy H.    |         |         |         |         |         |         |         |         |         |        |           |            |
-| Šiler J.      |         |         |         |         |         |         |         |         |         |        |           |            |
-| Vojtík A.     |         |         |         |         |         |         |         |         |         |        |           |            |
-| Yergaliyev D. |         |         |         |         |         |         |         |         |         |        |           |            |
-| Zykán F.      |         |         |         |         |         |         |         |         |         |        |           |            |
+| Artamonov M.  |  o, (1) |         |         |         |         |         |         |         |         |        | (3+4+5)   |            |
+| Bažantová V.  |  o, (2) |         |         |         |         |         |         |         |         |        | (3+3)     |            |
+| Darbayev C.   |  /, 1   |         |         |         |         |         |         |         |         |        | A         |            |
+| Děnisova A.   |  /, 1   |         |         |         |         |         |         |         |         |        | B         |            |
+| Golisová S.   |  -      |         |         |         |         |         |         |         |         |        | C         |            |
+| Chalas T.     |  /, 2   |         |         |         |         |         |         |         |         |        | A         |            |
+| Chylík R.     |  /      |         |         |         |         |         |         |         |         |        | B         |            |
+| Kašlíková M.  |  /, 1   |         |         |         |         |         |         |         |         |        | C         |            |
+| Kulhánková A. |  -      |         |         |         |         |         |         |         |         |        | A         |            |
+| Lohvynenko O. |  /      |         |         |         |         |         |         |         |         |        | B         |            |
+| Palovský V.   |  /      |         |         |         |         |         |         |         |         |        | C         |            |
+| Provazník V.  |  /, 1   |         |         |         |         |         |         |         |         |        | A         |            |
+| Rudenko Y.    |  /      |         |         |         |         |         |         |         |         |        | B         |            |
+| Salikhov D.   |  /, 2   |         |         |         |         |         |         |         |         |        | C         |            |
+| Sereghy H.    |  /, 1   |         |         |         |         |         |         |         |         |        | A         |            |
+| Šiler J.      |  /, 1   |         |         |         |         |         |         |         |         |        | B         |            |
+| Vojtík A.     |  -      |         |         |         |         |         |         |         |         |        | C         |            |
+| Yergaliyev D. |  /      |         |         |         |         |         |         |         |         |        | A         |            |
+| Zykán F.      |  /, 1   |         |         |         |         |         |         |         |         |        | B         |            |
 
 
 ### Cvičení čtvrtek 10:00
 |               |  **1**  |  **2**  |  **3**  |  **4**  |  **5**  |  **6**  |  **7**  |  **8**  |  **9**  | **10** | **Úlohy** |   **ZT**   |
 |---------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|--------|-----------|------------|
-| Býčková M.    | (6)     |         |         |         |         |         |         |         |         |        | 1         |            |
-| Dolejš M.     | (0)     |         |         |         |         |         |         |         |         |        |           |            |
-| Dragounová A. |         |         |         |         |         |         |         |         |         |        |           |            |
-| Hegerová S.   |         |         |         |         |         |         |         |         |         |        |           |            |
-| Hrabalová K.  |         |         |         |         |         |         |         |         |         |        |           |            |
-| Jachková K.   |         |         |         |         |         |         |         |         |         |        |           |            |
-| Janásková M.  | (2)     |         |         |         |         |         |         |         |         |        | 3+3       |            |
-| Jirásek A.    |         |         |         |         |         |         |         |         |         |        |           |            |
-| Kaputlu B.N.  |         |         |         |         |         |         |         |         |         |        |           |            |
-| Kinclová A.   |         |         |         |         |         |         |         |         |         |        |           |            |
-| Korecký M.    | (3)     |         |         |         |         |         |         |         |         |        | 5         |            |
-| Kubelka M.    | (4)     |         |         |         |         |         |         |         |         |        | 3+4       |            |
-| Marková B.    |         |         |         |         |         |         |         |         |         |        |           |            |
-| Metelková Š.  |         |         |         |         |         |         |         |         |         |        |           |            |
-| Mikšovský P.  | (1)     |         |         |         |         |         |         |         |         |        | 3         |            |
-| Modrianský J. |         |         |         |         |         |         |         |         |         |        |           |            |
-| Mroceková L.  |         |         |         |         |         |         |         |         |         |        |           |            |
-| Pelán Š.      | (5)     |         |         |         |         |         |         |         |         |        | 3         |            |
-| Pichová A.    |         |         |         |         |         |         |         |         |         |        |           |            |
-| Rišová Ž.     |         |         |         |         |         |         |         |         |         |        |           |            |
-| Sokolová Z.   |         |         |         |         |         |         |         |         |         |        |           |            |
-| Valach V.     |         |         |         |         |         |         |         |         |         |        |           |            |
-| Vavro T.      |         |         |         |         |         |         |         |         |         |        |           |            |
-| Vlčinová I.   |         |         |         |         |         |         |         |         |         |        |           |            |
-| Vyhnánek J.   |         |         |         |         |         |         |         |         |         |        |           |            |
-| Žůrek D.      |         |         |         |         |         |         |         |         |         |        |           |            |
+| Býčková M.    |  o, (6) |         |         |         |         |         |         |         |         |        | B, (1)    |            |
+| Dolejš M.     |  o, (0) |         |         |         |         |         |         |         |         |        | C         |            |
+| Dragounová A. |  /, 1   |         |         |         |         |         |         |         |         |        | A         |            |
+| Hegerová S.   |  /, 1   |         |         |         |         |         |         |         |         |        | B         |            |
+| Hrabalová K.  |  /, 2   |         |         |         |         |         |         |         |         |        | C         |            |
+| Jachková K.   |  /      |         |         |         |         |         |         |         |         |        | A         |            |
+| Janásková M.  |  o, (2) |         |         |         |         |         |         |         |         |        | (3+3)     |            |
+| Jirásek A.    |  -      |         |         |         |         |         |         |         |         |        | B         |            |
+| Kaputlu B.N.  |  /      |         |         |         |         |         |         |         |         |        | C         |            |
+| Kinclová A.   |  /, 1   |         |         |         |         |         |         |         |         |        | A         |            |
+| Korecký M.    |  o, (3) |         |         |         |         |         |         |         |         |        | (5)       |            |
+| Kubelka M.    |  /, (4) |         |         |         |         |         |         |         |         |        | (3+4)     |            |
+| Marková B.    |  /      |         |         |         |         |         |         |         |         |        | B         |            |
+| Metelková Š.  |  /, 1   |         |         |         |         |         |         |         |         |        | C         |            |
+| Mikšovský P.  |  o, (1) |         |         |         |         |         |         |         |         |        | C, (3)    |            |
+| Modrianský J. |  /      |         |         |         |         |         |         |         |         |        | A         |            |
+| Mroceková L.  |  /      |         |         |         |         |         |         |         |         |        | B         |            |
+| Pelán Š.      |  /, (5) |         |         |         |         |         |         |         |         |        | A, (3)    |            |
+| Pichová A.    |  /      |         |         |         |         |         |         |         |         |        | C         |            |
+| Rišová Ž.     |  /      |         |         |         |         |         |         |         |         |        | A         |            |
+| Sokolová Z.   |  /, 2   |         |         |         |         |         |         |         |         |        | B         |            |
+| Valach V.     |  /      |         |         |         |         |         |         |         |         |        | C         |            |
+| Vavro T.      |  /      |         |         |         |         |         |         |         |         |        | A         |            |
+| Vlčinová I.   |  /, 1   |         |         |         |         |         |         |         |         |        | B         |            |
+| Vyhnánek J.   |  /, 1   |         |         |         |         |         |         |         |         |        | C         |            |
+| Žůrek D.      |  /, 1   |         |         |         |         |         |         |         |         |        | A         |            |
+
+Vysvětlivky:"/" přítomen, "-" nepřitomen, "o" omluven, číslo udává počet bodů za aktivitu na cvičeních, v závorce jsou započítané body z předchozího akademického roku. 
+
+Upřesnění pro studenty, kteří mají předmět 12ANM zapsán napodruhé: Tito studenti si mohou svoje skóre vylepšit pouze vyřešením úloh dle přidělené skupiny A-C nebo úloh v předchozím akademickém roce nezadaných v případě, že u sebe skupinu ve sloupečku Úlohy uvedenou nemají (tj. úlohy 1-3, 7-9). 
 
 
 - přiřazení hodnocení počtu bodů dosažených v zápočtovém testu: 
