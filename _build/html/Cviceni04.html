@@ -166,8 +166,8 @@
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Obsah cvičení</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Cviceni01.html">1. Jupyter notebook a základy Pythonu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni02.html">2. Chyby a nestabilita</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni01vyplnene.html">1. Jupyter notebook a základy Pythonu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni02vyplnene.html">2. Chyby a nestabilita</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni03.html">3. Numerické metody lineární algebry</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni05.html">5. Aproximace funkcí</a></li>
@@ -831,7 +831,7 @@ x_{i}^{(k+1)}=x_{i}^{(k)}+\omega\Delta x_{i}^{(k)}
 <span class="c1"># do vlastniho vektoru v ulozime uvodni odhad</span>
 <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span><span class="o">.</span><span class="n">T</span>
 
-<span class="c1"># budeme opakovat 50, v prubehu vypoctu si budeme pamatovat normu matice*v, </span>
+<span class="c1"># budeme opakovat 50krat, v prubehu vypoctu si budeme pamatovat normu matice*v, </span>
 <span class="c1"># tedy odhad vlastniho cisla (vime ze se ma blizit ctyrce)</span>
 
 <span class="n">pocet_iteraci</span> <span class="o">=</span> <span class="mi">50</span>
@@ -875,21 +875,6 @@ Odhad prislusneho vlastniho vektoru =  0
 </pre></div>
 </div>
 <img alt="_images/926cdaada8c989adc3adf9a309fbfab31f98304faaa844f7ca29d3f38eea7a3b.png" src="_images/926cdaada8c989adc3adf9a309fbfab31f98304faaa844f7ca29d3f38eea7a3b.png" />
-</div>
-</div>
-<div class="alert alert-block alert-warning"><b>Úloha 4.A: </b> Zopakujte si pojmy podmíněnost úlohy a podmíněnost matice, maticová norma. Bez použití předdefinované funkce z knihoven Pythonu (nebo jiného programovacího jazyka) pro podmíněnost a normu matice (pozn. použití dalších předdefinovaných funkcí je povoleno) níže doplňte kód pro výpočet podmíněnosti matice $\mathbb{A}$ (resp. čísla podmíněnosti matice). Do kódu vložte komentáře, aby bylo rozumět tomu, co pomocí něj provádíte. Je úloha řešení soustavy lineárních rovnic $\mathbb{A} \mathbf{x} = \mathbf{b}$ dobře nebo špatně podmíněná? (zodpovězte v komentáři na konci Vámi doplněného kódu a odpověď zdůvodněte) </div><div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># vypocet podminenosti matice A</span>
-
-<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
-    <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
-    <span class="p">[</span><span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">11</span><span class="p">],</span>
-    <span class="p">[</span><span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">14</span><span class="p">]</span>
-    <span class="p">])</span>
-
-<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">45</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">44</span><span class="p">]])</span><span class="o">.</span><span class="n">T</span>
-</pre></div>
-</div>
 </div>
 </div>
 </section>

@@ -66,7 +66,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="4. Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel" href="Cviceni04.html" />
-    <link rel="prev" title="2. Chyby a nestabilita" href="Cviceni02.html" />
+    <link rel="prev" title="2. Chyby a nestabilita" href="Cviceni02vyplnene.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -166,8 +166,8 @@
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Obsah cvičení</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Cviceni01.html">1. Jupyter notebook a základy Pythonu</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni02.html">2. Chyby a nestabilita</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni01vyplnene.html">1. Jupyter notebook a základy Pythonu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni02vyplnene.html">2. Chyby a nestabilita</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Numerické metody lineární algebry</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni04.html">4. Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni05.html">5. Aproximace funkcí</a></li>
@@ -388,6 +388,7 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tridiagonalni-matice">3.3.1. Tridiagonální matice</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#podminenost-ulohy-podminenost-matice">3.4. Podmíněnost úlohy, podmíněnost matice</a></li>
 </ul>
             </nav>
         </div>
@@ -621,6 +622,40 @@ Matice U =  [[0. 0.]
 </div>
 </section>
 </section>
+<section id="podminenost-ulohy-podminenost-matice">
+<h2><span class="section-number">3.4. </span>Podmíněnost úlohy, podmíněnost matice<a class="headerlink" href="#podminenost-ulohy-podminenost-matice" title="Link to this heading">#</a></h2>
+<div class="alert alert-block alert-warning"><b>Cvičení 03.05: </b> Zopakujte si pojmy podmíněnost úlohy a podmíněnost matice, maticová norma. Bez použití předdefinované funkce z knihoven Pythonu pro podmíněnost a normu matice (pozn. použití dalších předdefinovaných funkcí je povoleno) níže doplňte kód pro výpočet podmíněnosti matice $\mathbb{A}$ (resp. čísla podmíněnosti matice). Do kódu vložte komentáře, aby bylo rozumět tomu, co pomocí něj provádíte. Je úloha řešení soustavy lineárních rovnic $\mathbb{A} \mathbf{x} = \mathbf{b}$ dobře nebo špatně podmíněná? (zodpovězte v komentáři na konci Vámi doplněného kódu a odpověď zdůvodněte) </div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+
+<span class="c1"># vypocet podminenosti matice A</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">11</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">14</span><span class="p">]</span>
+    <span class="p">])</span>
+
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">45</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">44</span><span class="p">]])</span><span class="o">.</span><span class="n">T</span>
+
+<span class="n">Ainv</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>  <span class="c1"># vypocet inverzni matice</span>
+
+<span class="c1"># doplnte kod</span>
+
+
+
+
+<span class="c1">#offset = float(input(&quot;Zadej zmenu posledni slozky vektoru b: &quot;))</span>
+<span class="c1">#b_offset = np.array([[0, 0, offset]]).T</span>
+<span class="c1">#sol1 = np.linalg.solve(A, b)</span>
+<span class="c1">#sol2 = np.linalg.solve(A, b+b_offset)</span>
+<span class="c1">#print(&quot;Reseni pro zadany vektor b:\t\t{} \nReseni pro zmeneny vektor b:\t{}&quot;.format(sol1.T, sol2.T))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -654,7 +689,7 @@ Matice U =  [[0. 0.]
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Cviceni02.html"
+       href="Cviceni02vyplnene.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
@@ -702,6 +737,7 @@ Matice U =  [[0. 0.]
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tridiagonalni-matice">3.3.1. Tridiagonální matice</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#podminenost-ulohy-podminenost-matice">3.4. Podmíněnost úlohy, podmíněnost matice</a></li>
 </ul>
   </nav></div>
 
