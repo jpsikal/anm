@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -66,7 +66,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="8. Numerická integrace" href="Cviceni08.html" />
-    <link rel="prev" title="6. Řešení nelineárních rovnic a jejich soustav" href="Cviceni06.html" />
+    <link rel="prev" title="6. Řešení nelineárních rovnic a jejich soustav" href="Cviceni06vyplnene.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -169,9 +169,9 @@
 <li class="toctree-l1"><a class="reference internal" href="Cviceni01vyplnene.html">1. Jupyter notebook a základy Pythonu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni02vyplnene.html">2. Chyby a nestabilita</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni03vyplnene.html">3. Numerické metody lineární algebry</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni04.html">4. Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni05.html">5. Aproximace funkcí</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni06.html">6. Řešení nelineárních rovnic a jejich soustav</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni04vyplnene.html">4. Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni05vyplnene.html">5. Aproximace funkcí</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni06vyplnene.html">6. Řešení nelineárních rovnic a jejich soustav</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">7. Extrémy funkcí</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni08.html">8. Numerická integrace</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni09.html">9. Obyčejné diferenciální rovnice (ODR)</a></li>
@@ -592,19 +592,22 @@
 <span class="c1"># pocatecni bod</span>
 <span class="n">x0</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.5</span><span class="p">]</span>
 
+<span class="c1"># pocatecni bod pro f1</span>
+<span class="n">x0</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.9</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.5</span><span class="p">]</span>
+
 
 <span class="c1"># budeme si prubezne ukladat odhad reseni a chybu odhadu</span>
 <span class="n">epsilon</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># odhad chyby v jednotlivych krocich</span>
 <span class="n">reseni</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># aktualni odhad reseni</span>
 
-<span class="n">f</span> <span class="o">=</span> <span class="n">f2</span> <span class="c1"># urceni funkce, jejiz minimum budeme hledat</span>
+<span class="n">f</span> <span class="o">=</span> <span class="n">f1</span> <span class="c1"># urceni funkce, jejiz minimum budeme hledat</span>
 
 <span class="n">grad</span> <span class="o">=</span> <span class="n">gradfce</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="mf">0.00001</span><span class="p">)</span>
 <span class="n">epsilon</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">grad</span> <span class="o">@</span> <span class="n">grad</span><span class="p">))</span>
 <span class="n">reseni</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x0</span><span class="p">)</span>
 
-<span class="c1">#alpha = 0.02      # nastaveni pro f1</span>
-<span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.002</span>     <span class="c1"># nastaveni pro f2</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.2</span>      <span class="c1"># nastaveni pro f1</span>
+<span class="c1">#alpha = 0.002     # nastaveni pro f2</span>
 <span class="n">maxIteraci</span> <span class="o">=</span> <span class="mi">200</span>
 
 <span class="c1"># hledani probiha v cyklu</span>
@@ -659,11 +662,11 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>minimum: [0.92256845 0.96041816] chyba: 0.0188845408113485 iteraci: 200
-minimum(SciPy): [0.99999953 0.99999982]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>minimum: [ 0.00187274 -0.00147848] chyba: 5.292117508679198e-05 iteraci: 16
+minimum(SciPy): [-6.00110546e-09 -8.59489175e-09]
 </pre></div>
 </div>
-<img alt="_images/3c48a2aea5bb6bee69fc97c750e12b60fb60aefc5dff62ad47d2aa5f1235b024.png" src="_images/3c48a2aea5bb6bee69fc97c750e12b60fb60aefc5dff62ad47d2aa5f1235b024.png" />
+<img alt="_images/a4f45ceaae358b3cc7f1348a34338d0286fffd475939ceac0779dc80d6efc814.png" src="_images/a4f45ceaae358b3cc7f1348a34338d0286fffd475939ceac0779dc80d6efc814.png" />
 </div>
 </div>
 </section>
@@ -719,7 +722,7 @@ minimum(SciPy): [0.99999953 0.99999982]
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Cviceni06.html"
+       href="Cviceni06vyplnene.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
