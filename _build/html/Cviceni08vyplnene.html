@@ -62,7 +62,7 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Cviceni08';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Cviceni08vyplnene';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="9. Obyčejné diferenciální rovnice (ODR)" href="Cviceni09.html" />
@@ -239,7 +239,7 @@
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/jpsikal/anm/main?urlpath=tree/Cviceni08.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/jpsikal/anm/main?urlpath=tree/Cviceni08vyplnene.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -257,7 +257,7 @@
       
       
       
-      <li><a href="https://jupyter.fjfi.cvut.cz/hub/user-redirect/git-pull?repo=https%3A//github.com/jpsikal/anm&urlpath=tree/anm/Cviceni08.ipynb&branch=main" target="_blank"
+      <li><a href="https://jupyter.fjfi.cvut.cz/hub/user-redirect/git-pull?repo=https%3A//github.com/jpsikal/anm&urlpath=tree/anm/Cviceni08vyplnene.ipynb&branch=main" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on JupyterHub"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -288,7 +288,7 @@
       
       
       
-      <li><a href="_sources/Cviceni08.ipynb" target="_blank"
+      <li><a href="_sources/Cviceni08vyplnene.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -440,7 +440,7 @@
 <span class="math notranslate nohighlight">\(\int_{x_{1}}^{x_{3}}f(x)\,dx\approx (x_{2}-x_{1})\dfrac{f(x_{1})+4f(x_{2})+f(x_{3})}{3}\)</span></p></li>
 <li><p>v případě složených vzorců z výše uvedených pravidel jsou obdélníková a lichoběžníková metoda řádu přesnosti <span class="math notranslate nohighlight">\(\sim O(h^2)\)</span>, Simpson <span class="math notranslate nohighlight">\(\sim O(h^4)\)</span>, ale u obdélníkového pravidla by přesnost byla pouze <span class="math notranslate nohighlight">\(\sim O(h)\)</span> při volbě funkčních hodnot na krajích intervalů (nikoliv uprostřed)</p></li>
 </ul>
-<div class="alert alert-block alert-warning"><b>Cvičení 08.01: </b>Pomocí obdélníkové, lichoběžníkové a Simpsonovy metody numericky vypočtěte <a href="https://www.wolframalpha.com/input?i=integrate+sin%28x%29+from+1+to+5">integrál</a> $\int_{1}^{5} \sin(x)\,dx$. </div><div class="cell docutils container">
+<div class="alert alert-block alert-warning"><b>Cvičení 08.01: </b>Pomocí obdélníkové, lichoběžníkové a Simpsonovy metody numericky vypočtěte <a href="https://www.wolframalpha.com/input?i=integrate+sin%28x%29+from+1+to+5">integrál</a> $\int_{1}^{5} \sin(x)\,dx$.</div><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># kod</span>
 
@@ -448,8 +448,18 @@
 <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
 
+<span class="c1"># stanoveni poctu kroku a krajnich bodu intervalu pro porovnani vysledku se cvicenim 08.02</span>
+<span class="c1">#pocet_kroku = 15</span>
+<span class="c1">#a = 0</span>
+<span class="c1">#b = np.pi</span>
+
 <span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+
+<span class="c1"># definice funkce pro porovnani vysledku se cvicenim 08.02</span>
+<span class="c1">#def f(x):</span>
+<span class="c1">#    return np.sin(x)*np.exp(np.cos(x))</span>
 
 <span class="n">r</span> <span class="o">=</span> <span class="p">(</span><span class="n">b</span><span class="o">-</span><span class="n">a</span><span class="p">)</span><span class="o">/</span><span class="n">pocet_kroku</span> <span class="c1"># velikost kroku</span>
 
@@ -458,7 +468,10 @@
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">pocet_kroku</span><span class="p">):</span>
     <span class="n">bod</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">i</span><span class="o">*</span><span class="n">r</span>
     <span class="c1"># DOPLNTE</span>
-    <span class="n">S_obdelnik</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">S_obdelnik</span> <span class="o">=</span> <span class="n">S_obdelnik</span> <span class="o">+</span> <span class="n">r</span><span class="o">*</span><span class="n">f</span><span class="p">((</span><span class="n">bod</span><span class="o">+</span><span class="n">bod</span><span class="o">+</span><span class="n">r</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+    <span class="c1">#S_obdelnik = S_obdelnik + r*f(bod)</span>
+<span class="c1"># tato zakomentovana druha varianta vypoctu vyuziva funkci hodnoty v krajnim bode a dava mene presny vysledek</span>
+<span class="c1"># (z duvodu nizsiho radu presnosti takove metody)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Obdelnikova metoda: &#39;</span><span class="p">,</span><span class="n">S_obdelnik</span><span class="p">)</span>
 
 <span class="c1"># lichobeznikova metoda</span>
@@ -466,7 +479,7 @@
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">pocet_kroku</span><span class="p">):</span>
     <span class="n">bod</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">i</span><span class="o">*</span><span class="n">r</span>  
     <span class="c1"># DOPLNTE</span>
-    <span class="n">S_lichobeznik</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">S_lichobeznik</span> <span class="o">=</span> <span class="n">S_lichobeznik</span> <span class="o">+</span> <span class="n">r</span><span class="o">*</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">bod</span><span class="p">)</span><span class="o">+</span><span class="n">f</span><span class="p">(</span><span class="n">bod</span><span class="o">+</span><span class="n">r</span><span class="p">))</span><span class="o">/</span><span class="mi">2</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Lichobeznikova metoda: &#39;</span><span class="p">,</span><span class="n">S_lichobeznik</span><span class="p">)</span>
 
 <span class="c1"># Simpsonovo pravidlo</span>
@@ -475,15 +488,18 @@
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">pocet_kroku_simpson</span><span class="p">):</span>
     <span class="n">bod</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="o">*</span><span class="n">r</span>
     <span class="c1"># DOPLNTE</span>
-    <span class="n">S_simpson</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">S_simpson</span> <span class="o">=</span> <span class="n">S_simpson</span> <span class="o">+</span> <span class="n">r</span><span class="o">/</span><span class="mi">3</span><span class="o">*</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">bod</span><span class="p">)</span> <span class="o">+</span> <span class="mi">4</span><span class="o">*</span><span class="n">f</span><span class="p">(</span><span class="n">bod</span><span class="o">+</span><span class="n">r</span><span class="p">)</span> <span class="o">+</span> <span class="n">f</span><span class="p">(</span><span class="n">bod</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">r</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Simpsonovo pravidlo: &#39;</span><span class="p">,</span><span class="n">S_simpson</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;presne reseni: &#39;</span><span class="p">,</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">+</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Obdelnikova metoda:  0
-Lichobeznikova metoda:  0
-Simpsonovo pravidlo:  0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Obdelnikova metoda:  0.256657230544745
+Lichobeznikova metoda:  0.2566059008096602
+Simpsonovo pravidlo:  0.25664012405560144
+presne reseni:  0.2566401204049135
 </pre></div>
 </div>
 </div>
@@ -594,7 +610,7 @@ Výpočet z primitivní funkce:  2.3504023872876028
         <span class="n">integral</span> <span class="o">=</span> <span class="n">integral</span> <span class="o">+</span> <span class="n">funkce</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
     <span class="c1"># a odecteme poloviny kraju</span>
 <span class="c1">#    integral = integral - 0.5 * funkce(xArr[0]) - 0.5 * funkce(xArr[xArr.size-1])</span>
-    <span class="n">integral</span> <span class="o">=</span> <span class="n">integral</span> <span class="o">-</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">funkce</span><span class="p">(</span><span class="n">xArr</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">-</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">funkce</span><span class="p">(</span><span class="n">xArr</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">integral</span> <span class="o">=</span> <span class="n">integral</span> <span class="o">-</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">funkce</span><span class="p">(</span><span class="n">xArr</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">-</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">funkce</span><span class="p">(</span><span class="n">xArr</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>    
     <span class="k">return</span> <span class="n">integral</span> <span class="o">*</span> <span class="n">krok</span>    
 
 
@@ -637,7 +653,7 @@ Výpočet z primitivní funkce:  2.3504023872876028
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x70c0c0c14140&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x72647ead7bc0&gt;
 </pre></div>
 </div>
 <img alt="_images/c8dbd247c31f13e0432f26b624cb9684ed03a624eb2c3aa3d0a7f912f0210c9c.png" src="_images/c8dbd247c31f13e0432f26b624cb9684ed03a624eb2c3aa3d0a7f912f0210c9c.png" />
@@ -682,7 +698,7 @@ Jinak <span class="math notranslate nohighlight">\(\tilde{f}(\vec{x}) = 0\)</spa
 <span class="n">kapek</span> <span class="o">=</span> <span class="mi">0</span>    <span class="c1"># pocet kapek</span>
 <span class="n">vkruhu</span> <span class="o">=</span> <span class="mi">0</span>   <span class="c1"># pocet kapek v kruhu</span>
 <span class="n">npi</span> <span class="o">=</span> <span class="mi">0</span>      <span class="c1"># odhad pi</span>
-<span class="n">steps</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1"># pocet kroku</span>
+<span class="n">steps</span> <span class="o">=</span> <span class="mi">1000</span> <span class="c1"># pocet kroku</span>
 <span class="n">plotPi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">steps</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
 
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mf">4.5</span><span class="p">))</span>
@@ -692,9 +708,13 @@ Jinak <span class="math notranslate nohighlight">\(\tilde{f}(\vec{x}) = 0\)</spa
     <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>    <span class="c1"># dve nahodna cisla x[0,0] a x[0,1]</span>
     <span class="c1"># jsou uvnitr kruhu se stredem (0.5,0.5) a polomerem 0.5?</span>
     <span class="c1"># DOPLNTE</span>
-    <span class="c1">#ax[0].scatter(x[0,0], x[0,1], marker=&quot;x&quot;, color=&#39;red&#39;)</span>
-    <span class="c1">#ax[0].scatter(x[0,0], x[0,1], marker=&quot;x&quot;, color=&#39;blue&#39;)</span>
+    <span class="c1">#</span>
     <span class="c1"># DOPLNTE</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mf">0.5</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="mf">0.5</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">&lt;</span><span class="mf">0.5</span><span class="o">**</span><span class="mi">2</span><span class="p">:</span>
+        <span class="n">vkruhu</span> <span class="o">=</span> <span class="n">vkruhu</span> <span class="o">+</span> <span class="mi">1</span>    <span class="c1"># pricteme je</span>
+        <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
     <span class="n">npi</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">vkruhu</span> <span class="o">/</span> <span class="n">kapek</span>
     <span class="n">plotPi</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">npi</span> 
 
@@ -708,14 +728,19 @@ Jinak <span class="math notranslate nohighlight">\(\tilde{f}(\vec{x}) = 0\)</spa
 <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Vypoctena hodnota pi = &#39;</span><span class="p">,</span><span class="n">npi</span><span class="p">)</span>
+
+<span class="c1"># ilustrace toho, ze metoda Monte Carlo je pomerne dobra pro nalezeni priblizne hodnoty cisla pi</span>
+<span class="c1"># avsak selhava pri snaze nalezt hodnotu pi s vysokou presnosti</span>
+<span class="c1"># duvodem je to, ze chyba urceni cisla pi teoreticky klesa pouze s druhou odmocninou poctu kroku</span>
+<span class="c1"># to vsak navic jen za predpokladu dokonaleho generatoru nahodnych cisel</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Vypoctena hodnota pi =  0.0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Vypoctena hodnota pi =  3.084
 </pre></div>
 </div>
-<img alt="_images/01e6899106a11857be37deb66e376082a685b85d15d67ed44fef4dabd6572837.png" src="_images/01e6899106a11857be37deb66e376082a685b85d15d67ed44fef4dabd6572837.png" />
+<img alt="_images/3a8347b4a5f04b671472b9da4fd83d3d2b50c24b901ecff2aa169887ca1187e3.png" src="_images/3a8347b4a5f04b671472b9da4fd83d3d2b50c24b901ecff2aa169887ca1187e3.png" />
 </div>
 </div>
 <div class="alert alert-block alert-warning"><b>Cvičení 08.05: </b> Numericky (metodou Monte Carlo) vypočítejte <a href="https://www.wolframalpha.com/input?i=integrate+x%2By+for+0%3Cx%3C1+and+0%3Cy%3C1">integrál</a> $\int_{0}^{1}\int_{0}^{1}(x+y) dx dy$. Vykreslete výslednou hodnotu, absolutní chybu a odhad přesnosti metody v závislosti na počtu kroků.</div><div class="cell docutils container">
@@ -731,7 +756,12 @@ Jinak <span class="math notranslate nohighlight">\(\tilde{f}(\vec{x}) = 0\)</spa
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">kroku</span><span class="p">):</span>
     <span class="c1"># DOPLNTE</span>
-    <span class="n">vysledky</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span> 
+    <span class="c1"># </span>
+    <span class="c1"># DOPLNTE</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># dve nahodna cisla v intervalu (0,1)</span>
+    <span class="n">value</span> <span class="o">=</span>  <span class="n">f</span><span class="p">(</span><span class="n">r</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="n">r</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># vypocteme funkcni hodnotu v techto dvou nahodnych bodech</span>
+    <span class="n">suma</span> <span class="o">=</span> <span class="n">suma</span> <span class="o">+</span> <span class="n">value</span>    <span class="c1"># pricteme ke kumulovane hodnote</span>
+    <span class="n">vysledky</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">suma</span> <span class="o">/</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># prumer (kumul. hodnota delena poctem kroku)</span>
 <span class="n">integral</span> <span class="o">=</span> <span class="n">suma</span> <span class="o">/</span> <span class="n">kroku</span>
 
 
@@ -765,14 +795,14 @@ Jinak <span class="math notranslate nohighlight">\(\tilde{f}(\vec{x}) = 0\)</spa
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Numericka integrace =  0.0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Numericka integrace =  1.0104218092573627
 Kontrola =  1
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x70c0b8787fe0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7264764199a0&gt;
 </pre></div>
 </div>
-<img alt="_images/0878037206385e0350f43fc511dd3bf990feef25ecc2583f86a45d3dd0ad101f.png" src="_images/0878037206385e0350f43fc511dd3bf990feef25ecc2583f86a45d3dd0ad101f.png" />
+<img alt="_images/7cea3f294fd73a56dc4b6d936edf03f2a223b43e068caa4ad9303ea034da24fc.png" src="_images/7cea3f294fd73a56dc4b6d936edf03f2a223b43e068caa4ad9303ea034da24fc.png" />
 </div>
 </div>
 </section>
