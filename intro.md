@@ -15,8 +15,10 @@
 - **aktivní** účast na cvičeních (řešení úloh přímo na cvičeních); pouhá fyzická přítomnost a očividné věnování se jiné aktivitě během výuky bude započítáno jako absence, stejně jako fyzická účast pouze na úvodních nebo závěrečných minutách cvičení
 - závěrečný zápočtový test
 - podkladem pro klasifikaci je závěrečný zápočtový test a body získané za aktivitu přímo na cvičeních nebo představením vyřešené úlohy (úloh) na tomto webu zadaných
-- podmínkou pro udělení zápočtu je zisk stanoveného minimálního počtu bodů ze zápočtového testu dle počtu bodů získaných za aktivitu, na klasifikaci má vliv i počet bodů získaných za aktivitu (obojí detailněji viz níže)Čím déle tato situace potrvá, tím vyšší je pravděpodobnost přetrvávajících inflačních tlaků. Pokud by se navíc přidaly sekundární inflační efekty, na které by centrální banky reagovaly zvýšením sazeb, mohl by být následný pokles trhů výraznější, než jaký jsme doposud pozorovali. Jinými slovy, trh v tuto chvíli spíše reaguje na tok informací a technické faktory než na jasně ukotvený fundamentální výhled.
+- podmínkou pro udělení zápočtu je zisk stanoveného minimálního počtu bodů ze zápočtového testu dle počtu bodů získaných za aktivitu, na klasifikaci má vliv i počet bodů získaných za aktivitu (obojí detailněji viz níže)
 - studenti, kteří mají 12ANM podruhé zapsán, si mohou svoje bodové skóre vylepšit před zápočtovým testem vyřešením úloh v předchozím akademickém roce nezadaných, na kterých se se mnou předem dohodnou
+- možnost přihlášení se (e-mailem) k představení řešené úlohy je do 11.5.2026 11:59 (na termín 12.5.)
+- termíny zápočtových testů: čtvrtek 14.5. od 10:00 v T201, středa 20.5. od 10:00 v T105, středa 20.5. od 12:00 v T105 dle termínu Vašeho cvičení, resp. tabulky níže
 
 ## Zápočtová tabulka
 
