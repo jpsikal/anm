@@ -23,57 +23,57 @@
 ## Zápočtová tabulka
 
 ### Cvičení středa 10:00
-|               |  **1**  |  **2**  |  **3**  |  **4**  |  **5**  |  **6**  |  **7**  |  **8**  |  **9**  | **10** | **Úlohy** |   **ZT**   |
-|---------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|--------|-----------|------------|
-| Adamec J.     |  /      |  /, 1   |  /      |  /      |  /, 1   |  /, 1   |  /, 1   |  /, 2   |  /, 1   |        | C: 3      |            |
-| Babulík O.    |  /, 1   |  /      |  /, 1   |  /, 1   |  /      |  -      |  /      |  /      |  -      |        | A: 3      |            |
-| Fildán M.     |  /, 1   |  /, 1   |  -      |  -      |  -      |  -      |  -      |  -      |  -      |        | B         |            |
-| Filip M.      |  /      |  /      |  -      |  -      |  /      |  /      |  /      |  /      |  -      |        | C         |            |
-| Flaig D. I.   |  -      |  /, 1   |  /      |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /, 2   |        | A         |            |
-| Gyepes F.     |  /, 1   |  /, 2   |  /      |  /, 1   |  /, 1   |  /      |  /, 1   |  /      |  -      |        | B: 3      |            |
-| Horáček K.    |  /      |  /      |  /      |  -      |  /      |  /      |  /      |  /      |  /      |        | C         |            |
-| Chmela R.     |  /      |  /, 1   |  /, 1   |  /      |  /, 1   |  /      |  /      |  -      |  /, 1   |        | A         |            |
-| Kolář J.      |  /, 1   |  /, 1   |  /      |  /, 2   |  /      |  /      |  /      |  /      |  /      |        | B: 3      |            |
-| Kozlová A.    |  /, 1   |  /, 1   |  -      |  /      |  /      |  /      |  /      |  /      |  /      |        | C         |            |
-| Krška F.      |  /      |  /      |  /, 1   |  -      |  /, 1   |  /, 1   |  /, 1   |  /, 2   |  /, 2   |        | A         |            |
-| Krupka F.     |  /, (8) |  /      |  /      |  /      |  /      |  o      |  /      |  /      |  o      |        | B         |            |
-| Kubiš J.      |  /      |  /      |  -      |  /      |  /      |  /      |  /      |  /      |  -      |        | C         |            |
-| Kuchárik J.   |  /      |  -      |  /      |  /      |  /, 2   |  /, 1   |  /, 2   |  /, 1   |  /, 2   |        | A         |            |
-| Landa P.      |  /      |  /      |  /      |  /, 1   |  /, 1   |  /      |  /, 1   |  /, 1   |  /, 2   |        | B: 2      |            |
-| Lorenc L.     |  /      |  /, 2   |  /, 1   |  /      |  /      |  /      |  /      |  -      |  /      |        | C: 3+5    |            |
-| Luhanová K.   |  /      |  /      |  /, 1   |  /, 1   |  /, 1   |  /      |  /, 1   |  -      |  -      |        | A: 3      |            |
-| Matušek J.    |  /, 1   |  /      |  -      |  /      |  -      |  /      |  /      |  -      |  /, 2   |        | B         |            |
-| Müller J.     |  /, 1   |  /, 1   |  /      |  -      |  /      |  /, 2   |  /, 1   |  /      |  /, 1   |        | C         |            |
-| Onderka R.    |  /, 1   |  -      |  /, 3   |  /, 2   |  o      |  o      |  -      |  o      |  /, 1   |        | A         |            |
-| Roller J.     |  /, 1   |  /, 2   |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /      |  -      |  /, 2   |        | B: 3+4    |            |
-| Sochorovský V.|  /, 1   |  /      |  -      |  /, 2   |  /, 1   |  /      |  o      |  /      |  /, 1   |        | C         |            |
-| Stuchlík O.   |  /, 1   |  /      |  -      |  /      |  /      |  /      |  /, 1   |  -      |  /, 1   |        | A         |            |
-| Vinkler V.    |  /, 1   |  /, 1   |  /, 1   |  /      |  /, 1   |  -      |  -      |  /      |  /      |        | B: 3+4    |            |
-| Zajac V.      |  /      |  /      |  /      |  /      |  /      |  /      |  -      |  /, 1   |  /      |        | C         |            |
+|               |  **1**  |  **2**  |  **3**  |  **4**  |  **5**  |  **6**  |  **7**  |  **8**  |  **9**  | **10**  | **Úlohy** |   **ZT**   |
+|---------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|-----------|------------|
+| Adamec J.     |  /      |  /, 1   |  /      |  /      |  /, 1   |  /, 1   |  /, 1   |  /, 2   |  /, 1   |  /, 1   | C: 3      |            |
+| Babulík O.    |  /, 1   |  /      |  /, 1   |  /, 1   |  /      |  -      |  /      |  /      |  -      |  -      | A: 3      |            |
+| Fildán M.     |  /, 1   |  /, 1   |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      | B         |            |
+| Filip M.      |  /      |  /      |  -      |  -      |  /      |  /      |  /      |  /      |  -      |  o      | C         |            |
+| Flaig D. I.   |  -      |  /, 1   |  /      |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /, 2   |  /      | A         |            |
+| Gyepes F.     |  /, 1   |  /, 2   |  /      |  /, 1   |  /, 1   |  /      |  /, 1   |  /      |  -      |  -      | B: 3      |            |
+| Horáček K.    |  /      |  /      |  /      |  -      |  /      |  /      |  /      |  /      |  /      |  -      | C         |            |
+| Chmela R.     |  /      |  /, 1   |  /, 1   |  /      |  /, 1   |  /      |  /      |  -      |  /, 1   |  /, 2   | A: 3      |            |
+| Kolář J.      |  /, 1   |  /, 1   |  /      |  /, 2   |  /      |  /      |  /      |  /      |  /      |  -      | B: 3      |            |
+| Kozlová A.    |  /, 1   |  /, 1   |  -      |  /      |  /      |  /      |  /      |  /      |  /      |  /, 1   | C         |            |
+| Krška F.      |  /      |  /      |  /, 1   |  -      |  /, 1   |  /, 1   |  /, 1   |  /, 2   |  /, 2   |  -      | A         |            |
+| Krupka F.     |  /, (8) |  /      |  /      |  /      |  /      |  o      |  /      |  /      |  o      |  /      | B         |            |
+| Kubiš J.      |  /      |  /      |  -      |  /      |  /      |  /      |  /      |  /      |  -      |  /      | C         |            |
+| Kuchárik J.   |  /      |  -      |  /      |  /      |  /, 2   |  /, 1   |  /, 2   |  /, 1   |  /, 2   |  -      | A         |            |
+| Landa P.      |  /      |  /      |  /      |  /, 1   |  /, 1   |  /      |  /, 1   |  /, 1   |  /, 2   |  -      | B: 2      |            |
+| Lorenc L.     |  /      |  /, 2   |  /, 1   |  /      |  /      |  /      |  /      |  -      |  /      |  -      | C: 3+5    |            |
+| Luhanová K.   |  /      |  /      |  /, 1   |  /, 1   |  /, 1   |  /      |  /, 1   |  -      |  -      |  -      | A: 3      |            |
+| Matušek J.    |  /, 1   |  /      |  -      |  /      |  -      |  /      |  /      |  -      |  /, 2   |  /      | B         |            |
+| Müller J.     |  /, 1   |  /, 1   |  /      |  -      |  /      |  /, 2   |  /, 1   |  /      |  /, 1   |  -      | C         |            |
+| Onderka R.    |  /, 1   |  -      |  /, 3   |  /, 2   |  o      |  o      |  -      |  o      |  /, 1   |  /, 2   | A         |            |
+| Roller J.     |  /, 1   |  /, 2   |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /      |  -      |  /, 2   |  /, 1   | B: 3+4    |            |
+| Sochorovský V.|  /, 1   |  /      |  -      |  /, 2   |  /, 1   |  /      |  o      |  /      |  /, 1   |  /, 2   | C         |            |
+| Stuchlík O.   |  /, 1   |  /      |  -      |  /      |  /      |  /      |  /, 1   |  -      |  /, 1   |  /, 2   | A         |            |
+| Vinkler V.    |  /, 1   |  /, 1   |  /, 1   |  /      |  /, 1   |  -      |  -      |  /      |  /      |  -      | B: 3+4    |            |
+| Zajac V.      |  /      |  /      |  /      |  /      |  /      |  /      |  -      |  /, 1   |  /      |  /      | C         |            |
 
 
 ### Cvičení středa 12:00
-|               |  **1**  |  **2**  |  **3**  |  **4**  |  **5**  |  **6**  |  **7**  |  **8**  |  **9**  | **10** | **Úlohy** |   **ZT**   |
-|---------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|--------|-----------|------------|
-| Artamonov M.  |  o, (1) |  /      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |        | (3+4+5)   |            |
-| Bažantová V.  |  o, (2) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |        | (3+3)     |            |
-| Darbayev C.   |  /, 1   |  /, 1   |  -      |  /      |  -      |  /, 1   |  /      |  /, 1   |  -      |        | A         |            |
-| Děnisova A.   |  /, 1   |  /      |  /      |  /      |  /      |  /      |  -      |  /      |  /      |        | B         |            |
-| Golisová S.   |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      |        | C         |            |
-| Chalas T.     |  /, 2   |  /      |  /      |  /      |  /      |  /      |  /      |  /      |  /      |        | A: 3+4    |            |
-| Chylík R.     |  /      |  -      |  /      |  /      |  /      |  /      |  /      |  /      |  /      |        | B         |            |
-| Kašlíková M.  |  /, 1   |  /, 2   |  /, 2   |  /, 1   |  /      |  /      |  -      |  /      |  -      |        | C         |            |
-| Kulhánková A. |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      |        | A         |            |
-| Lohvynenko O. |  /      |  /, 1   |  /      |  /      |  /, 1   |  -      |  -      |  /, 1   |  /      |        | B         |            |
-| Palovský V.   |  /      |  /      |  /      |  /, 1   |  /, 1   |  /, 1   |  -      |  /      |  /      |        | C         |            |
-| Provazník V.  |  /, 1   |  /, 2   |  /, 2   |  /, 1   |  /, 1   |  /, 2   |  /      |  /      |  /, 1   |        | A         |            |
-| Rudenko Y.    |  /      |  /      |  /      |  /, 1   |  /      |  /, 1   |  /, 2   |  /, 2   |  /, 2   |        | B         |            |
-| Salikhov D.   |  /, 2   |  /, 2   |  /, 2   |  /, 2   |  /, 1   |  /      |  /      |  /, 1   |  /, 1   |        | C         |            |
-| Sereghy H.    |  /, 1   |  /      |  /      |  /      |  /      |  /      |  /      |  /      |  -      |        | A         |            |
-| Šiler J.      |  /, 1   |  /      |  /, 2   |  /, 1   |  /      |  -      |  /, 1   |  /      |  /, 1   |        | B         |            |
-| Vojtík A.     |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      |        | C         |            |
-| Yergaliyev D. |  /      |  /      |  -      |  /      |  /      |  /      |  -      |  /      |  /      |        | A         |            |
-| Zykán F.      |  /, 1   |  /, 1   |  /, 2   |  /, 2   |  /, 1   |  /, 1   |  /      |  /      |  /      |        | B: 3      |            |
+|               |  **1**  |  **2**  |  **3**  |  **4**  |  **5**  |  **6**  |  **7**  |  **8**  |  **9**  | **10**  | **Úlohy** |   **ZT**   |
+|---------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|-----------|------------|
+| Artamonov M.  |  o, (1) |  /      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | (3+4+5)   |            |
+| Bažantová V.  |  o, (2) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | (3+3)     |            |
+| Darbayev C.   |  /, 1   |  /, 1   |  -      |  /      |  -      |  /, 1   |  /      |  /, 1   |  -      |  /      | A         |            |
+| Děnisova A.   |  /, 1   |  /      |  /      |  /      |  /      |  /      |  -      |  /      |  /      |  /      | B         |            |
+| Golisová S.   |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      | C         |            |
+| Chalas T.     |  /, 2   |  /      |  /      |  /      |  /      |  /      |  /      |  /      |  /      |  /, 1   | A: 3+4    |            |
+| Chylík R.     |  /      |  -      |  /      |  /      |  /      |  /      |  /      |  /      |  /      |  /      | B: 2      |            |
+| Kašlíková M.  |  /, 1   |  /, 2   |  /, 2   |  /, 1   |  /      |  /      |  -      |  /      |  -      |  -      | C         |            |
+| Kulhánková A. |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      | A         |            |
+| Lohvynenko O. |  /      |  /, 1   |  /      |  /      |  /, 1   |  -      |  -      |  /, 1   |  /      |  /      | B         |            |
+| Palovský V.   |  /      |  /      |  /      |  /, 1   |  /, 1   |  /, 1   |  -      |  /      |  /      |  /      | C         |            |
+| Provazník V.  |  /, 1   |  /, 2   |  /, 2   |  /, 1   |  /, 1   |  /, 2   |  /      |  /      |  /, 1   |  /, 2   | A         |            |
+| Rudenko Y.    |  /      |  /      |  /      |  /, 1   |  /      |  /, 1   |  /, 2   |  /, 2   |  /, 2   |  -      | B         |            |
+| Salikhov D.   |  /, 2   |  /, 2   |  /, 2   |  /, 2   |  /, 1   |  /      |  /      |  /, 1   |  /, 1   |  /, 2   | C         |            |
+| Sereghy H.    |  /, 1   |  /      |  /      |  /      |  /      |  /      |  /      |  /      |  -      |  /      | A         |            |
+| Šiler J.      |  /, 1   |  /      |  /, 2   |  /, 1   |  /      |  -      |  /, 1   |  /      |  /, 1   |  -      | B         |            |
+| Vojtík A.     |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      | C         |            |
+| Yergaliyev D. |  /      |  /      |  -      |  /      |  /      |  /      |  -      |  /      |  /      |  /      | A         |            |
+| Zykán F.      |  /, 1   |  /, 1   |  /, 2   |  /, 2   |  /, 1   |  /, 1   |  /      |  /      |  /      |  /, 2   | B: 3      |            |
 
 
 ### Cvičení čtvrtek 10:00
@@ -141,7 +141,7 @@ v případě hraničních 10ti bodů z testu je lepší hodnocení při dosažen
 - metoda nejmenších čtverců, vhodnost jejího použití (a úskalí použití), v čem se zásadně liší oproti aproximaci kubickými spliny, základní princip odvození (z čeho vycházíme, co je cílem této metody)
 - podmínka pro existenci alespoň jednoho kořene nelineární rovnice na určeném intervalu, zaručenost a rychlost konvergence při použití jednotlivých metod, základní princip Müllerovy metody pro hledání kořene polynomu
 - soustavy nelineárních rovnic, základní principy metody prosté iterace a metody Newton-Raphsonovy pro hledání kořenů soustav nelineárních rovnic
-- minimální potřebný počet bodů pro ohraničení lokálního extrému 1D funkce, přesnost hledání lokálního extrému funkce oproti kořenu nelineární rovnice, metoda zlatého řezu a princip jejího odvození, základní princip metody parabolické interpolace, vývoj chyby určení lokálního extrému u těchto metod, jak najít lokální maximum při použití metody pro hledání lokálního minima funkce
+- minimální potřebný počet bodů (resp. hodnot funkce v těchto bodech) pro ohraničení lokálního extrému 1D funkce, přesnost hledání lokálního extrému funkce oproti kořenu nelineární rovnice, metoda zlatého řezu a princip jejího odvození, základní princip metody parabolické interpolace, vývoj chyby určení lokálního extrému u těchto metod, jak najít lokální maximum při použití metody pro hledání lokálního minima funkce
 - hledání lokálních extrémů funkce o dvou a více proměnných, základní principy simplexové (Nelder-Mead) metody, metody největšího spádu a metody konjugovaných gradientů, problém metody největšího spádu a výhoda metody konjugovaných gradientů
 - numerický výpočet integrálu 1D funkce, klasické kvadraturní vzorce (princip lichoběžníkové, obdélníkové-midpoint metody a Simpsonova pravidla, složených vzorců uzavřených a otevřených) a jejich přesnost, základní principy a výhody Gaussových kvadratur oproti klasickým (Newton-Cotesovým) kvadraturním vzorcům, princip a výhody Rombergovy integrační metody
 - integrace vícerozměrných funkcí, integrace metodou Monte Carlo, vhodnost jejího použití, přesnost (chyba) metody Monte Carlo v závislosti na počtu vygenerovaných náhodných bodů
