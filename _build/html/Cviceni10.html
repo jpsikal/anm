@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -66,7 +66,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Úlohy k řešení" href="ZadaniUloh.html" />
-    <link rel="prev" title="9. Obyčejné diferenciální rovnice (ODR)" href="Cviceni09.html" />
+    <link rel="prev" title="9. Obyčejné diferenciální rovnice (ODR)" href="Cviceni09vyplnene.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -169,12 +169,12 @@
 <li class="toctree-l1"><a class="reference internal" href="Cviceni01vyplnene.html">1. Jupyter notebook a základy Pythonu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni02vyplnene.html">2. Chyby a nestabilita</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Cviceni03vyplnene.html">3. Numerické metody lineární algebry</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni04.html">4. Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni05.html">5. Aproximace funkcí</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni06.html">6. Řešení nelineárních rovnic a jejich soustav</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni07.html">7. Extrémy funkcí</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni08.html">8. Numerická integrace</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Cviceni09.html">9. Obyčejné diferenciální rovnice (ODR)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni04vyplnene.html">4. Iterační metody řešení soustav lineárních rovnic, hledání vlastních čísel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni05vyplnene.html">5. Aproximace funkcí</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni06vyplnene.html">6. Řešení nelineárních rovnic a jejich soustav</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni07vyplnene.html">7. Extrémy funkcí</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni08vyplnene.html">8. Numerická integrace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cviceni09vyplnene.html">9. Obyčejné diferenciální rovnice (ODR)</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">10. Obyčejné diferenciální rovnice (ODR) II</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Zadání úloh</span></p>
@@ -475,8 +475,12 @@ y''(t)=-y(t)
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># vstupni matice pro reseni pocatecniho problemu - resime dve rovnice prvniho radu</span>
+
+<span class="c1">#def F(t,s):</span>
+<span class="c1">#    return np.dot(np.array([[0,1],[0,-9.81/s[1]]]),s)  </span>
+
 <span class="k">def</span><span class="w"> </span><span class="nf">F</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">s</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mf">9.81</span><span class="o">/</span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">]]]),</span><span class="n">s</span><span class="p">)</span>    
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="o">-</span><span class="mf">9.81</span><span class="p">])</span>
 
 <span class="c1"># prvni pocatecni podminka y(t=0)=0</span>
 <span class="n">y0</span> <span class="o">=</span> <span class="mi">0</span>
@@ -549,7 +553,7 @@ y''(t)=-y(t)
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Cviceni09.html"
+       href="Cviceni09vyplnene.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
