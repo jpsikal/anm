@@ -18,7 +18,7 @@
 - podmínkou pro udělení zápočtu je zisk stanoveného minimálního počtu bodů ze zápočtového testu dle počtu bodů získaných za aktivitu, na klasifikaci má vliv i počet bodů získaných za aktivitu (obojí detailněji viz níže)
 - studenti, kteří mají 12ANM podruhé zapsán, si mohou svoje bodové skóre vylepšit před zápočtovým testem vyřešením úloh v předchozím akademickém roce nezadaných, na kterých se se mnou předem dohodnou
 - možnost přihlášení se (e-mailem) k představení řešené úlohy je do 11.5.2026 11:59 (na termín 12.5.)
-- termíny zápočtových testů: čtvrtek 14.5. od 10:00 v T201, středa 20.5. od 10:00 v T105, středa 20.5. od 12:00 v T105 dle termínu Vašeho cvičení, resp. tabulky níže
+- termíny zápočtových testů: čtvrtek 14.5. od 10:00 v T201, středa 20.5. od 12:00 v T201, dle dne v týdnu Vašeho cvičení, příp. dle přihlášení se e-mailem do pondělí 11.5.2026 9:59 (v případě, že Vám více vyhovuje druhý termín než ten určený dle rozpisu cvičení v tabulce níže)
 
 ## Zápočtová tabulka
 
@@ -77,34 +77,34 @@
 
 
 ### Cvičení čtvrtek 10:00
-|               |  **1**  |  **2**  |  **3**  |  **4**  |  **5**  |  **6**  |  **7**  |  **8**  |  **9**  | **10** | **Úlohy** |   **ZT**   |
-|---------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|--------|-----------|------------|
-| Býčková M.    |  o, (6) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |        | B, (1)    |            |
-| Dolejš M.     |  o, (0) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |        | C         |            |
-| Dragounová A. |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /      |  /, 1   |  /, 2   |  /      |        | A: 3      |            |
-| Hegerová S.   |  /, 1   |  o      |  /      |  /      |  o      |  /      |  /      |  o      |  /      |        | B         |            |
-| Hrabalová K.  |  /, 2   |  /, 1   |  /, 1   |  /      |  /, 1   |  /      |  /, 1   |  /      |  /      |        | C: 2      |            |
-| Jachková K.   |  /      |  /, 1   |  /      |  /      |  /, 1   |  /      |  /, 1   |  /, 1   |  /, 2   |        | A         |            |
-| Janásková M.  |  o, (2) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |        | (3+3)     |            |
-| Jirásek A.    |  -      |  -      |  /      |  /      |  /, 1   |  /      |  /      |  /      |  -      |        | B         |            |
-| Kaputlu B.N.  |  /      |  /      |  /, 1   |  /, 1   |  /, 2   |  /      |  /, 2   |  /, 2   |  /, 1   |        | C         |            |
-| Kinclová A.   |  /, 1   |  /      |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /      |  /, 1   |  /, 1   |        | A         |            |
-| Korecký M.    |  o, (3) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |        | (5)       |            |
-| Kubelka M.    |  /, (4) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |        | (3+4)     |            |
-| Marková B.    |  /      |  /      |  /, 1   |  /, 2   |  /, 2   |  /, 1   |  /, 1   |  /, 1   |  /      |        | B         |            |
-| Metelková Š.  |  /, 1   |  /, 1   |  /      |  /      |  /      |  /      |  /      |  /      |  -      |        | C: 3      |            |
-| Mikšovský P.  |  o, (1) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |        | C, (3)    |            |
-| Modrianský J. |  /      |  /, 1   |  /, 1   |  /      |  /      |  /, 1   |  /      |  /, 1   |  /      |        | A         |            |
-| Mroceková L.  |  /      |  /      |  /, 1   |  -      |  /      |  /, 1   |  /, 2   |  /      |  /, 2   |        | B         |            |
-| Pelán Š.      |  /, (5) |  /      |  o      |  /      |  /      |  /      |  /      |  /      |  /      |        | A, (3)    |            |
-| Pichová A.    |  /      |  /      |  /, 1   |  /, 1   |  /      |  -      |  /      |  /, 2   |  /, 1   |        | C         |            |
-| Rišová Ž.     |  /      |  /      |  /      |  /      |  /      |  -      |  -      |  /, 1   |  /, 2   |        | A         |            |
-| Sokolová Z.   |  /, 2   |  /, 2   |  -      |  /, 2   |  /, 2   |  /, 2   |  o      |  /, 1   |  /, 2   |  o     | B: 2+3+4  |            |
-| Valach V.     |  /      |  /      |  /      |  /, 2   |  /, 1   |  /, 2   |  /, 1   |  /, 2   |  /      |        | C         |            |
-| Vavro T.      |  /      |  /      |  /, 1   |  /      |  /      |  /      |  /      |  /      |  -      |        | A         |            |
-| Vlčinová I.   |  /, 1   |  /, 1   |  /      |  /, 1   |  /, 1   |  -      |  /      |  -      |  /, 2   |        | B: 5      |            |
-| Vyhnánek J.   |  /, 1   |  -      |  /      |  -      |  -      |  -      |  -      |  -      |  -      |        | C         |            |
-| Žůrek D.      |  /, 1   |  /      |  /      |  /, 2   |  /, 2   |  /, 1   |  /, 2   |  /      |  /      |        | A         |            |
+|               |  **1**  |  **2**  |  **3**  |  **4**  |  **5**  |  **6**  |  **7**  |  **8**  |  **9**  | **10**  | **Úlohy** |   **ZT**   |
+|---------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|-----------|------------|
+| Býčková M.    |  o, (6) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | B, (1)    |            |
+| Dolejš M.     |  o, (0) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | C         |            |
+| Dragounová A. |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /      |  /, 1   |  /, 2   |  /      |  -      | A: 3      |            |
+| Hegerová S.   |  /, 1   |  o      |  /      |  /      |  o      |  /      |  /      |  o      |  /      |  o      | B         |            |
+| Hrabalová K.  |  /, 2   |  /, 1   |  /, 1   |  /      |  /, 1   |  /      |  /, 1   |  /      |  /      |  /, 2   | C: 2      |            |
+| Jachková K.   |  /      |  /, 1   |  /      |  /      |  /, 1   |  /      |  /, 1   |  /, 1   |  /, 2   |  /, 2   | A         |            |
+| Janásková M.  |  o, (2) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | (3+3)     |            |
+| Jirásek A.    |  -      |  -      |  /      |  /      |  /, 1   |  /      |  /      |  /      |  -      |  -      | B         |            |
+| Kaputlu B.N.  |  /      |  /      |  /, 1   |  /, 1   |  /, 2   |  /      |  /, 2   |  /, 2   |  /, 1   |  /      | C         |            |
+| Kinclová A.   |  /, 1   |  /      |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /      |  /, 1   |  /, 1   |  /, 2   | A         |            |
+| Korecký M.    |  o, (3) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | (5)       |            |
+| Kubelka M.    |  /, (4) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | (3+4)     |            |
+| Marková B.    |  /      |  /      |  /, 1   |  /, 2   |  /, 2   |  /, 1   |  /, 1   |  /, 1   |  /      |  /      | B         |            |
+| Metelková Š.  |  /, 1   |  /, 1   |  /      |  /      |  /      |  /      |  /      |  /      |  -      |  /      | C: 3      |            |
+| Mikšovský P.  |  o, (1) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | C, (3)    |            |
+| Modrianský J. |  /      |  /, 1   |  /, 1   |  /      |  /      |  /, 1   |  /      |  /, 1   |  /      |  /, 1   | A         |            |
+| Mroceková L.  |  /      |  /      |  /, 1   |  -      |  /      |  /, 1   |  /, 2   |  /      |  /, 2   |  /      | B         |            |
+| Pelán Š.      |  /, (5) |  /      |  o      |  /      |  /      |  /      |  /      |  /      |  /      |  o      | A, (3)    |            |
+| Pichová A.    |  /      |  /      |  /, 1   |  /, 1   |  /      |  -      |  /      |  /, 2   |  /, 1   |  /      | C         |            |
+| Rišová Ž.     |  /      |  /      |  /      |  /      |  /      |  -      |  -      |  /, 1   |  /, 2   |  /      | A         |            |
+| Sokolová Z.   |  /, 2   |  /, 2   |  -      |  /, 2   |  /, 2   |  /, 2   |  o      |  /, 1   |  /, 2   |  o      | B: 2+3+4  |            |
+| Valach V.     |  /      |  /      |  /      |  /, 2   |  /, 1   |  /, 2   |  /, 1   |  /, 2   |  /      |  -      | C         |            |
+| Vavro T.      |  /      |  /      |  /, 1   |  /      |  /      |  /      |  /      |  /      |  -      |  /, 2   | A         |            |
+| Vlčinová I.   |  /, 1   |  /, 1   |  /      |  /, 1   |  /, 1   |  -      |  /      |  -      |  /, 2   |  /      | B: 5      |            |
+| Vyhnánek J.   |  /, 1   |  -      |  /      |  -      |  -      |  -      |  -      |  -      |  -      |  -      | C         |            |
+| Žůrek D.      |  /, 1   |  /      |  /      |  /, 2   |  /, 2   |  /, 1   |  /, 2   |  /      |  /      |  -      | A         |            |
 
 Vysvětlivky:"/" přítomen, "-" nepřitomen, "o" omluven, číslo udává počet bodů za aktivitu na cvičeních, v závorce jsou započítané body z předchozího akademického roku. 
 
