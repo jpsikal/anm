@@ -24,9 +24,9 @@
 - **výsledek zápočtového testu najdete v posledním sloupci v notaci: počet bodů (hodnocení)**
 - pokud je známka zapsaná tučně, jedná se o definitivní hodnocení se záznamem v systému KOS ČVUT
 - pokud se student z účasti na zápočtovém testu předem neomluvil a na svůj první test se tedy bez omluvy nedostavil, počítá se mu 0 bodů z prvního testu (zpětně lze vymazat pouze na základě vážných doložitelných důvodů)
-- studentům s prozatimním hodnocením lepším než F udělím definitivní hodnocení odpovídající zde uvedené známce, pokud mi do 31.5.2025 23:59 e-mailem neoznámí, že mají zájem se pokoušet o lepší hodnocení
+- studentům s prozatimním hodnocením lepším než F udělím definitivní hodnocení odpovídající zde uvedené známce, pokud mi do 31.5.2026 23:59 e-mailem neoznámí, že mají zájem se pokoušet o lepší hodnocení
 - každý student má právo na jeden opravný zápočtový test; pokud se pro něj rozhodne, pak platí následující pravidlo: počítá se co je pro studenta výhodnější - buď pouze hodnocení z druhého napsaného testu nebo hodnocení založené na aritmetickém průměru z obou testů
-- termíny opravných zápočtových testů budou stanoveny v předstihu všechny do konce května (předpokládám jeden termín v červnu, jeden v červenci, jeden v září)
+- termíny opravných zápočtových testů budou stanoveny v předstihu všechny do konce května (předpokládám jeden termín v červnu v týdnu 15.6.-19.6., jeden v červenci, jeden v září)
 
 
 ### Cvičení středa 10:00
@@ -38,7 +38,7 @@
 | Filip M.      |  /      |  /      |  -      |  -      |  /      |  /      |  /      |  /      |  -      |  o      | C         | 11 (F)     |
 | Flaig D. I.   |  -      |  /, 1   |  /      |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /, 2   |  /      | A         | 15 (C)     |
 | Gyepes F.     |  /, 1   |  /, 2   |  /      |  /, 1   |  /, 1   |  /      |  /, 1   |  /      |  -      |  -      | B: 3      | 7 (F)      |
-| Horáček K.    |  /      |  /      |  /      |  -      |  /      |  /      |  /      |  /      |  /      |  -      | C: 5+1    | 8 (F)      |
+| Horáček K.    |  /      |  /      |  /      |  -      |  /      |  /      |  /      |  /      |  /      |  -      | C: 5+1    | 9 (F)      |
 | Chmela R.     |  /      |  /, 1   |  /, 1   |  /      |  /, 1   |  /      |  /      |  -      |  /, 1   |  /, 2   | A: 3      | 12 (E)     |
 | Kolář J.      |  /, 1   |  /, 1   |  /      |  /, 2   |  /      |  /      |  /      |  /      |  /      |  -      | B: 3+4    | 7 (F)      |
 | Kozlová A.    |  /, 1   |  /, 1   |  -      |  /      |  /      |  /      |  /      |  /      |  /      |  /, 1   | C: 4      | 7 (F)      |
@@ -65,21 +65,21 @@
 | Artamonov M.  |  o, (1) |  /      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | (3+4+5)   |            |
 | Bažantová V.  |  o, (2) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | (3+3)     | 7 (F)      |
 | Darbayev C.   |  /, 1   |  /, 1   |  -      |  /      |  -      |  /, 1   |  /      |  /, 1   |  -      |  /      | A: 3+4    | 5 (F)      |
-| Děnisova A.   |  /, 1   |  /      |  /      |  /      |  /      |  /      |  -      |  /      |  /      |  /      | B: 2+4+4  | 9 (F)      |
+| Děnisova A.   |  /, 1   |  /      |  /      |  /      |  /      |  /      |  -      |  /      |  /      |  /      | B: 2+4+4  | 10 (E)     |
 | Golisová S.   |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      | C         | **0 (F)**  |
 | Chalas T.     |  /, 2   |  /      |  /      |  /      |  /      |  /      |  /      |  /      |  /      |  /, 1   | A: 3+4    |            |
 | Chylík R.     |  /      |  -      |  /      |  /      |  /      |  /      |  /      |  /      |  /      |  /      | B: 2      | 4 (F)      |
-| Kašlíková M.  |  /, 1   |  /, 2   |  /, 2   |  /, 1   |  /      |  /      |  -      |  /      |  -      |  -      | C         | 10 (F)     |
+| Kašlíková M.  |  /, 1   |  /, 2   |  /, 2   |  /, 1   |  /      |  /      |  -      |  /      |  -      |  -      | C         | 11 (E)     |
 | Kulhánková A. |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      | A         | **0 (F)**  |
 | Lohvynenko O. |  /      |  /, 1   |  /      |  /      |  /, 1   |  -      |  -      |  /, 1   |  /      |  /      | B         | 12 (F)     |
 | Palovský V.   |  /      |  /      |  /      |  /, 1   |  /, 1   |  /, 1   |  -      |  /      |  /      |  /      | C         | 8 (F)      |
-| Provazník V.  |  /, 1   |  /, 2   |  /, 2   |  /, 1   |  /, 1   |  /, 2   |  /      |  /      |  /, 1   |  /, 2   | A: 3+4+5  | **17 (A)** |
+| Provazník V.  |  /, 1   |  /, 2   |  /, 2   |  /, 1   |  /, 1   |  /, 2   |  /      |  /      |  /, 1   |  /, 2   | A: 3+4+5  | **18 (A)** |
 | Rudenko Y.    |  /      |  /      |  /      |  /, 1   |  /      |  /, 1   |  /, 2   |  /, 2   |  /, 2   |  -      | B         | 2 (F)      |
-| Salikhov D.   |  /, 2   |  /, 2   |  /, 2   |  /, 2   |  /, 1   |  /      |  /      |  /, 1   |  /, 1   |  /, 2   | C: 3+4+5  | **18 (A)** |
+| Salikhov D.   |  /, 2   |  /, 2   |  /, 2   |  /, 2   |  /, 1   |  /      |  /      |  /, 1   |  /, 1   |  /, 2   | C: 3+4+5  | **19 (A)** |
 | Sereghy H.    |  /, 1   |  /      |  /      |  /      |  /      |  /      |  /      |  /      |  -      |  /      | A: 3+2    | 13 (D)     |
 | Šiler J.      |  /, 1   |  /      |  /, 2   |  /, 1   |  /      |  -      |  /, 1   |  /      |  /, 1   |  -      | B: 3+4    | 15 (B)     |
 | Yergaliyev D. |  /      |  /      |  -      |  /      |  /      |  /      |  -      |  /      |  /      |  /      | A         | 6 (F)      |
-| Zykán F.      |  /, 1   |  /, 1   |  /, 2   |  /, 2   |  /, 1   |  /, 1   |  /      |  /      |  /      |  /, 2   | B: 3      | 14 (C)     |
+| Zykán F.      |  /, 1   |  /, 1   |  /, 2   |  /, 2   |  /, 1   |  /, 1   |  /      |  /      |  /      |  /, 2   | B: 3      | 15 (B)     |
 
 
 ### Cvičení čtvrtek 10:00
@@ -89,13 +89,13 @@
 | Dolejš M.     |  o, (0) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | C: 1+3+4  | 10 (E)     |
 | Dragounová A. |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /      |  /, 1   |  /, 2   |  /      |  -      | A: 3      | 8 (F)      |
 | Hegerová S.   |  /, 1   |  o      |  /      |  /      |  o      |  /      |  /      |  o      |  /      |  o      | B         | 0 (F)      |
-| Hrabalová K.  |  /, 2   |  /, 1   |  /, 1   |  /      |  /, 1   |  /      |  /, 1   |  /      |  /      |  /, 2   | C: 2+4    | 9 (F)      |
+| Hrabalová K.  |  /, 2   |  /, 1   |  /, 1   |  /      |  /, 1   |  /      |  /, 1   |  /      |  /      |  /, 2   | C: 2+4    | 8 (F)      |
 | Jachková K.   |  /      |  /, 1   |  /      |  /      |  /, 1   |  /      |  /, 1   |  /, 1   |  /, 2   |  /, 2   | A         | 7 (F)      |
 | Janásková M.  |  o, (2) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | (3+3)     | 6 (F)      |
 | Jirásek A.    |  -      |  -      |  /      |  /      |  /, 1   |  /      |  /      |  /      |  -      |  o      | B: 4+5    | 5 (F)      |
 | Kaputlu B.N.  |  /      |  /      |  /, 1   |  /, 1   |  /, 2   |  /      |  /, 2   |  /, 2   |  /, 1   |  /      | C: 5      | 7 (F)      |
 | Kinclová A.   |  /, 1   |  /      |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /      |  /, 1   |  /, 1   |  /, 2   | A         | 8 (F)      |
-| Korecký M.    |  o, (3) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | (5)       | 6 (F)      |
+| Korecký M.    |  o, (3) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | (5)       | 7 (F)      |
 | Kubelka M.    |  /, (4) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | (3+4)     | 10 (E)     |
 | Marková B.    |  /      |  /      |  /, 1   |  /, 2   |  /, 2   |  /, 1   |  /, 1   |  /, 1   |  /      |  /      | B         | 16 (C)     |
 | Metelková Š.  |  /, 1   |  /, 1   |  /      |  /      |  /      |  /      |  /      |  /      |  -      |  /      | C: 3+4    | 13 (D)     |
@@ -104,7 +104,7 @@
 | Mroceková L.  |  /      |  /      |  /, 1   |  -      |  /      |  /, 1   |  /, 2   |  /      |  /, 2   |  /      | B: 2+5    | 8 (F)      |
 | Pelán Š.      |  /, (5) |  /      |  o      |  /      |  /      |  /      |  /      |  /      |  /      |  o      | A, (3)    | 0 (F)      |
 | Pichová A.    |  /      |  /      |  /, 1   |  /, 1   |  /      |  -      |  /      |  /, 2   |  /, 1   |  /      | C: 1      | 2 (F)      |
-| Rišová Ž.     |  /      |  /      |  /      |  /      |  /      |  -      |  -      |  /, 1   |  /, 2   |  /      | A         | 14 (E)     |
+| Rišová Ž.     |  /      |  /      |  /      |  /      |  /      |  -      |  -      |  /, 1   |  /, 2   |  /      | A         | 13 (E)     |
 | Sokolová Z.   |  /, 2   |  /, 2   |  -      |  /, 2   |  /, 2   |  /, 2   |  o      |  /, 1   |  /, 2   |  o      | B: 2+3+4  | 8 (F)      |
 | Valach V.     |  /      |  /      |  /      |  /, 2   |  /, 1   |  /, 2   |  /, 1   |  /, 2   |  /      |  -      | C         | 2 (F)      |
 | Vavro T.      |  /      |  /      |  /, 1   |  /      |  /      |  /      |  /      |  /      |  -      |  /, 3   | A: 3+5    | 11 (D)     |
