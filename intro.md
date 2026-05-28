@@ -26,7 +26,10 @@
 - pokud se student z účasti na zápočtovém testu předem neomluvil a na svůj první test se tedy bez omluvy nedostavil, počítá se mu 0 bodů z prvního testu (zpětně lze vymazat pouze na základě vážných doložitelných důvodů)
 - studentům s prozatimním hodnocením lepším než F udělím definitivní hodnocení odpovídající zde uvedené známce, pokud mi do 31.5.2026 23:59 e-mailem neoznámí, že mají zájem se pokoušet o lepší hodnocení
 - každý student má právo na jeden opravný zápočtový test; pokud se pro něj rozhodne, pak platí následující pravidlo: počítá se co je pro studenta výhodnější - buď pouze hodnocení z druhého napsaného testu nebo hodnocení založené na aritmetickém průměru z obou testů
-- termíny opravných zápočtových testů budou stanoveny v předstihu všechny do konce května (předpokládám jeden termín v červnu v týdnu 15.6.-19.6., jeden v červenci, jeden v září)
+- **termíny opravných zápočtových testů: čtvrtek 18.6.2026 od 14:00 v T121, pondělí 20.7.2026 od 14:00 v T121, čtvrtek 10.9.2026 od 14:00 v T201**
+- změna místností vyhrazena, stanovené termíny se ale pokusím dodržet téměř "za každou cenu"
+- na zápočtový test je **nezbytné se předem písemně přihlásit e-mailem vyučujícímu** především z důvodů organizačních **minimálně 96 hodin (4 dny)** před začátek konání opravného testu, jinak Vám nebude umožněno si test napsat
+- **příp. písemné odhlášení s omlouvou** je možné **nejpozději 24 hodin před začátkem konání opravného testu** (maximálně však jednou ze všech opravných termínů), jinak budete hodnoceni s výsledkem 0 bodů, tedy hodnocením F (s výjimkou předem neomluvené nepřítomnosti z vážných důvodů doložitelných dokumenty)
 
 
 ### Cvičení středa 10:00
