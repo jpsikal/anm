@@ -28,8 +28,8 @@
 - každý student má právo na jeden opravný zápočtový test; pokud se pro něj rozhodne, pak platí následující pravidlo: počítá se co je pro studenta výhodnější - buď pouze hodnocení z druhého napsaného testu nebo hodnocení založené na aritmetickém průměru z obou testů
 - **termíny opravných zápočtových testů: čtvrtek 18.6.2026 od 14:00 v T121, pondělí 20.7.2026 od 14:00 v T121, čtvrtek 10.9.2026 od 14:00 v T201**
 - změna místností vyhrazena, stanovené termíny se ale pokusím dodržet téměř "za každou cenu"
-- na zápočtový test je **nezbytné se předem písemně přihlásit e-mailem vyučujícímu** především z důvodů organizačních **minimálně 96 hodin (4 dny) před začátkem konání opravného testu**, jinak Vám nebude umožněno si test napsat
-- **příp. písemné odhlášení s omluvou** je možné **nejpozději 24 hodin před začátkem konání opravného testu** (maximálně však jednou ze všech opravných termínů), jinak budete hodnoceni s výsledkem 0 bodů, tedy hodnocením F (s výjimkou předem neomluvené náhlé nepřítomnosti z vážných důvodů doložitelných dokumenty)
+- na zápočtový test je **nezbytné se předem písemně přihlásit e-mailem vyučujícímu** především z důvodů organizačních **minimálně 96 hodin (4 dny) před začátkem konání opravného testu**, jinak Vám nebude umožněno si test napsat (aktualizace po 20.7.: **tato podmínka neplatí pro poslední termín čtvrtek 10.9., zde předem počítám automaticky s max. 26 účastníky, kteří ještě opravný test psát v letošním semestru mohou**)
+- **příp. písemné odhlášení s omluvou** je možné **nejpozději 24 hodin před začátkem konání opravného testu** (maximálně však jednou ze všech opravných termínů před tím posledním plánovaným, kdy to už smysl nedává ...), jinak budete hodnoceni s výsledkem 0 bodů, tedy hodnocením F (s výjimkou předem neomluvené náhlé nepřítomnosti z vážných důvodů doložitelných dokumenty)
 
 
 ### Cvičení středa 10:00
@@ -38,34 +38,34 @@
 | Adamec J.     |  /      |  /, 1   |  /      |  /      |  /, 1   |  /, 1   |  /, 1   |  /, 2   |  /, 1   |  /, 1   | C: 3      | **17 (A)** |
 | Babulík O.    |  /, 1   |  /      |  /, 1   |  /, 1   |  /      |  -      |  /      |  /      |  -      |  -      | A: 3      | 9 (F)      |
 | Fildán M.     |  /, 1   |  /, 1   |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      | B         | **0 (F)**  |
-| Filip M.      |  /      |  /      |  -      |  -      |  /      |  /      |  /      |  /      |  -      |  o      | C         | 11 (F)     |
+| Filip M.      |  /      |  /      |  -      |  -      |  /      |  /      |  /      |  /      |  -      |  o      | C         | **13 (E)** |
 | Flaig D. I.   |  -      |  /, 1   |  /      |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /, 2   |  /      | A         | **15 (C)** |
 | Gyepes F.     |  /, 1   |  /, 2   |  /      |  /, 1   |  /, 1   |  /      |  /, 1   |  /      |  -      |  -      | B: 3      | 7 (F)      |
-| Horáček K.    |  /      |  /      |  /      |  -      |  /      |  /      |  /      |  /      |  /      |  -      | C: 5+1    | 9 (F)      |
+| Horáček K.    |  /      |  /      |  /      |  -      |  /      |  /      |  /      |  /      |  /      |  -      | C: 5+1    | **8 (F)**  |
 | Chmela R.     |  /      |  /, 1   |  /, 1   |  /      |  /, 1   |  /      |  /      |  -      |  /, 1   |  /, 2   | A: 3      | **12 (E)** |
 | Kolář J.      |  /, 1   |  /, 1   |  /      |  /, 2   |  /      |  /      |  /      |  /      |  /      |  -      | B: 3+4    | 7 (F)      |
 | Kozlová A.    |  /, 1   |  /, 1   |  -      |  /      |  /      |  /      |  /      |  /      |  /      |  /, 1   | C: 4      | 7 (F)      |
 | Krška F.      |  /      |  /      |  /, 1   |  -      |  /, 1   |  /, 1   |  /, 1   |  /, 2   |  /, 2   |  -      | A         | 9 (F)      |
 | Krupka F.     |  /, (8) |  /      |  /      |  /      |  /      |  o      |  /      |  /      |  o      |  /      | B         | 7 (F)      |
 | Kubiš J.      |  /      |  /      |  -      |  /      |  /      |  /      |  /      |  /      |  -      |  /      | C         | 9 (F)      |
-| Kuchárik J.   |  /      |  -      |  /      |  /      |  /, 2   |  /, 1   |  /, 2   |  /, 1   |  /, 2   |  -      | A: 4      | 7 (F)      |
+| Kuchárik J.   |  /      |  -      |  /      |  /      |  /, 2   |  /, 1   |  /, 2   |  /, 1   |  /, 2   |  -      | A: 4      | **14 (C)** |
 | Landa P.      |  /      |  /      |  /      |  /, 1   |  /, 1   |  /      |  /, 1   |  /, 1   |  /, 2   |  -      | B: 2      | **10 (E)** |
 | Lorenc L.     |  /      |  /, 2   |  /, 1   |  /      |  /      |  /      |  /      |  -      |  /      |  -      | C: 3+5    | **17 (A)** |
-| Luhanová K.   |  /      |  /      |  /, 1   |  /, 1   |  /, 1   |  /      |  /, 1   |  -      |  -      |  -      | A: 3+5    | 5 (F)      |
+| Luhanová K.   |  /      |  /      |  /, 1   |  /, 1   |  /, 1   |  /      |  /, 1   |  -      |  -      |  -      | A: 3+5    | **16 (B)** |
 | Matušek J.    |  /, 1   |  /      |  -      |  /      |  -      |  /      |  /      |  -      |  /, 2   |  /      | B         | 0 (F)      |
 | Müller J.     |  /, 1   |  /, 1   |  /      |  -      |  /      |  /, 2   |  /, 1   |  /      |  /, 1   |  -      | C: 5      | **12 (D)** |
 | Onderka R.    |  /, 1   |  -      |  /, 3   |  /, 2   |  o      |  o      |  -      |  o      |  /, 1   |  /, 2   | A         | **10 (E)** |
 | Roller J.     |  /, 1   |  /, 2   |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /      |  -      |  /, 2   |  /, 1   | B: 3+4    | **17 (A)** |
-| Sochorovský V.|  /, 1   |  /      |  -      |  /, 2   |  /, 1   |  /      |  o      |  /      |  /, 1   |  /, 2   | C         | 10 (F)     |
+| Sochorovský V.|  /, 1   |  /      |  -      |  /, 2   |  /, 1   |  /      |  o      |  /      |  /, 1   |  /, 2   | C         | **17 (B)** |
 | Stuchlík O.   |  /, 1   |  /      |  -      |  /      |  /      |  /      |  /, 1   |  -      |  /, 1   |  /, 2   | A: 3      | 9 (F)      |
 | Vinkler V.    |  /, 1   |  /, 1   |  /, 1   |  /      |  /, 1   |  -      |  -      |  /      |  /      |  -      | B: 3+4    | **12 (D)** |
-| Zajac V.      |  /      |  /      |  /      |  /      |  /      |  /      |  -      |  /, 1   |  /      |  /      | C: 3+4    | 8 (F)      |
+| Zajac V.      |  /      |  /      |  /      |  /      |  /      |  /      |  -      |  /, 1   |  /      |  /      | C: 3+4    | **8 (F)**  |
 
 
 ### Cvičení středa 12:00
 |               |  **1**  |  **2**  |  **3**  |  **4**  |  **5**  |  **6**  |  **7**  |  **8**  |  **9**  | **10**  | **Úlohy** |   **ZT**   |
 |---------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|-----------|------------|
-| Artamonov M.  |  o, (1) |  /      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | (3+4+5)   |            |
+| Artamonov M.  |  o, (1) |  /      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | (3+4+5)   | 6 (F)      |
 | Bažantová V.  |  o, (2) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | (3+3)     | 7 (F)      |
 | Darbayev C.   |  /, 1   |  /, 1   |  -      |  /      |  -      |  /, 1   |  /      |  /, 1   |  -      |  /      | A: 3+4    | **5 (F)**  |
 | Děnisova A.   |  /, 1   |  /      |  /      |  /      |  /      |  /      |  -      |  /      |  /      |  /      | B: 2+4+4  | **10 (E)** |
@@ -106,7 +106,7 @@
 | Modrianský J. |  /      |  /, 1   |  /, 1   |  /      |  /      |  /, 1   |  /      |  /, 1   |  /      |  /, 1   | A: 5      | **13 (D)** |
 | Mroceková L.  |  /      |  /      |  /, 1   |  -      |  /      |  /, 1   |  /, 2   |  /      |  /, 2   |  /      | B: 2+5    | 8 (F)      |
 | Pelán Š.      |  /, (5) |  /      |  o      |  /      |  /      |  /      |  /      |  /      |  /      |  o      | A, (3)    | 0 (F)      |
-| Pichová A.    |  /      |  /      |  /, 1   |  /, 1   |  /      |  -      |  /      |  /, 2   |  /, 1   |  /      | C: 1      | 2 (F)      |
+| Pichová A.    |  /      |  /      |  /, 1   |  /, 1   |  /      |  -      |  /      |  /, 2   |  /, 1   |  /      | C: 1      | **5 (F)**  |
 | Rišová Ž.     |  /      |  /      |  /      |  /      |  /      |  -      |  -      |  /, 1   |  /, 2   |  /      | A         | **13 (E)** |
 | Sokolová Z.   |  /, 2   |  /, 2   |  -      |  /, 2   |  /, 2   |  /, 2   |  o      |  /, 1   |  /, 2   |  o      | B: 2+3+4  | **8 (F)**  |
 | Valach V.     |  /      |  /      |  /      |  /, 2   |  /, 1   |  /, 2   |  /, 1   |  /, 2   |  /      |  -      | C         | 2 (F)      |
