@@ -3,10 +3,8 @@
 
 ## Rozvrh pro letní semestr
 
-- středa 10:00-11:40 (JI), středa 12:00-13:40 (AIPV, AMSM), čtvrtek 10:00-11:40 (RT) v učebně T-105
-- přednáška: úterý 12:00-13:40 v T-201
 - vyučující doc. Ing. Jan Pšikal, Ph.D., jan.psikal@fjfi.cvut.cz
-- přednášky k předmětu 12ANM jsou v tomto akademickém roce organizovány samostatně, v případě hlubšího zájmu o problematiku doporučuji materiály k předmětu 12NME1 (přednášející doc. Ing. Pavel Váchal, Ph.D.), materiály [zde](http://kfe.fjfi.cvut.cz/~vachal/edu/nme/)
+- slidy z přednášek jsou dostupné na MS Teams, v případě hlubšího zájmu o problematiku doporučuji materiály k předmětu 12NME1 (přednášející doc. Ing. Pavel Váchal, Ph.D.), materiály [zde](http://kfe.fjfi.cvut.cz/~vachal/edu/nme/)
 - přestupy mezi cvičeními možné jen z rozvrhových důvodů a se svolením vyučujícího
 - cvičení pro obor Jaderná chemie probíhají striktně odděleně! (vyučující Ing. Alena Zavadilová, Ph.D.), obsahově jsou odlišné a odpovídají specifickým potřebám daného studijního oboru
 
@@ -17,107 +15,104 @@
 - podkladem pro klasifikaci je závěrečný zápočtový test a body získané za aktivitu přímo na cvičeních nebo představením vyřešené úlohy (úloh) na tomto webu zadaných
 - podmínkou pro udělení zápočtu je zisk stanoveného minimálního počtu bodů ze zápočtového testu dle počtu bodů získaných za aktivitu, na klasifikaci má vliv i počet bodů získaných za aktivitu (obojí detailněji viz níže)
 - studenti, kteří mají 12ANM podruhé zapsán, si mohou svoje bodové skóre vylepšit před zápočtovým testem vyřešením úloh v předchozím akademickém roce nezadaných, na kterých se se mnou předem dohodnou
-- možnost přihlášení se (e-mailem) k představení řešené úlohy je do 11.5.2026 11:59 (na termín 12.5.)
-- termíny zápočtových testů: čtvrtek 14.5. od 10:00 v T201, středa 20.5. od 12:00 v T201, dle dne v týdnu Vašeho cvičení, příp. dle přihlášení se e-mailem do pondělí 11.5.2026 9:59 (v případě, že Vám více vyhovuje druhý termín než ten určený dle rozpisu cvičení v tabulce níže)
+- možnost přihlášení se (e-mailem) k představení řešené úlohy je do ... bude oznámeno
+- termíny zápočtových testů: bude oznámeno
 
 ## Zápočtová tabulka
 - **výsledek zápočtového testu najdete v posledním sloupci v notaci: počet bodů (hodnocení)**
 - pokud je známka zapsaná tučně, jedná se o definitivní hodnocení se záznamem v systému KOS ČVUT
 - pokud se student z účasti na zápočtovém testu předem neomluvil a na svůj první test se tedy bez omluvy nedostavil, počítá se mu 0 bodů z prvního testu (zpětně lze vymazat pouze na základě vážných doložitelných důvodů)
-- studentům s prozatimním hodnocením lepším než F udělím definitivní hodnocení odpovídající zde uvedené známce, pokud mi do 31.5.2026 23:59 e-mailem neoznámí, že mají zájem se pokoušet o lepší hodnocení (v případě, že mi to oznámí, mohou své rozhodnutí později změnit bez jakékoliv "penalizace" s výjimkou toho, že zde uvedené hodnocení budou mít v systému KOS zapsané až po vyhodnocení posledních opravných testů v září)
+- studentům s prozatimním hodnocením lepším než F udělím definitivní hodnocení odpovídající zde uvedené známce, pokud mi do 31.5.2027 23:59 e-mailem neoznámí, že mají zájem se pokoušet o lepší hodnocení (v případě, že mi to oznámí, mohou své rozhodnutí později změnit bez jakékoliv "penalizace" s výjimkou toho, že zde uvedené hodnocení budou mít v systému KOS zapsané až po vyhodnocení posledních opravných testů v září)
 - každý student má právo na jeden opravný zápočtový test; pokud se pro něj rozhodne, pak platí následující pravidlo: počítá se co je pro studenta výhodnější - buď pouze hodnocení z druhého napsaného testu nebo hodnocení založené na aritmetickém průměru z obou testů
-- **termíny opravných zápočtových testů: čtvrtek 18.6.2026 od 14:00 v T121, pondělí 20.7.2026 od 14:00 v T121, čtvrtek 10.9.2026 od 14:00 v T201**
-- změna místností vyhrazena, stanovené termíny se ale pokusím dodržet téměř "za každou cenu"
-- na zápočtový test je **nezbytné se předem písemně přihlásit e-mailem vyučujícímu** především z důvodů organizačních **minimálně 96 hodin (4 dny) před začátkem konání opravného testu**, jinak Vám nebude umožněno si test napsat (aktualizace po 20.7.: **tato podmínka neplatí pro poslední termín čtvrtek 10.9., zde předem počítám automaticky s max. 26 účastníky, kteří ještě opravný test psát v letošním semestru mohou**)
-- **příp. písemné odhlášení s omluvou** je možné **nejpozději 24 hodin před začátkem konání opravného testu** (maximálně však jednou ze všech opravných termínů před tím posledním plánovaným, kdy to už smysl nedává ...), jinak budete hodnoceni s výsledkem 0 bodů, tedy hodnocením F (s výjimkou předem neomluvené náhlé nepřítomnosti z vážných důvodů doložitelných dokumenty)
+- **termíny zápočtových testů: bude oznámeno**
 
 
-### Cvičení středa 10:00
+### Cvičení 1
 |               |  **1**  |  **2**  |  **3**  |  **4**  |  **5**  |  **6**  |  **7**  |  **8**  |  **9**  | **10**  | **Úlohy** |   **ZT**   |
 |---------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|-----------|------------|
-| Adamec J.     |  /      |  /, 1   |  /      |  /      |  /, 1   |  /, 1   |  /, 1   |  /, 2   |  /, 1   |  /, 1   | C: 3      | **17 (A)** |
-| Babulík O.    |  /, 1   |  /      |  /, 1   |  /, 1   |  /      |  -      |  /      |  /      |  -      |  -      | A: 3      | **11 (E)** |
-| Fildán M.     |  /, 1   |  /, 1   |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      | B         | **0 (F)**  |
-| Filip M.      |  /      |  /      |  -      |  -      |  /      |  /      |  /      |  /      |  -      |  o      | C         | **13 (E)** |
-| Flaig D. I.   |  -      |  /, 1   |  /      |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /, 2   |  /      | A         | **15 (C)** |
-| Gyepes F.     |  /, 1   |  /, 2   |  /      |  /, 1   |  /, 1   |  /      |  /, 1   |  /      |  -      |  -      | B: 3      | **10 (E)** |
-| Horáček K.    |  /      |  /      |  /      |  -      |  /      |  /      |  /      |  /      |  /      |  -      | C: 5+1    | **8 (F)**  |
-| Chmela R.     |  /      |  /, 1   |  /, 1   |  /      |  /, 1   |  /      |  /      |  -      |  /, 1   |  /, 2   | A: 3      | **12 (E)** |
-| Kolář J.      |  /, 1   |  /, 1   |  /      |  /, 2   |  /      |  /      |  /      |  /      |  /      |  -      | B: 3+4    | **7 (F)**  |
-| Kozlová A.    |  /, 1   |  /, 1   |  -      |  /      |  /      |  /      |  /      |  /      |  /      |  /, 1   | C: 4      | **9 (F)**  |
-| Krška F.      |  /      |  /      |  /, 1   |  -      |  /, 1   |  /, 1   |  /, 1   |  /, 2   |  /, 2   |  -      | A         | **8 (F)**  |
-| Krupka F.     |  /, (8) |  /      |  /      |  /      |  /      |  o      |  /      |  /      |  o      |  /      | B         | **13 (D)** |
-| Kubiš J.      |  /      |  /      |  -      |  /      |  /      |  /      |  /      |  /      |  -      |  /      | C         | **10 (F)** |
-| Kuchárik J.   |  /      |  -      |  /      |  /      |  /, 2   |  /, 1   |  /, 2   |  /, 1   |  /, 2   |  -      | A: 4      | **14 (C)** |
-| Landa P.      |  /      |  /      |  /      |  /, 1   |  /, 1   |  /      |  /, 1   |  /, 1   |  /, 2   |  -      | B: 2      | **10 (E)** |
-| Lorenc L.     |  /      |  /, 2   |  /, 1   |  /      |  /      |  /      |  /      |  -      |  /      |  -      | C: 3+5    | **17 (A)** |
-| Luhanová K.   |  /      |  /      |  /, 1   |  /, 1   |  /, 1   |  /      |  /, 1   |  -      |  -      |  -      | A: 3+5    | **16 (B)** |
-| Matušek J.    |  /, 1   |  /      |  -      |  /      |  -      |  /      |  /      |  -      |  /, 2   |  /      | B         | **0 (F)**  |
-| Müller J.     |  /, 1   |  /, 1   |  /      |  -      |  /      |  /, 2   |  /, 1   |  /      |  /, 1   |  -      | C: 5      | **12 (D)** |
-| Onderka R.    |  /, 1   |  -      |  /, 3   |  /, 2   |  o      |  o      |  -      |  o      |  /, 1   |  /, 2   | A         | **10 (E)** |
-| Roller J.     |  /, 1   |  /, 2   |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /      |  -      |  /, 2   |  /, 1   | B: 3+4    | **17 (A)** |
-| Sochorovský V.|  /, 1   |  /      |  -      |  /, 2   |  /, 1   |  /      |  o      |  /      |  /, 1   |  /, 2   | C         | **17 (B)** |
-| Stuchlík O.   |  /, 1   |  /      |  -      |  /      |  /      |  /      |  /, 1   |  -      |  /, 1   |  /, 2   | A: 3      | **10 (E)** |
-| Vinkler V.    |  /, 1   |  /, 1   |  /, 1   |  /      |  /, 1   |  -      |  -      |  /      |  /      |  -      | B: 3+4    | **12 (D)** |
-| Zajac V.      |  /      |  /      |  /      |  /      |  /      |  /      |  -      |  /, 1   |  /      |  /      | C: 3+4    | **8 (F)**  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |   |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |   |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |   |
+| | | | | | | | | | | | |   |
+| | | | | | | | | | | | |   |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |   |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |   |
 
 
-### Cvičení středa 12:00
+### Cvičení 2
 |               |  **1**  |  **2**  |  **3**  |  **4**  |  **5**  |  **6**  |  **7**  |  **8**  |  **9**  | **10**  | **Úlohy** |   **ZT**   |
 |---------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|-----------|------------|
-| Artamonov M.  |  o, (1) |  /      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | (3+4+5)   | **15 (B)** |
-| Bažantová V.  |  o, (2) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | (3+3)     | **8 (F)**  |
-| Darbayev C.   |  /, 1   |  /, 1   |  -      |  /      |  -      |  /, 1   |  /      |  /, 1   |  -      |  /      | A: 3+4    | **5 (F)**  |
-| Děnisova A.   |  /, 1   |  /      |  /      |  /      |  /      |  /      |  -      |  /      |  /      |  /      | B: 2+4+4  | **10 (E)** |
-| Golisová S.   |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      | C         | **0 (F)**  |
-| Chalas T.     |  /, 2   |  /      |  /      |  /      |  /      |  /      |  /      |  /      |  /      |  /, 1   | A: 3+4    | **10 (E)** |
-| Chylík R.     |  /      |  -      |  /      |  /      |  /      |  /      |  /      |  /      |  /      |  /      | B: 2      | **4 (F)**  |
-| Kašlíková M.  |  /, 1   |  /, 2   |  /, 2   |  /, 1   |  /      |  /      |  -      |  /      |  -      |  -      | C         | **11 (E)** |
-| Kulhánková A. |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      |  -      | A         | **0 (F)**  |
-| Lohvynenko O. |  /      |  /, 1   |  /      |  /      |  /, 1   |  -      |  -      |  /, 1   |  /      |  /      | B         | **6 (F)**  |
-| Palovský V.   |  /      |  /      |  /      |  /, 1   |  /, 1   |  /, 1   |  -      |  /      |  /      |  /      | C         | **6 (F)**  |
-| Provazník V.  |  /, 1   |  /, 2   |  /, 2   |  /, 1   |  /, 1   |  /, 2   |  /      |  /      |  /, 1   |  /, 2   | A: 3+4+5  | **18 (A)** |
-| Rudenko Y.    |  /      |  /      |  /      |  /, 1   |  /      |  /, 1   |  /, 2   |  /, 2   |  /, 2   |  -      | B         | **4 (F)**  |
-| Salikhov D.   |  /, 2   |  /, 2   |  /, 2   |  /, 2   |  /, 1   |  /      |  /      |  /, 1   |  /, 1   |  /, 2   | C: 3+4+5  | **19 (A)** |
-| Sereghy H.    |  /, 1   |  /      |  /      |  /      |  /      |  /      |  /      |  /      |  -      |  /      | A: 3+2    | **13 (D)** |
-| Šiler J.      |  /, 1   |  /      |  /, 2   |  /, 1   |  /      |  -      |  /, 1   |  /      |  /, 1   |  -      | B: 3+4    | **15 (B)** |
-| Yergaliyev D. |  /      |  /      |  -      |  /      |  /      |  /      |  -      |  /      |  /      |  /      | A         | **10 (F)** |
-| Zykán F.      |  /, 1   |  /, 1   |  /, 2   |  /, 2   |  /, 1   |  /, 1   |  /      |  /      |  /      |  /, 2   | B: 3      | **15 (B)** |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |   |
+| | | | | | | | | | | | |   |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |   |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |   |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |   |
+| | | | | | | | | | | | |   |
+| | | | | | | | | | | | |   |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |   |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
 
 
-### Cvičení čtvrtek 10:00
+### Cvičení 3
 |               |  **1**  |  **2**  |  **3**  |  **4**  |  **5**  |  **6**  |  **7**  |  **8**  |  **9**  | **10**  | **Úlohy** |   **ZT**   |
 |---------------|---------|---------|---------|---------|---------|---------|---------|---------|---------|---------|-----------|------------|
-| Býčková M.    |  o, (6) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | B, (1)    | **11 (E)** |
-| Dolejš M.     |  o, (0) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | C: 1+3+4  | **10 (E)** |
-| Dragounová A. |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /      |  /, 1   |  /, 2   |  /      |  -      | A: 3      | **10 (E)** |
-| Hegerová S.   |  /, 1   |  o      |  /      |  /      |  o      |  /      |  /      |  o      |  /      |  o      | B         | **0 (F)**  |
-| Hrabalová K.  |  /, 2   |  /, 1   |  /, 1   |  /      |  /, 1   |  /      |  /, 1   |  /      |  /      |  /, 2   | C: 2+4    | **14 (C)** |
-| Jachková K.   |  /      |  /, 1   |  /      |  /      |  /, 1   |  /      |  /, 1   |  /, 1   |  /, 2   |  /, 2   | A         | **10 (E)** |
-| Janásková M.  |  o, (2) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | (3+3)     | **15 (C)** |
-| Jirásek A.    |  -      |  -      |  /      |  /      |  /, 1   |  /      |  /      |  /      |  -      |  o      | B: 4+5    | **8 (F)**  |
-| Kaputlu B.N.  |  /      |  /      |  /, 1   |  /, 1   |  /, 2   |  /      |  /, 2   |  /, 2   |  /, 1   |  /      | C: 5      | **6 (F)**  |
-| Kinclová A.   |  /, 1   |  /      |  /, 1   |  /, 1   |  /, 1   |  /, 1   |  /      |  /, 1   |  /, 1   |  /, 2   | A         | **12 (E)** |
-| Korecký M.    |  o, (3) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | (5)       | **15 (C)** |
-| Kubelka M.    |  /, (4) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | (3+4)     | **10 (E)** |
-| Marková B.    |  /      |  /      |  /, 1   |  /, 2   |  /, 2   |  /, 1   |  /, 1   |  /, 1   |  /      |  /      | B         | **16 (C)** |
-| Metelková Š.  |  /, 1   |  /, 1   |  /      |  /      |  /      |  /      |  /      |  /      |  -      |  /      | C: 3+4    | **13 (D)** |
-| Mikšovský P.  |  o, (1) |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      |  o      | C, (3)    | **5 (F)**  |
-| Modrianský J. |  /      |  /, 1   |  /, 1   |  /      |  /      |  /, 1   |  /      |  /, 1   |  /      |  /, 1   | A: 5      | **13 (D)** |
-| Mroceková L.  |  /      |  /      |  /, 1   |  -      |  /      |  /, 1   |  /, 2   |  /      |  /, 2   |  /      | B: 2+5    | **15 (B)** |
-| Pelán Š.      |  /, (5) |  /      |  o      |  /      |  /      |  /      |  /      |  /      |  /      |  o      | A, (3)    | **0 (F)**  |
-| Pichová A.    |  /      |  /      |  /, 1   |  /, 1   |  /      |  -      |  /      |  /, 2   |  /, 1   |  /      | C: 1      | **5 (F)**  |
-| Rišová Ž.     |  /      |  /      |  /      |  /      |  /      |  -      |  -      |  /, 1   |  /, 2   |  /      | A         | **13 (E)** |
-| Sokolová Z.   |  /, 2   |  /, 2   |  -      |  /, 2   |  /, 2   |  /, 2   |  o      |  /, 1   |  /, 2   |  o      | B: 2+3+4  | **8 (F)**  |
-| Valach V.     |  /      |  /      |  /      |  /, 2   |  /, 1   |  /, 2   |  /, 1   |  /, 2   |  /      |  -      | C         | **2 (F)**  |
-| Vavro T.      |  /      |  /      |  /, 1   |  /      |  /      |  /      |  /      |  /      |  -      |  /, 3   | A: 3+5    | **11 (D)** |
-| Vlčinová I.   |  /, 1   |  /, 1   |  /      |  /, 1   |  /, 1   |  -      |  /      |  -      |  /, 2   |  /      | B: 5      | **13 (C)** |
-| Vyhnánek J.   |  /, 1   |  -      |  /      |  -      |  -      |  -      |  -      |  -      |  -      |  -      | C         | **0 (F)**  |
-| Žůrek D.      |  /, 1   |  /      |  /      |  /, 2   |  /, 2   |  /, 1   |  /, 2   |  /      |  /      |  -      | A: 3      | **20 (A)** |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |   |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |   |
+| | | | | | | | | | | | |   |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |   |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |   |
+| | | | | | | | | | | | |   |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |   |
+| | | | | | | | | | | | |   |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |  |
+| | | | | | | | | | | | |   |
+| | | | | | | | | | | | |  |
 
 Vysvětlivky:"/" přítomen, "-" nepřitomen, "o" omluven, číslo udává počet bodů za aktivitu na cvičeních, v závorce jsou započítané body z předchozího akademického roku. 
 
-Upřesnění pro studenty, kteří mají předmět 12ANM zapsán napodruhé: Tito studenti si mohou svoje skóre vylepšit pouze vyřešením úloh dle přidělené skupiny A-C nebo úloh v předchozím akademickém roce nezadaných v případě, že u sebe skupinu ve sloupečku Úlohy uvedenou nemají (tj. úlohy 1-3, 7-9). 
+Upřesnění pro studenty, kteří mají předmět 12ANM zapsán napodruhé: Tito studenti si mohou svoje skóre vylepšit pouze vyřešením úloh dle přidělené skupiny A-C v předchozím akademickém roce. 
 
 
 - přiřazení hodnocení počtu bodů dosažených v zápočtovém testu: 
